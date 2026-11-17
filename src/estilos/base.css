@@ -146,20 +146,38 @@ input[type='checkbox'] { width: 20px; height: 20px; accent-color: var(--azul); f
 .marca-manutencao, .marca-estoque { border-color: #9a988d; border-style: dotted; background: transparent; }
 
 .estante { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
-.ficha-acervo { --mola: cubic-bezier(.2, .8, .2, 1); background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); display: flex; flex-direction: column; overflow: hidden; transition: transform .35s var(--mola), border-color .2s, box-shadow .35s var(--mola); }
-.ficha-acervo:is(:hover, :focus-within) { transform: translateY(-4px); border-color: var(--azul); box-shadow: 0 18px 36px -18px rgba(12, 33, 76, 0.55), 0 2px 6px -2px rgba(12, 33, 76, 0.18); }
+.ficha-acervo { --mola: cubic-bezier(.2, .8, .2, 1); background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); display: flex; flex-direction: column; overflow: hidden; transition: transform .35s var(--mola), border-color .25s, box-shadow .35s var(--mola); }
+.ficha-acervo:is(:hover, :focus-within) { transform: translateY(-3px); border-color: color-mix(in oklab, var(--azul) 35%, var(--linha)); box-shadow: 0 18px 36px -20px rgba(12, 33, 76, 0.5); }
+
+/* luz que segue o ponteiro (Holofote): um brilho azul no cartão e a borda mais próxima em dourado */
+.holofote { position: relative; isolation: isolate; }
+.holofote-luz, .holofote-borda { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .3s; z-index: 2; }
+.holofote-luz { background: radial-gradient(280px circle at var(--luz-x, 50%) var(--luz-y, 50%), rgba(151, 177, 231, .22), transparent 70%); mix-blend-mode: multiply; }
+.holofote-borda { inset: -1px; padding: 1.5px; background: radial-gradient(220px circle at var(--luz-x, 50%) var(--luz-y, 50%), var(--ouro), transparent 65%);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; }
+.holofote:is(:hover, :focus-within) :is(.holofote-luz, .holofote-borda) { opacity: 1; }
+@media (hover: none) { .holofote-luz, .holofote-borda { display: none; } }
+
+/* painel que sobe sobre a foto (Reveal on hover) */
 .ficha-acervo-foto { position: relative; display: block; overflow: hidden; }
-.ficha-acervo-ver { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 16px 12px; color: #fff; font: 600 0.92rem var(--titulo); background: linear-gradient(transparent, rgba(12, 33, 76, 0.88)); transform: translateY(100%); opacity: 0; transition: transform .35s var(--mola), opacity .25s; }
-.ficha-acervo-ver span { display: inline-block; transition: transform .35s var(--mola); }
-.ficha-acervo:is(:hover, :focus-within) .ficha-acervo-ver { transform: none; opacity: 1; }
-.ficha-acervo:is(:hover, :focus-within) .ficha-acervo-ver span { transform: translateX(4px); }
+.ficha-acervo-painel { position: absolute; left: 12px; right: 12px; bottom: 12px; z-index: 1; display: grid; gap: 8px; padding: 12px 14px; border-radius: 8px;
+  background: rgba(12, 33, 76, 0.78); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: #fff;
+  translate: 0 120%; opacity: 0; transition: translate .5s var(--mola), opacity .4s; }
+.ficha-acervo:is(:hover, :focus-within) .ficha-acervo-painel { translate: 0 0; opacity: 1; }
+.painel-estados { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 0.82rem; }
+.painel-estado { display: inline-flex; align-items: center; gap: 6px; }
+.painel-estado .marca { border-color: #fff; }
+.painel-estado .marca-livre { background: #fff; }
+.painel-estado .marca-aula { border-color: var(--ouro-claro); background: repeating-linear-gradient(135deg, var(--ouro-claro) 0 2px, transparent 2px 4px); }
+.painel-estado .marca-emprestado { border-color: #f3a7a7; }
+.painel-ver { font: 600 0.88rem var(--titulo); display: inline-flex; gap: 6px; }
+.painel-ver span { transition: transform .35s var(--mola); }
+.ficha-acervo:is(:hover, :focus-within) .painel-ver span { transform: translateX(4px); }
 .ficha-acervo-corpo h2 a { background: linear-gradient(var(--ouro), var(--ouro)) no-repeat 0 100% / 0 2px; padding-bottom: 2px; transition: background-size .35s var(--mola); }
 .ficha-acervo:is(:hover, :focus-within) h2 a { background-size: 100% 2px; text-decoration: none; }
-.ficha-acervo .marca { transition: transform .25s var(--mola); transition-delay: calc(var(--i, 0) * 45ms); }
-.ficha-acervo:is(:hover, :focus-within) .marca { transform: scale(1.3); }
 .foto { aspect-ratio: 4 / 3; background: var(--papel-2); overflow: hidden; }
-.foto img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2, .8, .2, 1), filter .4s; }
-.ficha-acervo:is(:hover, :focus-within) .foto img { transform: scale(1.06); filter: saturate(1.12) contrast(1.03); }
+.foto img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2, .8, .2, 1); }
+.ficha-acervo:is(:hover, :focus-within) .foto img { transform: scale(1.05); }
 .foto-vazia { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; background: var(--azul); color: var(--malha); font-family: var(--titulo); background-image: linear-gradient(var(--azul-2) 1px, transparent 1px), linear-gradient(90deg, var(--azul-2) 1px, transparent 1px); background-size: 28px 28px; }
 .foto-vazia b { font-size: 1.5rem; color: #fff; }
 .foto-grande { aspect-ratio: 4 / 5; border: 1px solid var(--linha); border-radius: var(--raio); }

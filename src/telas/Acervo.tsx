@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react'
 import { Foto, Marcas, Vazio } from '../componentes/pecas'
+import { Holofote } from '../componentes/Holofote'
 import { useLea } from '../contexto'
 import { hoje, periodo } from '../lib/datas'
-import { quadro, textoAula } from '../lib/disponibilidade'
+import { quadro, textoAula, type EstadoUnidade } from '../lib/disponibilidade'
 
 export function Periodo() {
   const { cesta, definirCesta } = useLea()
@@ -88,8 +89,18 @@ export function Acervo() {
             const meus = naFicha(m.id)
             const sobra = q.livres.filter((u) => !cesta.itens.includes(u.id))
             return (
-              <li key={m.id} className="ficha-acervo">
-                <a href={`#/equipamento/${m.id}`} className="ficha-acervo-foto" tabIndex={-1} aria-hidden="true"><Foto m={m} /><span className="ficha-acervo-ver">Ver as unidades <span aria-hidden="true">→</span></span></a>
+              <Holofote key={m.id} className="ficha-acervo">
+                <a href={`#/equipamento/${m.id}`} className="ficha-acervo-foto" tabIndex={-1} aria-hidden="true">
+                  <Foto m={m} />
+                  <span className="ficha-acervo-painel">
+                    <span className="painel-estados">
+                      {resumoEstados(q.unidades.map((u) => u.estado)).map(([e, n]) => (
+                        <span key={e} className="painel-estado"><i className={`marca marca-${e}`} />{n} {ROTULO_PAINEL[e][n === 1 ? 0 : 1]}</span>
+                      ))}
+                    </span>
+                    <span className="painel-ver">Ver as unidades <span>→</span></span>
+                  </span>
+                </a>
                 <div className="ficha-acervo-corpo">
                   <p className="cota">{c.sigla} | {c.nome}</p>
                   <h2><a href={`#/equipamento/${m.id}`}>{m.marca} {m.nome}</a></h2>
@@ -115,7 +126,7 @@ export function Acervo() {
                     {q.livres.length === 0 ? 'Indisponível' : sobra.length === 0 ? 'Todos no pedido' : meus ? 'Mais um' : 'Pedir'}
                   </button>}
                 </div>
-              </li>
+              </Holofote>
             )
           })}
         </ul>
@@ -123,6 +134,18 @@ export function Acervo() {
       <BarraFicha />
     </main>
   )
+}
+
+const ROTULO_PAINEL: Record<EstadoUnidade, [string, string]> = {
+  livre: ['disponível', 'disponíveis'],
+  aula: ['em aula', 'em aula'],
+  emprestado: ['emprestada', 'emprestadas'],
+  manutencao: ['em manutenção', 'em manutenção'],
+  estoque: ['em estoque', 'em estoque'],
+}
+const ORDEM_ESTADOS: EstadoUnidade[] = ['livre', 'aula', 'emprestado', 'manutencao', 'estoque']
+function resumoEstados(estados: EstadoUnidade[]): [EstadoUnidade, number][] {
+  return ORDEM_ESTADOS.map((e) => [e, estados.filter((x) => x === e).length] as [EstadoUnidade, number]).filter(([, n]) => n > 0)
 }
 
 export function BarraFicha() {
