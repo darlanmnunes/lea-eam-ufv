@@ -1,18 +1,15 @@
 -- 005: inventário completo da sala 108 e marcação de empréstimo.
--- Para o banco que já recebeu 001 a 004. Instalações novas já trazem tudo isso em 001 a 003.
+-- Para o banco que já recebeu 001 a 004 (instalações novas já trazem tudo em 001 a 003).
+-- Preserva os usos em aula e as datas dos semestres; recria só as unidades.
 
 alter table modelos add column if not exists emprestavel boolean not null default true;
 alter table unidades drop constraint if exists unidades_modelo_id_numero_serie_key;
 
--- o acervo é recriado do zero: só é seguro enquanto não houver pedidos nem usos em aula
 do $$ begin
-  if exists (select 1 from emprestimo_itens) or exists (select 1 from disciplina_equipamentos) then
-    raise exception 'Já há pedidos ou usos em aula ligados ao acervo: esta troca precisa de uma migração própria';
+  if exists (select 1 from emprestimo_itens) then
+    raise exception 'Já há pedidos ligados às unidades: esta troca precisa de uma migração própria';
   end if;
 end $$;
-delete from unidades;
-delete from modelos;
-delete from categorias;
 
 insert into categorias (id, nome, sigla, ordem) values
   ('estacao-total', 'Estações totais', 'ET', 1),
@@ -24,7 +21,8 @@ insert into categorias (id, nome, sigla, ordem) values
   ('medicao', 'Bússolas e instrumentos de medição', 'MD', 7),
   ('acessorio', 'Miras, tripés e acessórios', 'AC', 8),
   ('desenho', 'Planímetros e desenho', 'DS', 9),
-  ('apoio', 'Apoio de campo', 'AP', 10);
+  ('apoio', 'Apoio de campo', 'AP', 10)
+on conflict (id) do update set nome = excluded.nome, sigla = excluded.sigla, ordem = excluded.ordem;
 
 insert into modelos (id, categoria_id, marca, nome, descricao, foto, emprestavel, ordem) values
   ('geodetic-gd2i', 'estacao-total', 'Geodetic', 'GD2i', 'Estação total das aulas práticas de Topografia. É o modelo com mais unidades no laboratório.', 'geodetic-gd2i.webp', true, 1),
@@ -121,7 +119,15 @@ insert into modelos (id, categoria_id, marca, nome, descricao, foto, emprestavel
   ('regua-de-escala-kern', 'desenho', 'Régua de escala', 'Kern', 'Régua de escala topográfica, metálica, um transferidor metálico de 180 graus, um compasso bomba, 1 estojo para ponta seca,1 cintel, 1 alfinete para copia, 2 compassos para lapis, 1 compasso de linha pararelas.', null, true, 92),
   ('bosch-martelete', 'apoio', 'Bosch', 'Martelete', 'Martelete perfurador e rompedor para implantação de marcos e pinos.', 'martelete-bosch.webp', true, 93),
   ('buffalo-bfg-2500', 'apoio', 'Buffalo', 'BFG 2500', 'Gerador a gasolina para energia em campo.', 'gerador-buffalo-bfg-2500.webp', true, 94),
-  ('camera-digital-nikon', 'apoio', 'Câmera digital', 'Nikon', 'Câmera digital.', null, true, 95);
+  ('camera-digital-nikon', 'apoio', 'Câmera digital', 'Nikon', 'Câmera digital.', null, true, 95)
+on conflict (id) do update set categoria_id = excluded.categoria_id, marca = excluded.marca, nome = excluded.nome,
+  descricao = excluded.descricao, foto = excluded.foto, emprestavel = excluded.emprestavel, ordem = excluded.ordem;
+
+delete from unidades;
+delete from modelos where id not in ('geodetic-gd2i', 'geodetic-gt2-plus', 'geodetic-gd8i', 'topcon-es-65', 'topcon-gts-102n', 'topcon-gts-212', 'estacao-total-pentax', 'chc-i50', 'topomap-t10', 'emlid-reach-rs2', 'emlid-reach-rs2-plus', 'javad-triumph-1', 'hi-target-v200', 'receptor-gnss-trimble', 'receptor-gnss-leica', 'receptor-gnss-sem-marca', 'topcon-dl-502', 'nivel-zeiss', 'nivel-foif', 'nivel-kern', 'nivel-sem-marca', 'luneta-de-nivel-niveltec', 'nivel-sion', 'nivel-gurley', 'nivel-mitutoyo', 'nivel-mom', 'nivel-pzo', 'nivel-siom', 'nivel-wild', 'teodolito-berger', 'teodolito-world', 'teodolito-sem-marca', 'teodolito-vasconcelos', 'teodolito-dfv', 'teodolito-wild', 'teodolito-zeiss', 'teodolito-keuffel', 'teodolito-sunray', 'teodolito-breithaupt', 'teodolito-mon-richer', 'teodolito-oms', 'teodolito-zeiss-jena', 'teodolito-zuhio', 'riegl-vz-400', 'batmap-ii', 'dji-mavic-air-2', 'bussola-passed', 'trena-eletronica-leica', 'altimetro-sem-marca', 'altimetro-wallace', 'bussola-ushikata', 'pantometro-sem-marca', 'podometro-teiluiz', 'prancheta-topografica-sem-marca', 'binoculo-bushnell', 'bussola-fuji', 'bussola-osaka-tamaya', 'clinometro-casella', 'clinometro-fuji', 'clinometro-meridian', 'medidor-topografico-genovesi', 'telemetro-wild', 'tripe-miratec', 'mira-foif', 'baliza-sem-marca', 'mira-desetec-trident', 'mira-sem-marca', 'tripe-cst', 'tripe-desetec-trident', 'mira-mom', 'mira-zeiss', 'micrometro-optico-mom', 'mira-miratec', 'base-topografica-mom', 'mira-amapal', 'oculares-mom', 'oculares-sem-marca', 'prisma-pentax', 'prumo-zenital-sem-marca', 'tripe-sem-marca', 'tripe-techgeo', 'tripe-trident', 'tripe-world', 'planimetro-k-pluse', 'planimetro-mom', 'planimetro-sem-marca', 'planimetro-tama-sokki', 'estereoscopio-zeiss', 'normografo-leroy-keuffel-esser', 'normografo-trident', 'planimetro-ansler', 'regua-de-escala-kern', 'bosch-martelete', 'buffalo-bfg-2500', 'camera-digital-nikon')
+  and id not in (select modelo_id from disciplina_equipamentos);
+delete from categorias where id not in ('estacao-total', 'gnss', 'nivel', 'teodolito', 'laser-scanner', 'aeronave', 'medicao', 'acessorio', 'desenho', 'apoio')
+  and id not in (select categoria_id from modelos);
 
 insert into unidades (modelo_id, patrimonio, numero_serie, situacao, observacao) values
   ('geodetic-gd2i', null, '173675', 'disponivel', null),
