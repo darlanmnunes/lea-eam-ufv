@@ -29,7 +29,7 @@ function Topo({ secao }: { secao: string }) {
       <div className="topo-dentro">
         <a className="topo-marca" href="./index.html" aria-label="LEA, página inicial">
           <img src="./marca/selo.png" alt="" width="40" height="40" />
-          <span><b>LEA</b><small>Acervo de equipamentos</small></span>
+          <span><b>LEA</b><small>Acervo do laboratório</small></span>
         </a>
         <button className="topo-menu" aria-expanded={aberto} aria-controls="nav" onClick={() => setAberto(!aberto)}>Menu</button>
         <nav id="nav" className={aberto ? 'aberto' : ''} aria-label="Seções" onClick={() => setAberto(false)}>
@@ -60,9 +60,10 @@ function Rodape() {
         <img src="./marca/ufv.png" alt="Universidade Federal de Viçosa" height="44" />
         <p>
           Laboratório de Engenharia de Agrimensura e Cartográfica (LEA)<br />
-          Departamento de Engenharia Civil · Universidade Federal de Viçosa
+          Departamento de Engenharia Civil | Universidade Federal de Viçosa<br />
+          <span className="rodape-autor">Desenvolvido por Prof. Dr. Darlan Miranda Nunes</span>
         </p>
-        <img src="./marca/assinatura.png" alt="EAM · Engenharia de Agrimensura e Cartográfica" height="44" />
+        <img src="./marca/assinatura.png" alt="EAM | Engenharia de Agrimensura e Cartográfica" height="44" />
       </div>
     </footer>
   )

@@ -44,17 +44,17 @@ Deno.serve(async () => {
       body: JSON.stringify({
         from: Deno.env.get('LEMBRETE_REMETENTE'),
         to: p.email,
-        subject: `LEA · pedido ${p.codigo} ${p.etapa === 'em_uso' ? 'com devolução vencida' : 'aguarda você'}`,
+        subject: `LEA | pedido ${p.codigo} ${p.etapa === 'em_uso' ? 'com devolução vencida' : 'aguarda você'}`,
         text: [
           `Olá, ${p.nome}.`,
           '',
           `O pedido ${p.codigo}, de ${p.solicitante}, ${O_QUE_FAZER[p.etapa] ?? 'aguarda uma ação sua'}.`,
-          `Retirada: ${data(p.retirada)} · Devolução prevista: ${data(p.devolucao)}`,
+          `Retirada: ${data(p.retirada)} | Devolução prevista: ${data(p.devolucao)}`,
           '',
           `Abrir o pedido: ${link}`,
           '',
           'Este aviso se repete até a etapa ser registrada no sistema.',
-          'Laboratório de Engenharia de Agrimensura e Cartográfica · UFV',
+          'Laboratório de Engenharia de Agrimensura e Cartográfica | UFV',
         ].join('\n'),
       }),
     })

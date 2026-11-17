@@ -7,9 +7,9 @@ export default defineConfig({
   base: './',
   plugins: [react()],
   build: {
+    assetsDir: 'app',
     rollupOptions: {
       input: {
-        inicio: resolve(import.meta.dirname, 'index.html'),
         acervo: resolve(import.meta.dirname, 'acervo.html'),
       },
     },

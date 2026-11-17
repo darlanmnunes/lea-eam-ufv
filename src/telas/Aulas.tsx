@@ -84,7 +84,7 @@ export function Aulas({ podeEditar }: { podeEditar: boolean }) {
               <div className="disc-nome">
                 <p className="cota">{l.codigo}</p>
                 <h2>{titulo(l.nome)}</h2>
-                <p className="disc-horas">{l.aulas.map((a) => `${DIAS[a.dia]} ${a.inicio}–${a.fim}h`).join(' · ')}</p>
+                <p className="disc-horas">{l.aulas.map((a) => `${DIAS[a.dia]} ${a.inicio}–${a.fim}h`).join(' | ')}</p>
               </div>
               <div className="disc-usos">
                 {l.usos.length === 0 && <p className="sem-uso">Não usa equipamento do LEA</p>}

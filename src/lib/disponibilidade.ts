@@ -56,7 +56,7 @@ export function reservaAulas(h: Horarios, modeloId: string, de: string, ate: str
 }
 
 export function textoAula(a: AulaComUso): string {
-  return `${a.disciplina} · ${DIAS[a.dia]} ${a.inicio}h–${a.fim}h`
+  return `${a.disciplina} | ${DIAS[a.dia]} ${a.inicio}h–${a.fim}h`
 }
 
 export type EstadoUnidade = 'livre' | 'aula' | 'emprestado' | 'manutencao' | 'estoque'

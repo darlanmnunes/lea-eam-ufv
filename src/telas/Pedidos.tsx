@@ -26,7 +26,7 @@ function Linha({ e, minha }: { e: Emprestimo; minha: boolean }) {
         <span className="linha-codigo">{e.codigo}</span>
         <span className="linha-miolo">
           <b>{e.finalidade}</b>
-          <small>{resumo} · {periodo(e.retiradaPrevista, e.devolucaoPrevista)}{minha ? '' : ` · ${e.respNome}`}</small>
+          <small>{resumo} | {periodo(e.retiradaPrevista, e.devolucaoPrevista)}{minha ? '' : ` | ${e.respNome}`}</small>
         </span>
         <span className="linha-status">
           <Selo status={e.status} />

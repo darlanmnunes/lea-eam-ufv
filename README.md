@@ -1,9 +1,10 @@
 # Acervo do LEA
 
-Catálogo e empréstimo de equipamentos do Laboratório de Engenharia de Agrimensura e
-Cartográfica (LEA), do curso de Engenharia de Agrimensura e Cartográfica da UFV.
+O acervo do Laboratório de Engenharia de Agrimensura e Cartográfica (LEA), do curso de
+Engenharia de Agrimensura e Cartográfica da UFV: os equipamentos, a situação de cada unidade,
+as aulas práticas que os usam e os empréstimos. Pensado para crescer além do empréstimo.
 
-Substitui o requerimento em papel: a pessoa escolhe as datas, vê o que está livre, monta o
+O empréstimo substitui o requerimento em papel: a pessoa escolhe as datas, vê o que está livre, monta o
 pedido e assina o termo de responsabilidade. A coordenação da área e o responsável pelo
 laboratório autorizam; o técnico confere os itens na entrega e na devolução; quem pediu dá
 ciente das duas. Cada assinatura fica registrada com nome, data e hora.
@@ -96,3 +97,29 @@ Agende a chamada (Database → Cron) a cada 30 minutos, por exemplo.
 O fluxo `.github/workflows/publicar.yml` gera o site e publica no GitHub Pages a cada envio
 para `main`. Em Settings → Pages, escolha "GitHub Actions" como fonte. Para ligar ao banco,
 cadastre `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` em Settings → Variables.
+
+## Na página do curso
+
+O site gerado (`npm run build`, pasta `dist/`) usa caminhos relativos e rotas com `#`, então
+funciona em qualquer endereço sem ajuste. Três formas de levá-lo ao site do curso:
+
+1. **Link ou botão** na página do curso apontando para o endereço do GitHub Pages
+   (`https://darlanmnunes.github.io/lea-eam-ufv/`). É a forma mais simples e a única em que o
+   login funciona sem restrição.
+2. **Copiar a pasta `dist/`** para o servidor do curso (por exemplo em `/lea/`). O sistema passa
+   a ter o endereço do curso. Com o banco ligado, inclua esse endereço em Authentication →
+   URL Configuration no Supabase.
+3. **Embutir com `<iframe>`**, bom para mostrar o catálogo dentro de uma página já existente:
+
+   ```html
+   <iframe src="https://darlanmnunes.github.io/lea-eam-ufv/acervo.html"
+           title="Acervo do LEA" style="width:100%;height:900px;border:0"></iframe>
+   ```
+
+   Dentro de um iframe de outro domínio, os navegadores isolam o armazenamento, e o login pelo
+   link do e-mail abre fora dele. Para pedir e assinar, use o link direto (forma 1 ou 2).
+
+## Autoria
+
+Desenvolvido por Prof. Dr. Darlan Miranda Nunes, Departamento de Engenharia Civil, Universidade
+Federal de Viçosa.

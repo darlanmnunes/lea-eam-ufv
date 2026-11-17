@@ -1,9 +1,9 @@
 {
-  "name": "lea-emprestimos",
+  "name": "lea-eam-ufv",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Acervo e empréstimo de equipamentos do LEA · Engenharia de Agrimensura e Cartográfica · UFV",
+  "description": "Acervo do LEA | Laboratório de Engenharia de Agrimensura e Cartográfica | UFV",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
