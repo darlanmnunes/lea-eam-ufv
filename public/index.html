@@ -99,7 +99,10 @@
     .lea-casa { min-height: 0; grid-template-columns: 20px 96px 1fr; align-items: center; border-left: 0; border-top: 1px solid var(--u-line); padding: 8px 14px; }
     .lea-casa:first-child { border-top: 0; }
     .lea-carimbo { margin: 0; }
-    .lea-casa:nth-child(n+5), .lea-linhas, .lea-ficha__bar .lea-cota { display: none; }
+    .lea-linhas, .lea-ficha__bar .lea-cota { display: none; }
+  }
+  @media (max-width: 639px) {
+    .lea-casa:nth-child(n+5) { display: none; }
   }
 
   /* acervo: a janela do sistema, lista e item aberto (receita app-frame) */
@@ -374,7 +377,7 @@
   <div class="wrap">
     <div class="closing__cta close--word">
       <div class="section-head--split">
-        <div><h2 id="close-h">Veja o que está livre no LEA</h2><p class="t-lead">Na demonstração, seis perfis fictícios percorrem o pedido inteiro.</p></div>
+        <div><h2 id="close-h">Veja o que está livre no LEA</h2><p class="t-lead">Entre com o seu e-mail da UFV para fazer um pedido.</p></div>
         <a class="btn btn--primary" href="acervo.html">Ver o acervo<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
       </div>
       <p class="close__word" aria-hidden="true">LEA</p>
