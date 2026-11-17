@@ -142,6 +142,13 @@ reset role;
 reset role;
 select pg_temp.deve_falhar('delete from emprestimo_eventos', 'não pode ser alterado');
 
+-- 7b. funções de lembrete não ficam ao alcance de quem está logado
+set role authenticated;
+select pg_temp.deve_falhar('select * from lembretes_a_enviar()', 'permission denied');
+select pg_temp.deve_falhar('select * from pendentes_de_ciente()', 'permission denied');
+select pg_temp.deve_falhar($q$insert into emprestimo_eventos (emprestimo_id, tipo, autor_id, autor_nome, autor_papel) values (gen_random_uuid(), 'ocorrencia', gen_random_uuid(), 'x', 'tecnico')$q$, 'permission denied');
+reset role;
+
 -- 8. visitante vê o acervo, não vê pedidos
 set role anon;
 do $$ begin
