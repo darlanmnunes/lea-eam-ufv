@@ -12,6 +12,7 @@ import { Entrar } from './telas/Entrar'
 import { Aulas } from './telas/Aulas'
 import { Gestao } from './telas/Gestao'
 import { Pessoas } from './telas/Pessoas'
+import { VoltarTopo } from './componentes/VoltarTopo'
 
 function Topo({ secao }: { secao: string }) {
   const { eu } = useLea()
@@ -101,6 +102,7 @@ function Telas() {
       <Topo secao={secao} />
       <div id="conteudo">{tela}</div>
       <Rodape />
+      <VoltarTopo />
     </>
   )
 }
