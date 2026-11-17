@@ -66,8 +66,8 @@ npm run db:local   # cria o banco "lea" para explorar
 ### Colocar no ar com Supabase
 
 1. Crie um projeto em supabase.com (plano gratuito).
-2. No SQL Editor, rode nesta ordem: `db/001_esquema.sql`, `db/002_regras.sql`,
-   `db/003_acervo.sql`, `db/004_horarios.sql`. (O `000_local_auth.sql` é só para Postgres local.)
+2. No SQL Editor, rode `db/supabase_completo.sql` (os scripts 001 a 004 juntos; gere de novo
+   com `npm run db:supabase` depois de mudar algum). O `000_local_auth.sql` é só para Postgres local.
 3. Em Authentication, mantenha o acesso por link no e-mail e inclua o endereço do site em
    URL Configuration.
 4. Copie `.env.example` para `.env` e preencha a URL e a chave `anon` do projeto.

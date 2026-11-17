@@ -379,14 +379,18 @@ create policy evento_leitura on emprestimo_eventos for select
   using (exists (select 1 from emprestimos e where e.id = emprestimo_id
                   and (e.solicitante_id = auth.uid() or sou_equipe())));
 
+-- No Supabase, tabelas, sequências e funções novas nascem liberadas para anon e authenticated.
+-- Fecha tudo e libera só o que o site usa.
+revoke all on all tables in schema public from anon, authenticated;
+revoke all on all sequences in schema public from anon, authenticated;
+revoke execute on all functions in schema public from public, anon, authenticated;
 grant usage on schema public to anon, authenticated;
 grant select on categorias, modelos, unidades, ocupacao,
                 semestres, disciplinas, aulas, disciplina_equipamentos to anon, authenticated;
 grant insert, update, delete on categorias, semestres to authenticated;
 grant select on pessoas, emprestimos, emprestimo_itens, emprestimo_eventos to authenticated;
 grant insert, update, delete on modelos, unidades to authenticated;
-revoke execute on all functions in schema public from public, anon;
 grant execute on function salvar_perfil, criar_emprestimo, avancar_emprestimo, definir_papeis,
                           definir_uso_disciplina, tenho_papel, sou_equipe, cuida_do_acervo, eu to authenticated;
-grant execute on function reserva_aulas to anon, authenticated;
+grant execute on function reserva_aulas, tenho_papel, sou_equipe, cuida_do_acervo, eu to anon, authenticated;
 grant execute on function pendentes_de_ciente, lembretes_a_enviar to service_role;

@@ -9,7 +9,8 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "db:local": "sh db/aplicar-local.sh",
-    "db:teste": "sh db/testes/rodar.sh"
+    "db:teste": "sh db/testes/rodar.sh",
+    "db:supabase": "sh db/juntar-supabase.sh"
   },
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.3.0",
