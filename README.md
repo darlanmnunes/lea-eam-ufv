@@ -68,7 +68,7 @@ flowchart LR
 
 | Página inicial | Acervo |
 | --- | --- |
-| <img src="docs/inicio.webp" alt="Página inicial com a ficha de um pedido e as assinaturas"> | <img src="docs/acervo.webp" alt="Catálogo de equipamentos com a situação de cada unidade"> |
+| <img src="docs/inicio.webp" alt="Página inicial com a placa do LEA e fotos de equipamentos do acervo"> | <img src="docs/acervo.webp" alt="Catálogo de equipamentos com a situação de cada unidade"> |
 | **Equipamento** | **Aulas práticas** |
 | <img src="docs/equipamento.webp" alt="Página de uma estação total com as unidades e o botão de pedido"> | <img src="docs/aulas.webp" alt="Horário das disciplinas EAM com os equipamentos de cada aula prática"> |
 
@@ -97,7 +97,7 @@ matrícula e telefone, que entram no termo de responsabilidade.
 
 ## Onde fica
 
-O LEA fica na Avenida da Agronomia, no campus da UFV em Viçosa. Os equipamentos ficam no
+O LEA fica na Avenida dos Lagos, no campus da UFV em Viçosa (MG). Os equipamentos ficam no
 almoxarifado da sala 108, com atendimento das 7h às 12h e das 13h às 18h.
 
 <p align="center">
