@@ -42,10 +42,6 @@
 <link rel="stylesheet" href="assets/ui/base.css">
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script src="assets/backgrounds/backgrounds.js"></script>
-<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
-<link rel="modulepreload" href="assets/moments/moments.js">
-<link rel="modulepreload" href="assets/moments/lib.js">
-<link rel="modulepreload" href="assets/moments/liquid-hover/moment.js">
 <!-- CSS da página: só o que fica dentro de um visual (a janela do sistema desenhada em HTML) -->
 <style>
   .nav__logo img { width: 36px; height: 36px; }
@@ -166,7 +162,7 @@
 <!-- type: software
      deal: hero centred, nav nav-centre, close close-word, footer footer-columns, rhythm space, buttons solid, mark: a logo do curso
      paleta: as cores da própria marca (azul #0c214c, bordô #5a0204 no botão principal, dourado nas marcas de estado) sobre papel claro
-     moments: liquid-hover em #aulas (a fotografia da estação total responde ao ponteiro) -->
+     moments: nenhum (o efeito de água deformava a foto) -->
 
 <header class="nav nav--centre">
   <div class="wrap nav__bar">
@@ -331,7 +327,7 @@
           <p>Atendimento das 7h às 12h e das 13h às 18h.</p>
         </div>
       </div>
-      <figure class="frame frame--photo fill lab-foto" data-moment="liquid-hover" data-moment-opts='{"strength": 0.6}'>
+      <figure class="frame frame--photo fill lab-foto">
         <img class="frame__img" src="lea/almoxarifado.webp" srcset="lea/almoxarifado-800.webp 800w, lea/almoxarifado-1200.webp 1200w, lea/almoxarifado.webp 2000w" sizes="(max-width: 639px) 900px, (max-width: 1023px) 1400px, 1280px" alt="Almoxarifado do LEA: estantes de madeira com estojos amarelos de estações totais, balizas encostadas na parede e uma mesa no centro" width="2000" height="1125" loading="lazy" data-source="client" data-subject="almoxarifado do LEA">
       </figure>
     </div>
