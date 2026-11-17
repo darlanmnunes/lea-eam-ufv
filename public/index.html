@@ -52,7 +52,12 @@
   .lea-apoio { display: flex; gap: var(--s-6); align-items: center; margin: var(--s-4) 0 0; }
   .lea-apoio img { height: 60px; width: auto; }
   .close__word { line-height: 1.38; overflow: visible; }
+  #aulas .frame__img { object-position: 50% 0; }
+  .lab-foto { margin-top: var(--s-7); }
+  .lab-foto .frame__img { width: 100%; height: 100%; object-fit: cover; }
+  @media (min-width: 640px) and (max-width: 1023px) { .close__word { font-size: 64px; line-height: 1.2; } }
   #faq .frame { --ratio: 66%; }
+  @media (min-width: 800px) and (max-width: 1023px) { #faq .frame { --ratio: 62%; } }
   @media (max-width: 1023px) { #faq .frame { --ratio: 50%; } .lea-apoio img { height: 36px; } }
   @media (max-width: 639px) { #faq .frame { --ratio: 125%; } }
   @media (min-width: 1024px) { #aulas .frame--split { --ratio: 100%; } }
@@ -60,7 +65,7 @@
   @media (min-width: 640px) and (max-width: 1023px) {
     #etapas .card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: var(--s-5); align-content: start; }
     #etapas .card > .lea-txt { display: grid; gap: var(--s-2); align-content: start; }
-    #etapas .card > .panel { --p-h: 200px; margin: 0; }
+    #etapas .card > .panel { --p-h: 220px; margin: 0; }
     #faq .span-5 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: var(--s-5); align-items: start; }
     #faq .span-5 > .frame { grid-column: 2; grid-row: 1 / span 3; }
     .closing__links { gap: var(--s-5); }
@@ -151,7 +156,7 @@
   .lea-seg .is-on { background: #0c214c; color: #fff; }
   .lea-seg .is-neso { background: var(--neso); color: #fff; }
   .lea-obs { font-size: 13px; color: var(--u-muted); border-top: 1px solid var(--u-line); padding-top: 10px; margin: 0; }
-  @media (max-width: 639px) { #etapas .panel { --p-h: 200px; } }
+  @media (max-width: 639px) { #etapas .panel { --p-h: 260px; } }
 </style>
 </head>
 <body>
@@ -167,6 +172,7 @@
     <nav class="nav__links" aria-label="Principal">
       <div class="nav__item"><a class="nav__link" href="#acervo">Acervo</a></div>
       <div class="nav__item"><a class="nav__link" href="#etapas">Etapas</a></div>
+      <div class="nav__item"><a class="nav__link" href="#laboratorio">Laboratório</a></div>
       <div class="nav__item"><a class="nav__link" href="#aulas">Aulas</a></div>
       <div class="nav__item"><a class="nav__link" href="#faq">Perguntas</a></div>
     </nav>
@@ -313,6 +319,21 @@
     </div>
   </section>
 
+  <section class="section" id="laboratorio" aria-labelledby="lab-h">
+    <div class="wrap">
+      <div class="grid">
+        <h2 class="span-5" id="lab-h">O almoxarifado do LEA</h2>
+        <div class="span-6 start-7 stack-4">
+          <p class="muted">Os equipamentos do acervo ficam guardados na sala 108. É ali que o técnico separa e confere cada item na retirada e na devolução.</p>
+          <p>Atendimento das 7h às 12h e das 13h às 18h.</p>
+        </div>
+      </div>
+      <figure class="frame frame--photo fill lab-foto" data-moment="liquid-hover" data-moment-opts='{"strength": 0.6}'>
+        <img class="frame__img" src="lea/almoxarifado.webp" srcset="lea/almoxarifado-800.webp 800w, lea/almoxarifado-1200.webp 1200w, lea/almoxarifado.webp 2000w" sizes="(max-width: 639px) 900px, (max-width: 1023px) 1400px, 1280px" alt="Almoxarifado do LEA: estantes de madeira com estojos amarelos de estações totais, balizas encostadas na parede e uma mesa no centro" width="2000" height="1125" loading="lazy" data-source="client" data-subject="almoxarifado do LEA">
+      </figure>
+    </div>
+  </section>
+
   <section class="section" id="aulas" aria-labelledby="aulas-h">
     <div class="wrap">
       <div class="grid">
@@ -322,8 +343,8 @@
           <p class="so-largo">50 disciplinas EAM em 2026.<br>60 horários de aula prática nos dois semestres.<br>Fora do período letivo nada fica reservado.</p>
           <p><a class="link" href="acervo.html#/aulas">Ver as aulas do semestre</a></p>
         </div>
-        <figure class="frame frame--photo frame--split span-6 start-7" data-moment="liquid-hover" data-moment-opts='{"strength": 0.6}'>
-          <img class="frame__img" src="equip/topcon-102n.webp" alt="Estação total Topcon amarela guardada no armário do laboratório" width="750" height="1000" loading="lazy" data-source="client" data-subject="estação total do LEA">
+        <figure class="frame frame--photo frame--split span-6 start-7">
+          <img class="frame__img" src="lea/gnss-patio.webp" srcset="lea/gnss-patio-600.webp 600w, lea/gnss-patio.webp 1200w" sizes="(max-width: 1023px) 100vw, 628px" alt="Receptor GNSS montado no tripé, no pátio de paralelepípedos em frente ao laboratório" width="1200" height="1600" loading="lazy" data-source="client" data-subject="receptor GNSS do LEA em campo">
         </figure>
       </div>
     </div>
@@ -365,7 +386,7 @@
           <p class="footer__lede">Laboratório de Engenharia de Agrimensura e Cartográfica da UFV.</p>
           <p class="lea-apoio"><img src="marca/ufv.png" alt="Universidade Federal de Viçosa" width="77" height="60"><img src="marca/assinatura.png" alt="EAM, Engenharia de Agrimensura e Cartográfica" width="121" height="60"></p>
         </div>
-        <div class="span-2 start-9 footer__col"><h3>Página</h3><ul><li><a href="#acervo">Acervo</a></li><li><a href="#etapas">Etapas</a></li><li><a href="#aulas">Aulas</a></li><li><a href="#faq">Perguntas</a></li></ul></div>
+        <div class="span-2 start-9 footer__col"><h3>Página</h3><ul><li><a href="#acervo">Acervo</a></li><li><a href="#etapas">Etapas</a></li><li><a href="#laboratorio">Laboratório</a></li><li><a href="#aulas">Aulas</a></li><li><a href="#faq">Perguntas</a></li></ul></div>
         <div class="span-2 footer__col"><h3>Sistema</h3><ul><li><a href="acervo.html">Ver o acervo</a></li><li><a href="acervo.html#/entrar">Entrar</a></li></ul></div>
       </div>
       <div class="footer__legal">
