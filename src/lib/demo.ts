@@ -4,10 +4,10 @@ import horario from '../dados/horarios.json'
 import { reservaAulas } from './disponibilidade'
 import { hoje, sobrepoe } from './datas'
 import type {
-  Acao, Acervo, Api, DadosAcao, Emprestimo, Evento, Horarios, Modelo, NovoPedido, Ocupacao, Papel, Perfil, Pessoa, Semestre, Status, TipoEvento, Uso,
+  Acao, Acervo, Api, Situacao, DadosAcao, Emprestimo, Evento, Horarios, Modelo, NovoPedido, Ocupacao, Papel, Perfil, Pessoa, Semestre, Status, TipoEvento, Uso,
 } from './tipos'
 
-const CHAVE = 'lea-demo-v3'
+const CHAVE = 'lea-demo-v4'
 
 const PERSONAS: Pessoa[] = [
   { id: 'p-estudante', nome: 'Marina Duarte', email: 'marina.duarte@ufv.example', matricula: '108245', telefone: '(31) 90000-0001', vinculo: 'Discente', papeis: ['solicitante'] },
@@ -27,13 +27,14 @@ const acervoInicial = (): Acervo => ({
     nome: m.nome,
     descricao: m.descricao,
     foto: m.foto,
+    emprestavel: (m as { emprestavel?: boolean }).emprestavel !== false,
     ordem: i,
-    unidades: (m.unidades as { patrimonio?: string; serie?: string; obs?: string }[]).map((u, j) => ({
+    unidades: (m.unidades as { patrimonio?: string; serie?: string; obs?: string; situacao?: Situacao }[]).map((u, j) => ({
       id: `${m.id}#${j + 1}`,
       modeloId: m.id,
       patrimonio: u.patrimonio ?? null,
       serie: u.serie ?? null,
-      situacao: 'disponivel',
+      situacao: u.situacao ?? 'disponivel',
       observacao: u.obs ?? null,
     })),
   })),
@@ -247,6 +248,10 @@ function criar(n: NovoPedido): string {
     }
   }
   const todas = estado.acervo.modelos.flatMap((m) => m.unidades)
+  for (const i of n.itens) {
+    const m = estado.acervo.modelos.find((x) => x.unidades.some((u) => u.id === i.unidadeId))
+    if (m && !m.emprestavel) throw new Error('Este equipamento não está disponível para empréstimo')
+  }
   for (const m of estado.acervo.modelos) {
     const pedidas = n.itens.filter((i) => todas.find((u) => u.id === i.unidadeId)?.modeloId === m.id).length
     if (!pedidas) continue
@@ -278,7 +283,7 @@ export const demo: Api = {
   modo: 'demo',
   async sessao() { return eu() },
   aoMudarSessao(fn) { ouvintes.add(fn); return () => ouvintes.delete(fn) },
-  async entrar(id) { estado.sessao = id; gravar(); avisar() },
+  async entrar(id) { estado.sessao = id ?? null; gravar(); avisar() },
   async sair() { estado.sessao = null; gravar(); avisar() },
   async salvarPerfil(_p: Perfil) { /* personas da demonstração já vêm completas */ },
   personas: () => PERSONAS.map(comPapeis),
@@ -307,8 +312,8 @@ export const demo: Api = {
     exige(papelDe('tecnico', 'responsavel_lea', 'admin'), 'O acervo é cadastrado pelo técnico do LEA')
     exige(d.marca.trim().length > 0 && d.nome.trim().length > 0, 'Informe marca e modelo')
     const atual = estado.acervo.modelos.find((m) => m.id === d.id)
-    if (atual) Object.assign(atual, { categoriaId: d.categoriaId, marca: d.marca.trim(), nome: d.nome.trim(), descricao: limpa(d.descricao), foto: d.foto })
-    else estado.acervo.modelos.push({ id: `m-${Date.now()}`, categoriaId: d.categoriaId, marca: d.marca.trim(), nome: d.nome.trim(), descricao: limpa(d.descricao), foto: d.foto, ordem: estado.acervo.modelos.length, unidades: [] })
+    if (atual) Object.assign(atual, { categoriaId: d.categoriaId, marca: d.marca.trim(), nome: d.nome.trim(), descricao: limpa(d.descricao), foto: d.foto, emprestavel: d.emprestavel })
+    else estado.acervo.modelos.push({ id: `m-${Date.now()}`, categoriaId: d.categoriaId, marca: d.marca.trim(), nome: d.nome.trim(), descricao: limpa(d.descricao), foto: d.foto, emprestavel: d.emprestavel, ordem: estado.acervo.modelos.length, unidades: [] })
     gravar()
   },
   async salvarUnidade(d) {

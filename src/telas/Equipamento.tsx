@@ -21,6 +21,7 @@ export function Equipamento({ id }: { id: string }) {
           <p className="cota">{c.sigla} | {c.nome}</p>
           <h1>{m.marca} {m.nome}</h1>
           {m.descricao && <p className="equip-desc">{m.descricao}</p>}
+          {!m.emprestavel && <p className="so-consulta">Só consulta: este equipamento não sai do laboratório.</p>}
           <Periodo />
 
           <h2>Unidades em {periodo(cesta.de, cesta.ate)}</h2>
@@ -37,7 +38,7 @@ export function Equipamento({ id }: { id: string }) {
                       {u.observacao ? ` | ${u.observacao}` : ` | ${identificacao(u)}`}
                     </p>
                   </div>
-                  {estado === 'livre' && (
+                  {estado === 'livre' && m.emprestavel && (
                     <button className={`btn btn-pequeno${dentro ? ' btn-claro' : ''}`} onClick={() =>
                       definirCesta({ ...cesta, itens: dentro ? cesta.itens.filter((x) => x !== u.id) : [...cesta.itens, u.id] })}>
                       {dentro ? 'Tirar do pedido' : 'Pedir esta'}

@@ -138,6 +138,20 @@ do $$ declare n int; begin
 end $$;
 reset role;
 
+-- 6d. modelo fora de empréstimo e conta fora da UFV
+reset role;
+update modelos set emprestavel = false where id = 'riegl-vz-400';
+set role authenticated;
+select pg_temp.como('00000000-0000-0000-0000-000000000001');
+select pg_temp.deve_falhar(format($q$select criar_emprestimo('x','y','z', current_date + 20, current_date + 21, '{}', null, '[{"unidade_id":"%s"}]')$q$,
+  (select u.id from unidades u where u.modelo_id = 'riegl-vz-400')), 'não está disponível para empréstimo');
+select set_config('request.jwt.claims', '{"email":"alguem@gmail.com"}', false);
+select pg_temp.deve_falhar($q$select salvar_perfil('Fulano de Tal', '1', '2', 'Discente')$q$, 'institucional');
+select set_config('request.jwt.claims', '{"email":"estudante@ufv.br"}', false);
+select salvar_perfil('Estudante Teste', '100001', '31 0000-0001', 'Discente');
+reset role;
+update modelos set emprestavel = true where id = 'riegl-vz-400';
+
 -- 7. o registro de assinaturas não se altera
 reset role;
 select pg_temp.deve_falhar('delete from emprestimo_eventos', 'não pode ser alterado');

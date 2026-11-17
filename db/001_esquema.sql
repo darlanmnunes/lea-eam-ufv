@@ -84,6 +84,7 @@ create table modelos (
   descricao     text,
   acompanha     text[] not null default '{}',  -- acessórios que saem junto
   foto          text,
+  emprestavel   boolean not null default true,  -- falso: aparece no acervo, sem pedido
   ordem         int not null default 0
 );
 
@@ -94,8 +95,7 @@ create table unidades (
   numero_serie  text,                      -- quando não há patrimônio
   situacao      situacao_unidade not null default 'disponivel',
   observacao    text,
-  unique (patrimonio),
-  unique (modelo_id, numero_serie)
+  unique (patrimonio)
 );
 
 -- ---------------------------------------------------------------------------
