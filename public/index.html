@@ -90,11 +90,6 @@
   .lea-janela .lea-ficha { max-width: 980px; margin-inline: auto; }
   @media (max-width: 639px) { .lea-janela { padding: var(--s-3); } }
 
-  /* o prédio: fachada e pátio lado a lado */
-  .predio-fotos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-5); margin-top: var(--s-7); }
-  .predio-fotos .frame { --ratio: 78%; margin: 0; }
-  .predio-fotos .frame__img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
-  @media (max-width: 639px) { .predio-fotos { gap: var(--s-3); } .predio-fotos .frame { --ratio: 140%; } }
   .lea-apoio { display: flex; gap: var(--s-6); align-items: center; margin: var(--s-4) 0 0; }
   .lea-apoio img { height: 60px; width: auto; }
   .close__word { line-height: 1.38; overflow: visible; }
@@ -226,7 +221,7 @@
     <nav class="nav__links" aria-label="Principal">
       <div class="nav__item"><a class="nav__link" href="#emprestimo"><span class="nav-longo">Etapas do empréstimo</span><span class="nav-curto">Empréstimo</span></a></div>
       <div class="nav__item"><a class="nav__link" href="#acervo">Acervo</a></div>
-      <div class="nav__item"><a class="nav__link" href="#predio">Laboratório</a></div>
+      <div class="nav__item"><a class="nav__link" href="#laboratorio">Laboratório</a></div>
       <div class="nav__item"><a class="nav__link" href="#aulas">Aulas</a></div>
       <div class="nav__item nav-perguntas"><a class="nav__link" href="#faq">Perguntas</a></div>
     </nav>
@@ -399,27 +394,12 @@
   </section>
 
 
-  <section class="section" id="predio" aria-labelledby="predio-h">
-    <div class="wrap">
-      <div class="grid">
-        <h2 class="span-5" id="predio-h">O prédio do LEA no campus</h2>
-        <div class="span-6 start-7 stack-4">
-          <p class="muted">O laboratório fica na Avenida dos Lagos, no campus da UFV em Viçosa (MG). O pátio em frente ao prédio recebe as práticas de campo com os equipamentos do acervo.</p>
-        </div>
-      </div>
-      <div class="predio-fotos">
-        <figure class="frame frame--photo"><img class="frame__img" src="lea/fachada.webp" srcset="lea/fachada-480.webp 480w, lea/fachada.webp 900w" sizes="(max-width: 639px) 50vw, 640px" alt="Fachada do LEA vista da rua, com o portão de grade e a placa diante da entrada" width="900" height="1273" loading="lazy" data-source="client" data-subject="fachada do LEA"></figure>
-        <figure class="frame frame--photo"><img class="frame__img" src="lea/patio.webp" srcset="lea/patio-480.webp 480w, lea/patio.webp 900w" sizes="(max-width: 639px) 50vw, 640px" alt="O prédio do LEA visto do pátio, com o gramado e o calçamento de pedra em frente à porta" width="900" height="1338" loading="lazy" data-source="client" data-subject="pátio do LEA"></figure>
-      </div>
-    </div>
-  </section>
-
   <section class="section" id="laboratorio" aria-labelledby="lab-h">
     <div class="wrap">
       <div class="grid">
         <h2 class="span-5" id="lab-h">O almoxarifado do LEA</h2>
         <div class="span-6 start-7 stack-4">
-          <p class="muted">Os equipamentos do acervo ficam guardados na sala 108. É ali que o técnico separa e confere cada item na retirada e na devolução.</p>
+          <p class="muted">O LEA fica na Avenida dos Lagos, no campus da UFV em Viçosa (MG). Os equipamentos do acervo ficam guardados na sala 108, onde o técnico separa e confere cada item na retirada e na devolução.</p>
           <p>Atendimento das 7h às 12h e das 13h às 18h.</p>
         </div>
       </div>
@@ -481,7 +461,7 @@
           <p class="footer__lede">Laboratório de Engenharia de Agrimensura e Cartográfica da UFV.</p>
           <p class="lea-apoio"><img src="marca/ufv.png" alt="Universidade Federal de Viçosa" width="77" height="60"><img src="marca/assinatura.png" alt="EAM, Engenharia de Agrimensura e Cartográfica" width="121" height="60"></p>
         </div>
-        <div class="span-2 start-9 footer__col"><h3>Página</h3><ul><li><a href="#emprestimo">Etapas do empréstimo</a></li><li><a href="#acervo">Acervo</a></li><li><a href="#predio">Laboratório</a></li><li><a href="#aulas">Aulas</a></li><li><a href="#faq">Perguntas</a></li></ul></div>
+        <div class="span-2 start-9 footer__col"><h3>Página</h3><ul><li><a href="#emprestimo">Etapas do empréstimo</a></li><li><a href="#acervo">Acervo</a></li><li><a href="#laboratorio">Laboratório</a></li><li><a href="#aulas">Aulas</a></li><li><a href="#faq">Perguntas</a></li></ul></div>
         <div class="span-2 footer__col"><h3>Sistema</h3><ul><li><a href="acervo.html">Ver o acervo</a></li><li><a href="acervo.html#/entrar">Entrar</a></li></ul></div>
       </div>
       <div class="footer__legal">
