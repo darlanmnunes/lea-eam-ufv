@@ -94,9 +94,15 @@ Agende a chamada (Database → Cron) a cada 30 minutos, por exemplo.
 
 ## Publicação
 
-O fluxo `.github/workflows/publicar.yml` gera o site e publica no GitHub Pages a cada envio
-para `main`. Em Settings → Pages, escolha "GitHub Actions" como fonte. Para ligar ao banco,
-cadastre `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` em Settings → Variables.
+O site é publicado no GitHub Pages a partir do ramo `gh-pages`:
+
+```bash
+npm run publicar
+```
+
+O comando gera o site com as variáveis do `.env` (endereço e chave pública do Supabase) e envia
+a pasta `dist/` para o ramo `gh-pages`. Em Settings → Pages, a fonte é "Deploy from a branch",
+ramo `gh-pages`, pasta `/`.
 
 ## Na página do curso
 
