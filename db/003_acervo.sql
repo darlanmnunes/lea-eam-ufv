@@ -1,0 +1,55 @@
+-- Acervo inicial do LEA. Gerado por scripts/gerar-sql-acervo.mjs; não editar à mão.
+
+insert into categorias (id, nome, sigla, ordem) values
+  ('estacao-total', 'Estações totais', 'ET', 1),
+  ('gnss', 'Receptores GNSS e RTK', 'GN', 2),
+  ('nivel', 'Níveis', 'NV', 3),
+  ('laser-scanner', 'Laser scanner', 'LS', 4),
+  ('aeronave', 'Drones e VANT', 'VT', 5),
+  ('apoio', 'Apoio de campo', 'AP', 6);
+
+insert into modelos (id, categoria_id, marca, nome, descricao, foto, ordem) values
+  ('geodetic-gd2i', 'estacao-total', 'Geodetic', 'GD2i', 'Estação total das aulas práticas de Topografia. É o modelo com mais unidades no laboratório.', 'geodetic-gd2i.webp', 1),
+  ('geodetic-gd8i', 'estacao-total', 'Geodetic', 'GD8i', 'Estação total para levantamento planialtimétrico e locação.', 'geodetic-gd8i.webp', 2),
+  ('geodetic-gt2-plus', 'estacao-total', 'Geodetic', 'GT2+', 'Estação total para levantamento planialtimétrico e locação.', 'geodetic-gt2-plus.webp', 3),
+  ('topcon-gts-212', 'estacao-total', 'Topcon', 'GTS-212', 'Estação total para levantamento planialtimétrico e locação.', 'topcon-212.webp', 4),
+  ('topcon-gts-102n', 'estacao-total', 'Topcon', 'GTS-102N', 'Estação total para levantamento planialtimétrico e locação.', 'topcon-102n.webp', 5),
+  ('topcon-es-65', 'estacao-total', 'Topcon', 'ES-65', 'Estação total para levantamento planialtimétrico e locação.', 'topcon-es-65.webp', 6),
+  ('topomap-t10', 'gnss', 'Topomap', 'T10', 'Par base e rover para posicionamento RTK.', 'rtk-topomap-t10.webp', 7),
+  ('chc-i50', 'gnss', 'CHC Nav', 'i50', 'Receptor GNSS para posicionamento RTK.', 'chc-nav-i50.webp', 8),
+  ('hi-target-v200', 'gnss', 'Hi-Target', 'V200', 'Receptor GNSS para posicionamento RTK.', null, 9),
+  ('javad-triumph-1', 'gnss', 'Javad', 'Triumph-1', 'Receptor GNSS geodésico para rastreio estático e apoio de campo.', 'javad-trimph-1.webp', 10),
+  ('emlid-reach-rs2', 'gnss', 'Emlid', 'Reach RS2', 'Receptor GNSS multifrequência para posicionamento RTK.', 'emild-reach-rs2.webp', 11),
+  ('emlid-reach-rs2-plus', 'gnss', 'Emlid', 'Reach RS2+', 'Receptor GNSS multifrequência para posicionamento RTK.', 'emilid-reach-rs2-plus.webp', 12),
+  ('topcon-dl-502', 'nivel', 'Topcon', 'DL-502', 'Nível digital para nivelamento geométrico.', 'nivel-topcon-dl-502.webp', 13),
+  ('riegl-vz-400', 'laser-scanner', 'Riegl', 'VZ-400', 'Laser scanner terrestre para nuvens de pontos.', 'riegl-vz-400.webp', 14),
+  ('batmap-ii', 'aeronave', 'Batmap', 'II', 'VANT de asa fixa para aerolevantamento.', 'batmap-ii.webp', 15),
+  ('dji-mavic-air-2', 'aeronave', 'DJI', 'Mavic Air 2', 'Drone multirrotor para imagens aéreas.', 'drone-dji-mavic-air-2.webp', 16),
+  ('buffalo-bfg-2500', 'apoio', 'Buffalo', 'BFG 2500', 'Gerador a gasolina para energia em campo.', 'gerador-buffalo-bfg-2500.webp', 17),
+  ('bosch-martelete', 'apoio', 'Bosch', 'Martelete', 'Martelete para implantação de marcos e pinos.', 'martelete-bosch.webp', 18);
+
+insert into unidades (modelo_id, patrimonio, numero_serie, observacao) values
+  ('geodetic-gd2i', null, '173675', null),
+  ('geodetic-gd2i', null, '173749', null),
+  ('geodetic-gd2i', null, '177553', null),
+  ('geodetic-gd2i', null, '177641', null),
+  ('geodetic-gd2i', null, '177663', null),
+  ('geodetic-gd2i', null, '177691', null),
+  ('geodetic-gd8i', null, '287402', null),
+  ('geodetic-gd8i', null, '288160', null),
+  ('geodetic-gt2-plus', null, null, 'Fora da planilha de controle: confirmar patrimônio.'),
+  ('topcon-gts-212', '116525', null, null),
+  ('topcon-gts-102n', '256054', null, null),
+  ('topcon-es-65', '356629', null, null),
+  ('topomap-t10', '347741', null, null),
+  ('chc-i50', '404261', null, null),
+  ('hi-target-v200', '442036', null, null),
+  ('javad-triumph-1', '291005', null, null),
+  ('emlid-reach-rs2', null, null, 'Fora da planilha de controle: confirmar patrimônio.'),
+  ('emlid-reach-rs2-plus', null, null, 'Fora da planilha de controle: confirmar patrimônio.'),
+  ('topcon-dl-502', null, null, 'Sem número de patrimônio na planilha.'),
+  ('riegl-vz-400', '313015', null, null),
+  ('batmap-ii', '356632', null, null),
+  ('dji-mavic-air-2', null, null, 'Fora da planilha de controle: confirmar patrimônio.'),
+  ('buffalo-bfg-2500', '356630', null, null),
+  ('bosch-martelete', '461871', null, null);

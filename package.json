@@ -1,0 +1,29 @@
+{
+  "name": "lea-emprestimos",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Acervo e empréstimo de equipamentos do LEA · Engenharia de Agrimensura e Cartográfica · UFV",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "db:local": "sh db/aplicar-local.sh",
+    "db:teste": "sh db/testes/rodar.sh"
+  },
+  "dependencies": {
+    "@fontsource-variable/montserrat": "^5.3.0",
+    "@fontsource-variable/source-sans-3": "^5.3.1",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@supabase/supabase-js": "^2.119.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
