@@ -25,9 +25,12 @@ create function salvar_perfil(p_nome text, p_matricula text, p_telefone text, p_
 returns pessoas language plpgsql security definer set search_path = public as $$
 declare
   v pessoas;
-  v_email text := auth.jwt() ->> 'email';
+  v_email text := lower(auth.jwt() ->> 'email');
 begin
   if auth.uid() is null then raise exception 'Entre para continuar'; end if;
+  if v_email is null or not (v_email like '%@ufv.br' or v_email like '%.ufv.br') then
+    raise exception 'Use a sua conta institucional da UFV (@ufv.br)';
+  end if;
   insert into pessoas (id, nome, email, matricula, telefone, vinculo)
   values (auth.uid(), trim(p_nome), v_email, nullif(trim(p_matricula), ''),
           nullif(trim(p_telefone), ''), nullif(trim(p_vinculo), ''))
@@ -98,6 +101,9 @@ begin
     select * into v_unidade from unidades
      where id = (v_item ->> 'unidade_id')::uuid for update;
     if v_unidade.id is null then raise exception 'Equipamento não encontrado'; end if;
+    if not (select emprestavel from modelos where id = v_unidade.modelo_id) then
+      raise exception 'Este equipamento não está disponível para empréstimo';
+    end if;
     if v_unidade.situacao <> 'disponivel' then
       raise exception 'Unidade % fora de circulação', coalesce(v_unidade.patrimonio, v_unidade.numero_serie);
     end if;

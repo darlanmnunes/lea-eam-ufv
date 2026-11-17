@@ -1,0 +1,157 @@
+[
+ {
+  "patrimonio": "285764",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GT2+"
+ },
+ {
+  "patrimonio": "285765",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GT2+"
+ },
+ {
+  "patrimonio": "285766",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GT2+"
+ },
+ {
+  "patrimonio": "285767",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GT2+"
+ },
+ {
+  "patrimonio": "285768",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GT2+"
+ },
+ {
+  "patrimonio": "173675*",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GD2I"
+ },
+ {
+  "patrimonio": "173749*",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GD2I"
+ },
+ {
+  "patrimonio": "177553*",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GD2I"
+ },
+ {
+  "patrimonio": "177641*",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GD2I"
+ },
+ {
+  "patrimonio": "177663*",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GD2I"
+ },
+ {
+  "patrimonio": "177691*",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GD2I"
+ },
+ {
+  "patrimonio": "403951",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GD8I"
+ },
+ {
+  "patrimonio": "403952",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "GEODETIC GD8I"
+ },
+ {
+  "patrimonio": "116525",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "TOPCON 212"
+ },
+ {
+  "patrimonio": "256054",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "TOPCON 102N"
+ },
+ {
+  "patrimonio": "356629",
+  "tipo": "ESTAÇÃO TOTAL",
+  "modelo": "TOPCON ES 65"
+ },
+ {
+  "patrimonio": "347741",
+  "tipo": "RTK",
+  "modelo": "TOPOMAP T10"
+ },
+ {
+  "patrimonio": "347742",
+  "tipo": "RTK",
+  "modelo": "TOPOMAP T10"
+ },
+ {
+  "patrimonio": "404261",
+  "tipo": "RTK",
+  "modelo": "CHC NAV I50"
+ },
+ {
+  "patrimonio": "-",
+  "tipo": "RTK",
+  "modelo": "CHC NAV I50"
+ },
+ {
+  "patrimonio": "442036",
+  "tipo": "RTK",
+  "modelo": "HI-TARGET V200"
+ },
+ {
+  "patrimonio": "441759",
+  "tipo": "RTK",
+  "modelo": "HI-TARGET V200"
+ },
+ {
+  "patrimonio": "291005",
+  "tipo": "GNSS",
+  "modelo": "TRIMPH-1"
+ },
+ {
+  "patrimonio": "442003",
+  "tipo": "GNSS",
+  "modelo": "REACH RS2+"
+ },
+ {
+  "patrimonio": "449667",
+  "tipo": "GNSS",
+  "modelo": "REACH RS2"
+ },
+ {
+  "patrimonio": "313015",
+  "tipo": "LASER SCANNER",
+  "modelo": "RIEGL VZ 400"
+ },
+ {
+  "patrimonio": "-",
+  "tipo": "NIVEL DIGITAL",
+  "modelo": "TOPCON DL-502"
+ },
+ {
+  "patrimonio": "356630",
+  "tipo": "GERADOR",
+  "modelo": "BUFFALO BFG 2500"
+ },
+ {
+  "patrimonio": "461871",
+  "tipo": "MARTELETE",
+  "modelo": "BOSCH"
+ },
+ {
+  "patrimonio": "362264",
+  "tipo": "DRONE",
+  "modelo": "DJI MAVIC AIR 2"
+ },
+ {
+  "patrimonio": "356632",
+  "tipo": "VANT",
+  "modelo": "BATMAP II"
+ }
+]

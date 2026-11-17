@@ -139,6 +139,8 @@ input[type='checkbox'] { width: 20px; height: 20px; accent-color: var(--azul); f
 
 .marcas { display: inline-flex; gap: 4px; flex-wrap: wrap; }
 .marca { width: 12px; height: 12px; border-radius: 50%; display: inline-block; flex: none; border: 2px solid var(--azul); background: var(--azul); }
+.marcas-mais { font: 500 0.78rem var(--mono); color: var(--tinta-2); align-self: center; margin-left: 2px; }
+.so-consulta { font-size: 0.88rem; font-weight: 600; color: var(--tinta-2); }
 .marca-aula { border-color: var(--ouro); background: repeating-linear-gradient(135deg, var(--ouro) 0 2px, #fff 2px 4px); }
 .marca-emprestado { border-color: var(--neso); background: transparent; }
 .marca-manutencao, .marca-estoque { border-color: #9a988d; border-style: dotted; background: transparent; }
@@ -296,7 +298,8 @@ input[type='checkbox'] { width: 20px; height: 20px; accent-color: var(--azul); f
 .personas b { display: block; }
 .personas small { color: var(--tinta-2); font-size: 0.9rem; }
 .personas em { margin-left: auto; font-style: normal; font: 500 0.78rem var(--mono); text-transform: uppercase; color: #8a6207; }
-.entrar { display: grid; gap: 16px; max-width: 420px; }
+.btn-google { background: #fff; color: #1f1f1f; border-color: #747775; gap: 12px; padding: 0 20px; margin: 8px 0 4px; }
+.btn-google:hover { background: #f8f9fa; color: #1f1f1f; border-color: #1f1f1f; }
 .confirma { background: #eef6f1; border: 1px solid #8fb8a0; color: var(--verde); padding: 14px 16px; border-radius: var(--raio); }
 
 /* ---------- aulas ---------- */

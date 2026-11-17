@@ -72,6 +72,7 @@ export interface Modelo {
   nome: string
   descricao: string | null
   foto: string | null
+  emprestavel: boolean
   ordem: number
   unidades: Unidade[]
 }
@@ -146,7 +147,7 @@ export interface Aula { semestre: string; disciplina: string; tipo: string; turm
 export interface Uso { disciplina: string; modeloId: string; quantidade: number }
 export interface Horarios { semestres: Semestre[]; disciplinas: Disciplina[]; aulas: Aula[]; usos: Uso[] }
 
-export interface DadosModelo { id?: string; categoriaId: string; marca: string; nome: string; descricao: string; foto: string | null }
+export interface DadosModelo { id?: string; categoriaId: string; marca: string; nome: string; descricao: string; foto: string | null; emprestavel: boolean }
 export interface DadosUnidade { id?: string; modeloId: string; patrimonio: string; serie: string; situacao: Situacao; observacao: string }
 
 export interface Perfil { nome: string; matricula: string; telefone: string; vinculo: string }
@@ -155,8 +156,8 @@ export interface Api {
   modo: 'demo' | 'supabase'
   sessao(): Promise<Pessoa | null>
   aoMudarSessao(fn: () => void): () => void
-  /** demo: id da persona | supabase: e-mail para o link de acesso */
-  entrar(chave: string): Promise<void>
+  /** demo: id da persona | supabase: abre o login do Google */
+  entrar(chave?: string): Promise<void>
   sair(): Promise<void>
   salvarPerfil(p: Perfil): Promise<void>
   personas(): Pessoa[]

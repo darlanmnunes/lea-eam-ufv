@@ -1,66 +1,1908 @@
 {
-  "categorias": [
-    { "id": "estacao-total", "nome": "Estações totais", "sigla": "ET", "ordem": 1 },
-    { "id": "gnss", "nome": "Receptores GNSS e RTK", "sigla": "GN", "ordem": 2 },
-    { "id": "nivel", "nome": "Níveis", "sigla": "NV", "ordem": 3 },
-    { "id": "laser-scanner", "nome": "Laser scanner", "sigla": "LS", "ordem": 4 },
-    { "id": "aeronave", "nome": "Drones e VANT", "sigla": "VT", "ordem": 5 },
-    { "id": "apoio", "nome": "Apoio de campo", "sigla": "AP", "ordem": 6 }
-  ],
-  "modelos": [
-    { "id": "geodetic-gd2i", "categoria": "estacao-total", "marca": "Geodetic", "nome": "GD2i", "foto": "geodetic-gd2i.webp",
-      "descricao": "Estação total das aulas práticas de Topografia. É o modelo com mais unidades no laboratório.",
-      "unidades": [ { "serie": "173675" }, { "serie": "173749" }, { "serie": "177553" }, { "serie": "177641" }, { "serie": "177663" }, { "serie": "177691" } ] },
-    { "id": "geodetic-gd8i", "categoria": "estacao-total", "marca": "Geodetic", "nome": "GD8i", "foto": "geodetic-gd8i.webp",
-      "descricao": "Estação total para levantamento planialtimétrico e locação.",
-      "unidades": [ { "serie": "287402" }, { "serie": "288160" } ] },
-    { "id": "geodetic-gt2-plus", "categoria": "estacao-total", "marca": "Geodetic", "nome": "GT2+", "foto": "geodetic-gt2-plus.webp",
-      "descricao": "Estação total para levantamento planialtimétrico e locação.",
-      "unidades": [ { "obs": "Fora da planilha de controle: confirmar patrimônio." } ] },
-    { "id": "topcon-gts-212", "categoria": "estacao-total", "marca": "Topcon", "nome": "GTS-212", "foto": "topcon-212.webp",
-      "descricao": "Estação total para levantamento planialtimétrico e locação.",
-      "unidades": [ { "patrimonio": "116525" } ] },
-    { "id": "topcon-gts-102n", "categoria": "estacao-total", "marca": "Topcon", "nome": "GTS-102N", "foto": "topcon-102n.webp",
-      "descricao": "Estação total para levantamento planialtimétrico e locação.",
-      "unidades": [ { "patrimonio": "256054" } ] },
-    { "id": "topcon-es-65", "categoria": "estacao-total", "marca": "Topcon", "nome": "ES-65", "foto": "topcon-es-65.webp",
-      "descricao": "Estação total para levantamento planialtimétrico e locação.",
-      "unidades": [ { "patrimonio": "356629" } ] },
-    { "id": "topomap-t10", "categoria": "gnss", "marca": "Topomap", "nome": "T10", "foto": "rtk-topomap-t10.webp",
-      "descricao": "Par base e rover para posicionamento RTK.",
-      "unidades": [ { "patrimonio": "347741" } ] },
-    { "id": "chc-i50", "categoria": "gnss", "marca": "CHC Nav", "nome": "i50", "foto": "chc-nav-i50.webp",
-      "descricao": "Receptor GNSS para posicionamento RTK.",
-      "unidades": [ { "patrimonio": "404261" } ] },
-    { "id": "hi-target-v200", "categoria": "gnss", "marca": "Hi-Target", "nome": "V200", "foto": null,
-      "descricao": "Receptor GNSS para posicionamento RTK.",
-      "unidades": [ { "patrimonio": "442036" } ] },
-    { "id": "javad-triumph-1", "categoria": "gnss", "marca": "Javad", "nome": "Triumph-1", "foto": "javad-trimph-1.webp",
-      "descricao": "Receptor GNSS geodésico para rastreio estático e apoio de campo.",
-      "unidades": [ { "patrimonio": "291005" } ] },
-    { "id": "emlid-reach-rs2", "categoria": "gnss", "marca": "Emlid", "nome": "Reach RS2", "foto": "emild-reach-rs2.webp",
-      "descricao": "Receptor GNSS multifrequência para posicionamento RTK.",
-      "unidades": [ { "obs": "Fora da planilha de controle: confirmar patrimônio." } ] },
-    { "id": "emlid-reach-rs2-plus", "categoria": "gnss", "marca": "Emlid", "nome": "Reach RS2+", "foto": "emilid-reach-rs2-plus.webp",
-      "descricao": "Receptor GNSS multifrequência para posicionamento RTK.",
-      "unidades": [ { "obs": "Fora da planilha de controle: confirmar patrimônio." } ] },
-    { "id": "topcon-dl-502", "categoria": "nivel", "marca": "Topcon", "nome": "DL-502", "foto": "nivel-topcon-dl-502.webp",
-      "descricao": "Nível digital para nivelamento geométrico.",
-      "unidades": [ { "obs": "Sem número de patrimônio na planilha." } ] },
-    { "id": "riegl-vz-400", "categoria": "laser-scanner", "marca": "Riegl", "nome": "VZ-400", "foto": "riegl-vz-400.webp",
-      "descricao": "Laser scanner terrestre para nuvens de pontos.",
-      "unidades": [ { "patrimonio": "313015" } ] },
-    { "id": "batmap-ii", "categoria": "aeronave", "marca": "Batmap", "nome": "II", "foto": "batmap-ii.webp",
-      "descricao": "VANT de asa fixa para aerolevantamento.",
-      "unidades": [ { "patrimonio": "356632" } ] },
-    { "id": "dji-mavic-air-2", "categoria": "aeronave", "marca": "DJI", "nome": "Mavic Air 2", "foto": "drone-dji-mavic-air-2.webp",
-      "descricao": "Drone multirrotor para imagens aéreas.",
-      "unidades": [ { "obs": "Fora da planilha de controle: confirmar patrimônio." } ] },
-    { "id": "buffalo-bfg-2500", "categoria": "apoio", "marca": "Buffalo", "nome": "BFG 2500", "foto": "gerador-buffalo-bfg-2500.webp",
-      "descricao": "Gerador a gasolina para energia em campo.",
-      "unidades": [ { "patrimonio": "356630" } ] },
-    { "id": "bosch-martelete", "categoria": "apoio", "marca": "Bosch", "nome": "Martelete", "foto": "martelete-bosch.webp",
-      "descricao": "Martelete para implantação de marcos e pinos.",
-      "unidades": [ { "patrimonio": "461871" } ] }
-  ]
+ "categorias": [
+  {
+   "id": "estacao-total",
+   "nome": "Estações totais",
+   "sigla": "ET",
+   "ordem": 1
+  },
+  {
+   "id": "gnss",
+   "nome": "Receptores GNSS e RTK",
+   "sigla": "GN",
+   "ordem": 2
+  },
+  {
+   "id": "nivel",
+   "nome": "Níveis",
+   "sigla": "NV",
+   "ordem": 3
+  },
+  {
+   "id": "teodolito",
+   "nome": "Teodolitos",
+   "sigla": "TD",
+   "ordem": 4
+  },
+  {
+   "id": "laser-scanner",
+   "nome": "Laser scanner",
+   "sigla": "LS",
+   "ordem": 5
+  },
+  {
+   "id": "aeronave",
+   "nome": "Drones e VANT",
+   "sigla": "VT",
+   "ordem": 6
+  },
+  {
+   "id": "medicao",
+   "nome": "Bússolas e instrumentos de medição",
+   "sigla": "MD",
+   "ordem": 7
+  },
+  {
+   "id": "acessorio",
+   "nome": "Miras, tripés e acessórios",
+   "sigla": "AC",
+   "ordem": 8
+  },
+  {
+   "id": "desenho",
+   "nome": "Planímetros e desenho",
+   "sigla": "DS",
+   "ordem": 9
+  },
+  {
+   "id": "apoio",
+   "nome": "Apoio de campo",
+   "sigla": "AP",
+   "ordem": 10
+  }
+ ],
+ "modelos": [
+  {
+   "id": "geodetic-gd2i",
+   "categoria": "estacao-total",
+   "marca": "Geodetic",
+   "nome": "GD2i",
+   "foto": "geodetic-gd2i.webp",
+   "descricao": "Estação total das aulas práticas de Topografia. É o modelo com mais unidades no laboratório.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "serie": "173675"
+    },
+    {
+     "serie": "173749"
+    },
+    {
+     "serie": "177553"
+    },
+    {
+     "serie": "177641"
+    },
+    {
+     "serie": "177663"
+    },
+    {
+     "serie": "177691"
+    }
+   ]
+  },
+  {
+   "id": "geodetic-gt2-plus",
+   "categoria": "estacao-total",
+   "marca": "Geodetic",
+   "nome": "GT2+",
+   "foto": "geodetic-gt2-plus.webp",
+   "descricao": "Estação total para levantamento planialtimétrico e locação.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "285764"
+    },
+    {
+     "patrimonio": "285765"
+    },
+    {
+     "patrimonio": "285766"
+    },
+    {
+     "patrimonio": "285767"
+    },
+    {
+     "patrimonio": "285768"
+    }
+   ]
+  },
+  {
+   "id": "geodetic-gd8i",
+   "categoria": "estacao-total",
+   "marca": "Geodetic",
+   "nome": "GD8i",
+   "foto": "geodetic-gd8i.webp",
+   "descricao": "Estação total para levantamento planialtimétrico e locação.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "403951"
+    },
+    {
+     "patrimonio": "403952"
+    }
+   ]
+  },
+  {
+   "id": "topcon-es-65",
+   "categoria": "estacao-total",
+   "marca": "Topcon",
+   "nome": "ES-65",
+   "foto": "topcon-es-65.webp",
+   "descricao": "Estação total para levantamento planialtimétrico e locação.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "356629"
+    }
+   ]
+  },
+  {
+   "id": "topcon-gts-102n",
+   "categoria": "estacao-total",
+   "marca": "Topcon",
+   "nome": "GTS-102N",
+   "foto": "topcon-102n.webp",
+   "descricao": "Estação total para levantamento planialtimétrico e locação.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "256054"
+    }
+   ]
+  },
+  {
+   "id": "topcon-gts-212",
+   "categoria": "estacao-total",
+   "marca": "Topcon",
+   "nome": "GTS-212",
+   "foto": "topcon-212.webp",
+   "descricao": "Estação total para levantamento planialtimétrico e locação.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "116525"
+    }
+   ]
+  },
+  {
+   "id": "estacao-total-pentax",
+   "categoria": "estacao-total",
+   "marca": "Estação total",
+   "nome": "Pentax",
+   "foto": null,
+   "descricao": "Estação total, precisão linear 2 mm + 2 ppm, alcance 3.500 m com 1 prisma e 250 m sem prisma, tempo medição 1 s, uso topografia, ac. 2 prismas alvos, 2 bastões 3,60 m, nível esférico, tripé ext. em alumínio, cabo transm.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "151468",
+     "serie": "865703"
+    }
+   ]
+  },
+  {
+   "id": "chc-i50",
+   "categoria": "gnss",
+   "marca": "CHC Nav",
+   "nome": "i50",
+   "foto": "chc-nav-i50.webp",
+   "descricao": "Receptor GNSS para posicionamento RTK.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "404261"
+    },
+    {
+     "obs": "Sem número de patrimônio na planilha."
+    }
+   ]
+  },
+  {
+   "id": "topomap-t10",
+   "categoria": "gnss",
+   "marca": "Topomap",
+   "nome": "T10",
+   "foto": "rtk-topomap-t10.webp",
+   "descricao": "Receptor GNSS para posicionamento RTK, usado em par como base e rover.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "347741"
+    },
+    {
+     "patrimonio": "347742"
+    }
+   ]
+  },
+  {
+   "id": "emlid-reach-rs2",
+   "categoria": "gnss",
+   "marca": "Emlid",
+   "nome": "Reach RS2",
+   "foto": "emild-reach-rs2.webp",
+   "descricao": "Receptor GNSS multifrequência para posicionamento RTK.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "449667"
+    }
+   ]
+  },
+  {
+   "id": "emlid-reach-rs2-plus",
+   "categoria": "gnss",
+   "marca": "Emlid",
+   "nome": "Reach RS2+",
+   "foto": "emilid-reach-rs2-plus.webp",
+   "descricao": "Receptor GNSS multifrequência para posicionamento RTK.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "442003"
+    }
+   ]
+  },
+  {
+   "id": "javad-triumph-1",
+   "categoria": "gnss",
+   "marca": "Javad",
+   "nome": "Triumph-1",
+   "foto": "javad-trimph-1.webp",
+   "descricao": "Receptor GNSS geodésico para rastreio estático e apoio de campo.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "291005"
+    }
+   ]
+  },
+  {
+   "id": "hi-target-v200",
+   "categoria": "gnss",
+   "marca": "Hi-Target",
+   "nome": "V200",
+   "foto": null,
+   "descricao": "Receptor GNSS para posicionamento RTK.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "442036"
+    },
+    {
+     "patrimonio": "441759"
+    }
+   ]
+  },
+  {
+   "id": "receptor-gnss-trimble",
+   "categoria": "gnss",
+   "marca": "Receptor GNSS",
+   "nome": "Trimble",
+   "foto": null,
+   "descricao": "Receptor GPS.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "133503",
+     "serie": "0220118229"
+    },
+    {
+     "patrimonio": "156891",
+     "serie": "0220403474"
+    }
+   ]
+  },
+  {
+   "id": "receptor-gnss-leica",
+   "categoria": "gnss",
+   "marca": "Receptor GNSS",
+   "nome": "Leica",
+   "foto": null,
+   "descricao": "Receptor GPS de sinais de constelações com capacidade de correção.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "192795",
+     "serie": "314492"
+    }
+   ]
+  },
+  {
+   "id": "receptor-gnss-sem-marca",
+   "categoria": "gnss",
+   "marca": "Receptor GNSS",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Receptor GPS para medição geodésica, com 02 receptores com 02 bolsas de temperatura.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "133502",
+     "serie": "0220226370"
+    }
+   ]
+  },
+  {
+   "id": "topcon-dl-502",
+   "categoria": "nivel",
+   "marca": "Topcon",
+   "nome": "DL-502",
+   "foto": "nivel-topcon-dl-502.webp",
+   "descricao": "Nível digital para nivelamento geométrico.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "obs": "Sem número de patrimônio na planilha."
+    }
+   ]
+  },
+  {
+   "id": "nivel-zeiss",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "Zeiss",
+   "foto": null,
+   "descricao": "Nível para topografia acondicionado em caixa de madeira. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11536",
+     "serie": "22394"
+    },
+    {
+     "patrimonio": "32315",
+     "serie": "131319"
+    },
+    {
+     "patrimonio": "32316",
+     "serie": "130957"
+    },
+    {
+     "patrimonio": "32317"
+    },
+    {
+     "patrimonio": "66867",
+     "serie": "456806"
+    },
+    {
+     "patrimonio": "66871",
+     "serie": "507936"
+    },
+    {
+     "patrimonio": "66872",
+     "serie": "507037"
+    },
+    {
+     "patrimonio": "68006",
+     "serie": "460115"
+    }
+   ]
+  },
+  {
+   "id": "nivel-foif",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "Foif",
+   "foto": null,
+   "descricao": "Nível óptico.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "357008",
+     "serie": "T291387"
+    },
+    {
+     "patrimonio": "357009",
+     "serie": "T291444"
+    },
+    {
+     "patrimonio": "357010",
+     "serie": "T407394"
+    },
+    {
+     "patrimonio": "357011",
+     "serie": "T295424"
+    }
+   ]
+  },
+  {
+   "id": "nivel-kern",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "Kern",
+   "foto": null,
+   "descricao": "Nível para topografia, acondicionado em caixa plástica. cor: marrom/verde.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11534",
+     "serie": "121847"
+    },
+    {
+     "patrimonio": "105946",
+     "serie": "36221"
+    },
+    {
+     "patrimonio": "105947",
+     "serie": "36971"
+    }
+   ]
+  },
+  {
+   "id": "nivel-sem-marca",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Nível para topografia, automático, para levantamento de média precisão com acessórios, caixa em madeira e tripé tambem em madeira tipo - k002. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "66846",
+     "serie": "113376"
+    },
+    {
+     "patrimonio": "66849",
+     "serie": "123405"
+    },
+    {
+     "patrimonio": "66851",
+     "serie": "127999"
+    }
+   ]
+  },
+  {
+   "id": "luneta-de-nivel-niveltec",
+   "categoria": "nivel",
+   "marca": "Luneta de nível",
+   "nome": "Niveltec",
+   "foto": null,
+   "descricao": "Luneta, com tripé, altura regulável, com capa, acompanhada de uma mira em PVC de 2,5m. cor: preta.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "4283",
+     "serie": "2957"
+    },
+    {
+     "patrimonio": "4284",
+     "serie": "2988"
+    }
+   ]
+  },
+  {
+   "id": "nivel-sion",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "Sion",
+   "foto": null,
+   "descricao": "Nível para topografia, com giro de 360 graus e 1 luneta, estojo de madiera portátil com chave. cor: laranja.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "70418",
+     "serie": "670"
+    },
+    {
+     "patrimonio": "70823",
+     "serie": "1415"
+    }
+   ]
+  },
+  {
+   "id": "nivel-gurley",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "Gurley",
+   "foto": null,
+   "descricao": "Nível para topografia, de luneta, em metal amarela, com tripé(para fins didáticos). cor: amarelo.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11646"
+    }
+   ]
+  },
+  {
+   "id": "nivel-mitutoyo",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "Mitutoyo",
+   "foto": null,
+   "descricao": "Nível de pedreiro metálico, precisão 0.02mm/m, em estojo de madeira envernizado. cor: cinza dimensões: 0,20x0,04x0,04 m.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "37390"
+    }
+   ]
+  },
+  {
+   "id": "nivel-mom",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "MOM",
+   "foto": null,
+   "descricao": "Nível para topografia, pequeno instrumento de nivelacao automática, em estojo de couro. cor: vermelha.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "66862",
+     "serie": "067162"
+    }
+   ]
+  },
+  {
+   "id": "nivel-pzo",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "PZO",
+   "foto": null,
+   "descricao": "Nível para topografia com objetiva auxiliar acoplada na base,capa plástica, acondicionado em caixa metálica com alça e trincos, equipado com 1 mira falante extensiva em madeira envernizada 4m de altura pat.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "52629",
+     "serie": "12204"
+    }
+   ]
+  },
+  {
+   "id": "nivel-siom",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "Siom",
+   "foto": null,
+   "descricao": "Nível para topografia, escala de 0 a 350 graus, em estojo e tripé em madeira e pontas de ferro. cor: laranja.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "67288"
+    }
+   ]
+  },
+  {
+   "id": "nivel-wild",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "Wild",
+   "foto": null,
+   "descricao": "Nível topográfico acondicionado em caixa de plástico.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11533"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-berger",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Berger",
+   "foto": null,
+   "descricao": "Teodolito digital, com prumo óptico, leitura digital de 10 segundos, com porcentagem de rampa, com estojo para aconcionamento, proteção e transporte, com tripé de alumínio.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "117729",
+     "serie": "60029"
+    },
+    {
+     "patrimonio": "117730",
+     "serie": "60024"
+    },
+    {
+     "patrimonio": "117731",
+     "serie": "60027"
+    },
+    {
+     "patrimonio": "117732",
+     "serie": "60013"
+    },
+    {
+     "patrimonio": "117733",
+     "serie": "60011"
+    },
+    {
+     "patrimonio": "117734",
+     "serie": "60002"
+    },
+    {
+     "patrimonio": "117735",
+     "serie": "60017"
+    },
+    {
+     "patrimonio": "117736",
+     "serie": "60019"
+    },
+    {
+     "patrimonio": "117737",
+     "serie": "60014"
+    },
+    {
+     "patrimonio": "117738",
+     "serie": "60032"
+    },
+    {
+     "patrimonio": "117739",
+     "serie": "2127"
+    },
+    {
+     "patrimonio": "117740",
+     "serie": "60018"
+    },
+    {
+     "patrimonio": "117741",
+     "serie": "600026"
+    },
+    {
+     "patrimonio": "117742",
+     "serie": "60006"
+    },
+    {
+     "patrimonio": "117743",
+     "serie": "60030"
+    },
+    {
+     "patrimonio": "117744",
+     "serie": "60028"
+    },
+    {
+     "patrimonio": "117745",
+     "serie": "60031"
+    },
+    {
+     "patrimonio": "117746",
+     "serie": "60025"
+    },
+    {
+     "patrimonio": "117747",
+     "serie": "60009"
+    },
+    {
+     "patrimonio": "117748",
+     "serie": "2108"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-world",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "World",
+   "foto": null,
+   "descricao": "Teodolito de leitura externa, escala de 0 a 360 graus, precisão de 1 minuto, com bússola. cor: bege.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "71539",
+     "serie": "615106"
+    },
+    {
+     "patrimonio": "71540",
+     "serie": "615092"
+    },
+    {
+     "patrimonio": "71541",
+     "serie": "615091"
+    },
+    {
+     "patrimonio": "71544",
+     "serie": "615108",
+     "situacao": "manutencao",
+     "obs": "Consta como \"Com defeito\" no patrimônio."
+    },
+    {
+     "patrimonio": "71545",
+     "serie": "615105"
+    },
+    {
+     "patrimonio": "71546",
+     "serie": "615088"
+    },
+    {
+     "patrimonio": "71547",
+     "serie": "615090",
+     "situacao": "manutencao",
+     "obs": "Consta como \"Com defeito\" no patrimônio."
+    },
+    {
+     "patrimonio": "71548",
+     "serie": "582675"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-sem-marca",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Teodolito taqueômetro de alta precisão, com acessórios, tripé em madeira k-001, em caixa de madeira. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "66565",
+     "serie": "111447"
+    },
+    {
+     "patrimonio": "66845",
+     "serie": "111433"
+    },
+    {
+     "patrimonio": "66847",
+     "serie": "072428"
+    },
+    {
+     "patrimonio": "66848",
+     "serie": "72437"
+    },
+    {
+     "patrimonio": "66850",
+     "serie": "132092"
+    },
+    {
+     "patrimonio": "66858",
+     "serie": "132093"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-vasconcelos",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Vasconcelos",
+   "foto": null,
+   "descricao": "Teodolito, com limbos externos, aproximadamente de 1 minuto no limbo horizontal e no vertical, em estojo metálico tipo campanula de cor cinza e preta com tripé em madeira, altura regulável. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11553",
+     "serie": "4093"
+    },
+    {
+     "patrimonio": "11554",
+     "serie": "4386"
+    },
+    {
+     "patrimonio": "11555",
+     "serie": "4296"
+    },
+    {
+     "patrimonio": "11557",
+     "serie": "4058"
+    },
+    {
+     "patrimonio": "11558"
+    },
+    {
+     "patrimonio": "11559",
+     "serie": "2972"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-dfv",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "DFV",
+   "foto": null,
+   "descricao": "Teodolito repetidor, ajustável, com bússola e luneta em caixa cinza e preta portátil, tripé regulável em madeira cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "5060",
+     "serie": "4451"
+    },
+    {
+     "patrimonio": "37194",
+     "serie": "4591"
+    },
+    {
+     "patrimonio": "37196",
+     "serie": "4592"
+    },
+    {
+     "patrimonio": "37197",
+     "serie": "4592"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-wild",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Wild",
+   "foto": null,
+   "descricao": "Teodolito, com limbos internos, aproximadamente de 1 minuto nos limbos horizontais e verticais, luneta autoredutor, em caixa metálica tipo campanula cor verde, com tripé em madeiraaltura regulável.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11545",
+     "serie": "112709"
+    },
+    {
+     "patrimonio": "11546",
+     "serie": "63767"
+    },
+    {
+     "patrimonio": "11547",
+     "serie": "113212"
+    },
+    {
+     "patrimonio": "11548",
+     "serie": "21171"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-zeiss",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Zeiss",
+   "foto": null,
+   "descricao": "Teodolito, com limbos internos em caixa metálica tipo maleta de cor azul, com tripé de madeira, altura regulável. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11550",
+     "serie": "11661"
+    },
+    {
+     "patrimonio": "30771",
+     "serie": "121292"
+    },
+    {
+     "patrimonio": "68008",
+     "serie": "201182"
+    },
+    {
+     "patrimonio": "87390",
+     "serie": "NR.6314186"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-keuffel",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Keuffel",
+   "foto": null,
+   "descricao": "Teodolito, com limbos internos, aproximadamente de 1 minuto no limbo horizontal e no vertical, em caixa metálica tipo campanula cor verde, com tripé de madeira, altura regulável.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11549",
+     "serie": "664924"
+    },
+    {
+     "patrimonio": "11551",
+     "serie": "203514"
+    },
+    {
+     "patrimonio": "11552",
+     "serie": "204025"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-sunray",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Sunray",
+   "foto": null,
+   "descricao": "Teodolito, com limbo externo, aproximadamente de 20 segundos no limbo horizontal e 1 minuto no limbo vertical, acondicionado em caixa tipo maleta, bolsa a tira colo cor laranja, com tripé de madeira, altura regulável.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11541",
+     "serie": "3JO-73"
+    },
+    {
+     "patrimonio": "11542",
+     "serie": "3J-126"
+    },
+    {
+     "patrimonio": "11543",
+     "serie": "3J-127"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-breithaupt",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Breithaupt",
+   "foto": null,
+   "descricao": "Teodolito metálico com bússola, base de madeira.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11639"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-mon-richer",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Mon Richer",
+   "foto": null,
+   "descricao": "Teodolito, metálico (para fins didáticos). cor: bronzeado.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11638"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-oms",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "OMS",
+   "foto": null,
+   "descricao": "Teodolito, base de ferro (para fins didáticos). cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11637"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-zeiss-jena",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Zeiss Jena",
+   "foto": null,
+   "descricao": "Teodolito de escala, micrométrico, 7 ajustes, procedência alemã.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "87392",
+     "serie": "NR5203863"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-zuhio",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Zuhio",
+   "foto": null,
+   "descricao": "Teodolito, em caixa de madeira, com tripé e bússola com limbos externos e sessenta segundos no limbo interno. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11663"
+    }
+   ]
+  },
+  {
+   "id": "riegl-vz-400",
+   "categoria": "laser-scanner",
+   "marca": "Riegl",
+   "nome": "VZ-400",
+   "foto": "riegl-vz-400.webp",
+   "descricao": "Laser scanner terrestre para nuvens de pontos.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "313015"
+    }
+   ]
+  },
+  {
+   "id": "batmap-ii",
+   "categoria": "aeronave",
+   "marca": "Batmap",
+   "nome": "II",
+   "foto": "batmap-ii.webp",
+   "descricao": "VANT de asa fixa para aerolevantamento.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "356632",
+     "situacao": "manutencao",
+     "obs": "Consta como \"Com defeito\" no patrimônio."
+    }
+   ]
+  },
+  {
+   "id": "dji-mavic-air-2",
+   "categoria": "aeronave",
+   "marca": "DJI",
+   "nome": "Mavic Air 2",
+   "foto": "drone-dji-mavic-air-2.webp",
+   "descricao": "Drone multirrotor para imagens aéreas.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "362264"
+    }
+   ]
+  },
+  {
+   "id": "bussola-passed",
+   "categoria": "medicao",
+   "marca": "Bússola",
+   "nome": "Passed",
+   "foto": null,
+   "descricao": "Bússola com luneta, tipo brunton, origem japonesa, disco de 50 a 50, acondicionada com bolsa de couro marrom, com tripé em madeira envernizada e altura regulável. cor: verde e preta.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "37285"
+    },
+    {
+     "patrimonio": "37286"
+    },
+    {
+     "patrimonio": "37287"
+    },
+    {
+     "patrimonio": "37288"
+    },
+    {
+     "patrimonio": "37289"
+    }
+   ]
+  },
+  {
+   "id": "trena-eletronica-leica",
+   "categoria": "medicao",
+   "marca": "Trena eletrônica",
+   "nome": "Leica",
+   "foto": null,
+   "descricao": "Trena eletrônica.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "162306"
+    },
+    {
+     "patrimonio": "162307"
+    },
+    {
+     "patrimonio": "162308"
+    },
+    {
+     "patrimonio": "162309"
+    }
+   ]
+  },
+  {
+   "id": "altimetro-sem-marca",
+   "categoria": "medicao",
+   "marca": "Altímetro",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Altímetro, com escala de metro em metro e de 5 em 5 metros, acondicionado em bolsa de couro. cor: alumínio.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "17076",
+     "serie": "2507"
+    },
+    {
+     "patrimonio": "17077",
+     "serie": "3228"
+    }
+   ]
+  },
+  {
+   "id": "altimetro-wallace",
+   "categoria": "medicao",
+   "marca": "Altímetro",
+   "nome": "Wallace",
+   "foto": null,
+   "descricao": "Altímetro de precisão com termômetro de bulbo seco e bulbo úmido, acondicionado em caixa metálica. cor: verde.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "17074",
+     "serie": "SS10894"
+    },
+    {
+     "patrimonio": "17075",
+     "serie": "SS10895"
+    }
+   ]
+  },
+  {
+   "id": "bussola-ushikata",
+   "categoria": "medicao",
+   "marca": "Bússola",
+   "nome": "Ushikata",
+   "foto": null,
+   "descricao": "Bússola com luneta, acondicionado em estojo de couro preto, com escala de 360 graus, luneta com objetiva de 18m/m, escaladupla de 0 a 50 graus, tripé metálico regulável com capa de tecido amarelo com alça. cor: bege.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "49253",
+     "serie": "143172"
+    },
+    {
+     "patrimonio": "49254",
+     "serie": "143164"
+    }
+   ]
+  },
+  {
+   "id": "pantometro-sem-marca",
+   "categoria": "medicao",
+   "marca": "Pantômetro",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Pantômetro, com luneta e bússola, metálico, base de ferro, tripé de madeira. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11642"
+    },
+    {
+     "patrimonio": "11644"
+    }
+   ]
+  },
+  {
+   "id": "podometro-teiluiz",
+   "categoria": "medicao",
+   "marca": "Podômetro",
+   "nome": "Teiluiz",
+   "foto": null,
+   "descricao": "Podômetro 0-40km, aparelho para medir distância em junção de número de passos dados.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "59825"
+    },
+    {
+     "patrimonio": "59826"
+    }
+   ]
+  },
+  {
+   "id": "prancheta-topografica-sem-marca",
+   "categoria": "medicao",
+   "marca": "Prancheta topográfica",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Prancheta topográfica, caixa em madeira, bolsa em lona, tripé em madeira, tipo k-014. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "66568",
+     "serie": "118455"
+    },
+    {
+     "patrimonio": "66854",
+     "serie": "118456"
+    }
+   ]
+  },
+  {
+   "id": "binoculo-bushnell",
+   "categoria": "medicao",
+   "marca": "Binóculo",
+   "nome": "Bushnell",
+   "foto": null,
+   "descricao": "Binóculo com diâmetro de 35mm, aumento 7x15 vezes com zoom, com tampa protetora das lentes, acompanha bolsa em courvin para acondicionamento. cor: preto.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "107992",
+     "serie": "AF-9119"
+    }
+   ]
+  },
+  {
+   "id": "bussola-fuji",
+   "categoria": "medicao",
+   "marca": "Bússola",
+   "nome": "Fuji",
+   "foto": null,
+   "descricao": "Bússola com tripé, 0-360 graus, com luneta. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "59828"
+    }
+   ]
+  },
+  {
+   "id": "bussola-osaka-tamaya",
+   "categoria": "medicao",
+   "marca": "Bússola",
+   "nome": "Osaka-Tamaya",
+   "foto": null,
+   "descricao": "Bússola com tripé, 0-360 graus, com luneta. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "59827"
+    }
+   ]
+  },
+  {
+   "id": "clinometro-casella",
+   "categoria": "medicao",
+   "marca": "Clinômetro",
+   "nome": "Casella",
+   "foto": null,
+   "descricao": "Clinômetro metálico com escala de 0 a 90 graus, acondicionado em caixa de madeira revestida em plástico.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11531"
+    }
+   ]
+  },
+  {
+   "id": "clinometro-fuji",
+   "categoria": "medicao",
+   "marca": "Clinômetro",
+   "nome": "Fuji",
+   "foto": null,
+   "descricao": "Clinômetro de pêndulo, com escala espelhada de 0 a 50, metálico, com bússola número 25, em caixa de couro. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11529"
+    }
+   ]
+  },
+  {
+   "id": "clinometro-meridian",
+   "categoria": "medicao",
+   "marca": "Clinômetro",
+   "nome": "Meridian",
+   "foto": null,
+   "descricao": "Clinômetro (clisímetro) portátil com bolsa de couro para seu acondicionamento.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11508"
+    }
+   ]
+  },
+  {
+   "id": "medidor-topografico-genovesi",
+   "categoria": "medicao",
+   "marca": "Medidor topográfico",
+   "nome": "Genovesi",
+   "foto": null,
+   "descricao": "Medidor topográfico, com leituras parciais em decímetros, capacidade máxima do registrador 10 km cor laranja.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "2351"
+    }
+   ]
+  },
+  {
+   "id": "telemetro-wild",
+   "categoria": "medicao",
+   "marca": "Telêmetro",
+   "nome": "Wild",
+   "foto": null,
+   "descricao": "Telêmetro com cabeçote, marca Wild, com limbos externos horizontais e verticais em estojo metálico.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11568"
+    }
+   ]
+  },
+  {
+   "id": "tripe-miratec",
+   "categoria": "acessorio",
+   "marca": "Tripé",
+   "nome": "Miratec",
+   "foto": null,
+   "descricao": "Tripé para teodolito, com pernas extensíveis em alumínio, com placa de apoio do instrumento e parafusos de fixação.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "109133"
+    },
+    {
+     "patrimonio": "109134"
+    },
+    {
+     "patrimonio": "109135"
+    },
+    {
+     "patrimonio": "109136"
+    },
+    {
+     "patrimonio": "109138"
+    },
+    {
+     "patrimonio": "109139"
+    },
+    {
+     "patrimonio": "109140"
+    },
+    {
+     "patrimonio": "109142"
+    }
+   ]
+  },
+  {
+   "id": "mira-foif",
+   "categoria": "acessorio",
+   "marca": "Mira",
+   "nome": "Foif",
+   "foto": null,
+   "descricao": "Mira uso topográfico, material alumínio, tipo encaixe, comprimento 4 m, aplicação topografia e agrimensura.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "290986"
+    },
+    {
+     "patrimonio": "290987"
+    },
+    {
+     "patrimonio": "290988"
+    },
+    {
+     "patrimonio": "290989"
+    },
+    {
+     "patrimonio": "290990"
+    }
+   ]
+  },
+  {
+   "id": "baliza-sem-marca",
+   "categoria": "acessorio",
+   "marca": "Baliza",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Baliza topográfica, cor branca/vermelha, 3/4\", metálica, com 10 hastes, cor branca/vermelha, 3/4\", metálica.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "81632"
+    },
+    {
+     "patrimonio": "81636"
+    },
+    {
+     "patrimonio": "81637"
+    },
+    {
+     "patrimonio": "81639"
+    }
+   ]
+  },
+  {
+   "id": "mira-desetec-trident",
+   "categoria": "acessorio",
+   "marca": "Mira",
+   "nome": "Desetec/Trident",
+   "foto": null,
+   "descricao": "Mira topográfica, tipo encaixe, 3 metros de comprimento, em madeira graduada de 01 em 01 cm, base metálica.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "67687"
+    },
+    {
+     "patrimonio": "79527"
+    },
+    {
+     "patrimonio": "81623"
+    },
+    {
+     "patrimonio": "112767"
+    }
+   ]
+  },
+  {
+   "id": "mira-sem-marca",
+   "categoria": "acessorio",
+   "marca": "Mira",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Mira topográfica, metálica, de invar, inteiriça 4m. cor: laranja.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "59822",
+     "serie": "54762"
+    },
+    {
+     "patrimonio": "66586",
+     "serie": "157651"
+    },
+    {
+     "patrimonio": "66853"
+    },
+    {
+     "patrimonio": "66868",
+     "serie": "157650"
+    }
+   ]
+  },
+  {
+   "id": "tripe-cst",
+   "categoria": "acessorio",
+   "marca": "Tripé",
+   "nome": "CST",
+   "foto": null,
+   "descricao": "Tripé cabeça hidráulica, material em duralumínio, base em meia esfera engate rápido, altura máxima 1,90 m, bolsa de transporte.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "162301"
+    },
+    {
+     "patrimonio": "162302"
+    },
+    {
+     "patrimonio": "162303"
+    },
+    {
+     "patrimonio": "162304"
+    }
+   ]
+  },
+  {
+   "id": "tripe-desetec-trident",
+   "categoria": "acessorio",
+   "marca": "Tripé",
+   "nome": "Desetec/Trident",
+   "foto": null,
+   "descricao": "Tripé para equipamentos topográficos, em madeira, 3 torniquetes, 3 pés metalicos, em bolsa de couro com acessorio. cor: amarela.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "81617"
+    },
+    {
+     "patrimonio": "81618"
+    },
+    {
+     "patrimonio": "81620"
+    },
+    {
+     "patrimonio": "81621"
+    }
+   ]
+  },
+  {
+   "id": "mira-mom",
+   "categoria": "acessorio",
+   "marca": "Mira",
+   "nome": "MOM",
+   "foto": null,
+   "descricao": "Mira para leitura graduada, dobrável envernizada. cor verde.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "66587"
+    },
+    {
+     "patrimonio": "66855"
+    },
+    {
+     "patrimonio": "66856"
+    }
+   ]
+  },
+  {
+   "id": "mira-zeiss",
+   "categoria": "acessorio",
+   "marca": "Mira",
+   "nome": "Zeiss",
+   "foto": null,
+   "descricao": "Mira topográfica falante, 175cm, precisão 1cm, equipada com 1nivel e base de pretecao, em caixa de madeira. cor: amarela.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "68001",
+     "serie": "58571"
+    },
+    {
+     "patrimonio": "68002",
+     "serie": "58572"
+    },
+    {
+     "patrimonio": "68003",
+     "serie": "57737"
+    }
+   ]
+  },
+  {
+   "id": "micrometro-optico-mom",
+   "categoria": "acessorio",
+   "marca": "Micrômetro óptico",
+   "nome": "MOM",
+   "foto": null,
+   "descricao": "Micrômetro óptico, para níveis de NI-B3, 4, 5, 6 em estojo de couro. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "66863",
+     "serie": "108303"
+    },
+    {
+     "patrimonio": "67278",
+     "serie": "108339"
+    }
+   ]
+  },
+  {
+   "id": "mira-miratec",
+   "categoria": "acessorio",
+   "marca": "Mira",
+   "nome": "Miratec",
+   "foto": null,
+   "descricao": "Mira falante em madeira envernizada, com 3 peças de encaixar, medindo 3 metros. cor clara dimensões: 400x8x4,7 cm.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "60272"
+    },
+    {
+     "patrimonio": "162297"
+    }
+   ]
+  },
+  {
+   "id": "base-topografica-mom",
+   "categoria": "acessorio",
+   "marca": "Base topográfica",
+   "nome": "MOM",
+   "foto": null,
+   "descricao": "Base para medição topográfica, sem tripé, em caixa de madeira sem alça. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "66583",
+     "serie": "109719"
+    }
+   ]
+  },
+  {
+   "id": "mira-amapal",
+   "categoria": "acessorio",
+   "marca": "Mira",
+   "nome": "Amapal",
+   "foto": null,
+   "descricao": "Mira topográfica, dobrável, em alumínio, graduada, portátil. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11585"
+    }
+   ]
+  },
+  {
+   "id": "oculares-mom",
+   "categoria": "acessorio",
+   "marca": "Oculares",
+   "nome": "MOM",
+   "foto": null,
+   "descricao": "Conjunto de oculares de ângulos, em caixa de madeira. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "66864",
+     "serie": "110229"
+    }
+   ]
+  },
+  {
+   "id": "oculares-sem-marca",
+   "categoria": "acessorio",
+   "marca": "Oculares",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Estojo de oculares de cotovelo, composto de duas peças, referências: 704127 e 704211, em estojo de madeira aglomerada. cor: cinza e preta dimensões do estojo: 0,15x0,08x0,04 m.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "37800"
+    }
+   ]
+  },
+  {
+   "id": "prisma-pentax",
+   "categoria": "acessorio",
+   "marca": "Prisma",
+   "nome": "Pentax",
+   "foto": null,
+   "descricao": "Equipamento diversos para serviços profissionais, prisma para estação total.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "259536"
+    }
+   ]
+  },
+  {
+   "id": "prumo-zenital-sem-marca",
+   "categoria": "acessorio",
+   "marca": "Prumo zenital",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Prumo zenital óptico de precisão.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "68005"
+    }
+   ]
+  },
+  {
+   "id": "tripe-sem-marca",
+   "categoria": "acessorio",
+   "marca": "Tripé",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Tripé para equipamentos topográficos, em madeira envernizada, ref 20, estrutura metálica, 3 torniquetes. cor: verde.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "105949"
+    }
+   ]
+  },
+  {
+   "id": "tripe-techgeo",
+   "categoria": "acessorio",
+   "marca": "Tripé",
+   "nome": "Techgeo",
+   "foto": null,
+   "descricao": "Tripé para GPS, componente para o sistema RTK GTR-G2.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "176062"
+    }
+   ]
+  },
+  {
+   "id": "tripe-trident",
+   "categoria": "acessorio",
+   "marca": "Tripé",
+   "nome": "Trident",
+   "foto": null,
+   "descricao": "Tripé para equipamentos topográficos, em madeira acompanhado de 1 chave halem e 1 fio de plumo. cor: amarela.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "87394"
+    }
+   ]
+  },
+  {
+   "id": "tripe-world",
+   "categoria": "acessorio",
+   "marca": "Tripé",
+   "nome": "World",
+   "foto": null,
+   "descricao": "Tripé topográfico, em madeira pintada, regulável, pés com ponteira metálica. cor: laranja.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "71550"
+    }
+   ]
+  },
+  {
+   "id": "planimetro-k-pluse",
+   "categoria": "desenho",
+   "marca": "Planímetro",
+   "nome": "K+E",
+   "foto": null,
+   "descricao": "Planímetro compensado, acondicionado em estojo de madeira revestido em plástico, serial 51361. cor: verde.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11522",
+     "serie": "620005"
+    },
+    {
+     "patrimonio": "11523",
+     "serie": "620005"
+    },
+    {
+     "patrimonio": "11524"
+    },
+    {
+     "patrimonio": "11525"
+    },
+    {
+     "patrimonio": "11526"
+    }
+   ]
+  },
+  {
+   "id": "planimetro-mom",
+   "categoria": "desenho",
+   "marca": "Planímetro",
+   "nome": "MOM",
+   "foto": null,
+   "descricao": "Planímetro, acondicionado em caixa de madeira revestida em plástico. cor: preta.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11520",
+     "serie": "575665"
+    },
+    {
+     "patrimonio": "66859",
+     "serie": "125615"
+    }
+   ]
+  },
+  {
+   "id": "planimetro-sem-marca",
+   "categoria": "desenho",
+   "marca": "Planímetro",
+   "nome": "sem marca",
+   "foto": null,
+   "descricao": "Planímetro g. coradi ag zurich. acondicionado em estojo em madeira, com revestimento em plástico. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11516"
+    },
+    {
+     "patrimonio": "11517"
+    }
+   ]
+  },
+  {
+   "id": "planimetro-tama-sokki",
+   "categoria": "desenho",
+   "marca": "Planímetro",
+   "nome": "Tama Sokki",
+   "foto": null,
+   "descricao": "Planímetro, acondicionado em caixa de madeira revestida em plástico. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11518"
+    },
+    {
+     "patrimonio": "11519"
+    }
+   ]
+  },
+  {
+   "id": "estereoscopio-zeiss",
+   "categoria": "desenho",
+   "marca": "Estereoscópio",
+   "nome": "Zeiss",
+   "foto": null,
+   "descricao": "Estereoscópio de restituição, para fotografias até 30 x 30cm,composto de 1 estereoscópio de espelho com 2 oculares de 3.5 x 15 e 4 hastess para sustencao, 1 estereopantometro de desenho com guia paralela e 4 rodizios.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "68007",
+     "serie": "258032"
+    }
+   ]
+  },
+  {
+   "id": "normografo-leroy-keuffel-esser",
+   "categoria": "desenho",
+   "marca": "Normógrafo",
+   "nome": "Leroy/Keuffel & Esser",
+   "foto": null,
+   "descricao": "Normógrafo, acondicionado em estojo de madeira envernizada, com 11 réguas, 11 penas, 1 aranha, 1 portatinta e 1 ponteirade grafite.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11567",
+     "serie": "7280"
+    }
+   ]
+  },
+  {
+   "id": "normografo-trident",
+   "categoria": "desenho",
+   "marca": "Normógrafo",
+   "nome": "Trident",
+   "foto": null,
+   "descricao": "Normógrafo completo em estojo de madeira envernizada, com 11 réguas, 10 penas com os seguintes números: 0.3 a 0.8; 1.0; 1.2; 1.5 e 1.8. dimensões do estojo: 0,44x0,17x0,06m.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "3732"
+    }
+   ]
+  },
+  {
+   "id": "planimetro-ansler",
+   "categoria": "desenho",
+   "marca": "Planímetro",
+   "nome": "Ansler",
+   "foto": null,
+   "descricao": "Planímetro, acondicionado em estojo de madeira revestido em plástico. cor: preta.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11521",
+     "serie": "69995"
+    }
+   ]
+  },
+  {
+   "id": "regua-de-escala-kern",
+   "categoria": "desenho",
+   "marca": "Régua de escala",
+   "nome": "Kern",
+   "foto": null,
+   "descricao": "Régua de escala topográfica, metálica, um transferidor metálico de 180 graus, um compasso bomba, 1 estojo para ponta seca,1 cintel, 1 alfinete para copia, 2 compassos para lapis, 1 compasso de linha pararelas.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "11565"
+    }
+   ]
+  },
+  {
+   "id": "bosch-martelete",
+   "categoria": "apoio",
+   "marca": "Bosch",
+   "nome": "Martelete",
+   "foto": "martelete-bosch.webp",
+   "descricao": "Martelete perfurador e rompedor para implantação de marcos e pinos.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "461871"
+    }
+   ]
+  },
+  {
+   "id": "buffalo-bfg-2500",
+   "categoria": "apoio",
+   "marca": "Buffalo",
+   "nome": "BFG 2500",
+   "foto": "gerador-buffalo-bfg-2500.webp",
+   "descricao": "Gerador a gasolina para energia em campo.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "356630"
+    }
+   ]
+  },
+  {
+   "id": "camera-digital-nikon",
+   "categoria": "apoio",
+   "marca": "Câmera digital",
+   "nome": "Nikon",
+   "foto": null,
+   "descricao": "Câmera digital.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "313016",
+     "serie": "6036609"
+    }
+   ]
+  }
+ ]
 }

@@ -37,7 +37,7 @@ export function Acervo() {
       .map((m) => ({ m, q: quadro(m, ocupacao, horarios, cesta.de, cesta.ate), cat: acervo.categorias.find((c) => c.id === m.categoriaId)! }))
       .filter(({ m, q, cat: c }) =>
         (cat === 'todas' || m.categoriaId === cat) &&
-        (!soLivres || q.livres.length > 0) &&
+        (!soLivres || (m.emprestavel && q.livres.length > 0)) &&
         (!t || `${m.marca} ${m.nome} ${c.nome} ${m.unidades.map((u) => `${u.patrimonio ?? ''} ${u.serie ?? ''}`).join(' ')}`.toLowerCase().includes(t)))
   }, [acervo, ocupacao, horarios, cesta.de, cesta.ate, cat, busca, soLivres])
 
@@ -95,7 +95,7 @@ export function Acervo() {
                   <h2><a href={`#/equipamento/${m.id}`}>{m.marca} {m.nome}</a></h2>
                   <div className="ficha-acervo-linha">
                     <Marcas q={q} />
-                    <span className="conta">{q.livres.length} de {q.unidades.length} {q.livres.length === 1 ? 'livre' : 'livres'}</span>
+                    <span className="conta">{m.emprestavel ? `${q.livres.length} de ${q.unidades.length} ${q.livres.length === 1 ? 'livre' : 'livres'}` : `${q.unidades.length} ${q.unidades.length === 1 ? 'unidade' : 'unidades'}`}</span>
                   </div>
                   {q.aulas.length > 0 && <p className="nota-aula">Em aula: {q.aulas.slice(0, 2).map(textoAula).join(' | ')}{q.aulas.length > 2 ? ` e mais ${q.aulas.length - 2}` : ''}</p>}
                 </div>
@@ -108,12 +108,12 @@ export function Acervo() {
                     }} aria-label={`Tirar um ${m.nome} do pedido`}>Tirar</button>
                   )}
                   {meus > 0 && <span className="na-ficha">{meus} no pedido</span>}
-                  <button className="btn btn-pequeno" disabled={sobra.length === 0} onClick={() => {
+                  {!m.emprestavel ? <span className="so-consulta">Só consulta</span> : <button className="btn btn-pequeno" disabled={sobra.length === 0} onClick={() => {
                     definirCesta({ ...cesta, itens: [...cesta.itens, sobra[0].id] })
                     avisar(`${m.marca} ${m.nome} entrou no pedido.`)
                   }}>
                     {q.livres.length === 0 ? 'Indisponível' : sobra.length === 0 ? 'Todos no pedido' : meus ? 'Mais um' : 'Pedir'}
-                  </button>
+                  </button>}
                 </div>
               </li>
             )

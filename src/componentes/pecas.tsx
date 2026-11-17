@@ -7,6 +7,8 @@ export function Selo({ status }: { status: Status }) {
   return <span className={`selo selo-${TOM_STATUS[status]}`}>{NOME_STATUS[status]}</span>
 }
 
+const MAX_MARCAS = 12
+
 /** Uma marca por unidade do modelo: cheia = livre, hachurada = em aula, vazada = fora. */
 export function Marcas({ q }: { q: Quadro }) {
   const conta: Partial<Record<EstadoUnidade, number>> = {}
@@ -14,7 +16,8 @@ export function Marcas({ q }: { q: Quadro }) {
   const rotulo = (Object.keys(conta) as EstadoUnidade[]).map((e) => `${conta[e]} ${NOME_ESTADO[e].toLowerCase()}`).join(', ')
   return (
     <span className="marcas" role="img" aria-label={rotulo} title={rotulo}>
-      {q.unidades.map((u, i) => <i key={u.unidade.id} className={`marca marca-${u.estado}`} style={{ '--i': i } as CSSProperties} />)}
+      {q.unidades.slice(0, MAX_MARCAS).map((u, i) => <i key={u.unidade.id} className={`marca marca-${u.estado}`} style={{ '--i': i } as CSSProperties} />)}
+      {q.unidades.length > MAX_MARCAS && <span className="marcas-mais" aria-hidden="true">+{q.unidades.length - MAX_MARCAS}</span>}
     </span>
   )
 }

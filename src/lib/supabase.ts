@@ -36,7 +36,7 @@ function ok<T>(r: { data: T | null; error: { message: string } | null }): T {
 }
 
 export function criarApiSupabase(url: string, chave: string): Api {
-  const sb: SupabaseClient = createClient(url, chave)
+  const sb: SupabaseClient = createClient(url, chave, { auth: { flowType: 'pkce' } })
   return {
     modo: 'supabase',
     async sessao() {
@@ -45,15 +45,20 @@ export function criarApiSupabase(url: string, chave: string): Api {
       if (!u) return null
       const { data: l } = await sb.from('pessoas').select('*').eq('id', u.id).maybeSingle()
       if (l) return pessoa(l)
-      return { id: u.id, nome: '', email: u.email ?? '', matricula: null, telefone: null, vinculo: null, papeis: ['solicitante'], incompleto: true }
+      const nome = String(u.user_metadata?.full_name ?? u.user_metadata?.name ?? '')
+      return { id: u.id, nome, email: u.email ?? '', matricula: null, telefone: null, vinculo: null, papeis: ['solicitante'], incompleto: true }
     },
     aoMudarSessao(fn) {
       const { data } = sb.auth.onAuthStateChange(() => fn())
       return () => data.subscription.unsubscribe()
     },
-    async entrar(email) {
-      const destino = location.href.split('#')[0]
-      const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: destino } })
+    async entrar() {
+      // volta para a mesma página, sem o # da rota (o retorno usa ?code=)
+      const destino = location.href.split('#')[0].split('?')[0]
+      const { error } = await sb.auth.signInWithOAuth({
+        provider: 'google',
+        options: { redirectTo: destino, queryParams: { hd: 'ufv.br', prompt: 'select_account' } },
+      })
       if (error) throw new Error(error.message)
     },
     async sair() { await sb.auth.signOut() },
@@ -71,7 +76,7 @@ export function criarApiSupabase(url: string, chave: string): Api {
       return {
         categorias: ok<Linha[]>(c) as Acervo['categorias'],
         modelos: ok<Linha[]>(m).map((l): Modelo => ({
-          id: l.id, categoriaId: l.categoria_id, marca: l.marca, nome: l.nome, descricao: l.descricao, foto: l.foto, ordem: l.ordem,
+          id: l.id, categoriaId: l.categoria_id, marca: l.marca, nome: l.nome, descricao: l.descricao, foto: l.foto, emprestavel: l.emprestavel !== false, ordem: l.ordem,
           unidades: unidades.filter((x) => x.modeloId === l.id),
         })),
       }
@@ -122,7 +127,7 @@ export function criarApiSupabase(url: string, chave: string): Api {
       ok(await sb.from('semestres').update({ inicio: s.inicio, fim: s.fim }).eq('id', s.id))
     },
     async salvarModelo(d) {
-      const campos = { categoria_id: d.categoriaId, marca: d.marca.trim(), nome: d.nome.trim(), descricao: d.descricao.trim() || null, foto: d.foto }
+      const campos = { categoria_id: d.categoriaId, marca: d.marca.trim(), nome: d.nome.trim(), descricao: d.descricao.trim() || null, foto: d.foto, emprestavel: d.emprestavel }
       if (d.id) ok(await sb.from('modelos').update(campos).eq('id', d.id))
       else {
         const id = `${d.marca} ${d.nome}`.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')

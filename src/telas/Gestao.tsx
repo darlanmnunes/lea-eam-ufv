@@ -36,7 +36,7 @@ export function Gestao() {
   return (
     <main className="pagina">
       <Cabecalho sobre="Cadastro do laboratório" titulo="Equipamentos">
-        <button className="btn" onClick={() => { setUn(null); setModelo({ categoriaId: acervo.categorias[0]?.id ?? '', marca: '', nome: '', descricao: '', foto: null }) }}>Cadastrar modelo</button>
+        <button className="btn" onClick={() => { setUn(null); setModelo({ categoriaId: acervo.categorias[0]?.id ?? '', marca: '', nome: '', descricao: '', foto: null, emprestavel: true }) }}>Cadastrar modelo</button>
       </Cabecalho>
 
       <dl className="placar">
@@ -60,6 +60,7 @@ export function Gestao() {
             <Campo rotulo="Modelo"><input type="text" value={modelo.nome} onChange={(e) => setModelo({ ...modelo, nome: e.target.value })} /></Campo>
             <Campo rotulo="Endereço da foto" ajuda="Opcional. Link de uma imagem."><input type="url" value={modelo.foto ?? ''} onChange={(e) => setModelo({ ...modelo, foto: e.target.value || null })} /></Campo>
             <Campo rotulo="Descrição" largo><textarea rows={2} value={modelo.descricao} onChange={(e) => setModelo({ ...modelo, descricao: e.target.value })} /></Campo>
+            <label className="chave campo-largo"><input type="checkbox" checked={modelo.emprestavel} onChange={(e) => setModelo({ ...modelo, emprestavel: e.target.checked })} /> Disponível para empréstimo. Desmarcado, o modelo aparece no acervo só para consulta.</label>
           </div>
           <div className="vez-botoes">
             <button className="btn" onClick={salvarModelo}>Salvar modelo</button>
@@ -81,9 +82,9 @@ export function Gestao() {
                 <Foto m={m} />
                 <div>
                   <p className="cota">{c.sigla} | {c.nome}</p>
-                  <h2>{m.marca} {m.nome}</h2>
+                  <h2>{m.marca} {m.nome}{!m.emprestavel && <span className="so-consulta"> Só consulta</span>}</h2>
                   <p className="gestao-botoes">
-                    <button className="btn-texto" onClick={() => { setUn(null); setModelo({ id: m.id, categoriaId: m.categoriaId, marca: m.marca, nome: m.nome, descricao: m.descricao ?? '', foto: m.foto }); window.scrollTo(0, 0) }}>Editar modelo</button>
+                    <button className="btn-texto" onClick={() => { setUn(null); setModelo({ id: m.id, categoriaId: m.categoriaId, marca: m.marca, nome: m.nome, descricao: m.descricao ?? '', foto: m.foto, emprestavel: m.emprestavel }); window.scrollTo(0, 0) }}>Editar modelo</button>
                     <button className="btn-texto" onClick={() => { setModelo(null); setUn(unidadeNova(m.id)) }}>Acrescentar unidade</button>
                   </p>
                 </div>
