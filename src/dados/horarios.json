@@ -1,0 +1,1359 @@
+{
+ "fonte": "https://www.dti.ufv.br/horario/",
+ "semestres": [
+  {
+   "id": "2026-1",
+   "ano": 2026,
+   "semestre": 1
+  },
+  {
+   "id": "2026-2",
+   "ano": 2026,
+   "semestre": 2
+  }
+ ],
+ "disciplinas": [
+  {
+   "codigo": "EAM 190",
+   "nome": "INTRODUÇÃO À ENGENHARIA DE AGRIMENSURA E CARTOGRÁFICA"
+  },
+  {
+   "codigo": "EAM 191",
+   "nome": "INTRODUÇÃO À EXTENSÃO UNIVERSITÁRIA"
+  },
+  {
+   "codigo": "EAM 300",
+   "nome": "TOPOGRAFIA E ESTRADAS"
+  },
+  {
+   "codigo": "EAM 301",
+   "nome": "TOPOGRAFIA BÁSICA"
+  },
+  {
+   "codigo": "EAM 310",
+   "nome": "TOPOGRAFIA I"
+  },
+  {
+   "codigo": "EAM 311",
+   "nome": "TOPOGRAFIA II"
+  },
+  {
+   "codigo": "EAM 312",
+   "nome": "TOPOGRAFIA III"
+  },
+  {
+   "codigo": "EAM 313",
+   "nome": "TOPOGRAFIA IV"
+  },
+  {
+   "codigo": "EAM 330",
+   "nome": "CARTOGRAFIA GERAL"
+  },
+  {
+   "codigo": "EAM 351",
+   "nome": "FUNDAMENTOS DE SISTEMAS DE INFORMAÇÃO GEOGRÁFICA"
+  },
+  {
+   "codigo": "EAM 380",
+   "nome": "AJUSTAMENTO DE OBSERVAÇÕES"
+  },
+  {
+   "codigo": "EAM 392",
+   "nome": "ATIVIDADES DE EXTENSÃO PARA O CURSO DE ENGENHARIA DE AGRIMENSURA E CARTOGRÁFICA"
+  },
+  {
+   "codigo": "EAM 393",
+   "nome": "PROJETO DE EXTENSÃO I"
+  },
+  {
+   "codigo": "EAM 394",
+   "nome": "PROJETO DE EXTENSÃO II"
+  },
+  {
+   "codigo": "EAM 410",
+   "nome": "HIDROGRAFIA I"
+  },
+  {
+   "codigo": "EAM 420",
+   "nome": "GEODÉSIA III"
+  },
+  {
+   "codigo": "EAM 421",
+   "nome": "GEODÉSIA I"
+  },
+  {
+   "codigo": "EAM 422",
+   "nome": "GEODESIA II"
+  },
+  {
+   "codigo": "EAM 431",
+   "nome": "PROJEÇÕES CARTOGRÁFICAS"
+  },
+  {
+   "codigo": "EAM 433",
+   "nome": "CARTOGRAFIA DIGITAL I"
+  },
+  {
+   "codigo": "EAM 434",
+   "nome": "CARTOGRAFIA DIGITAL II"
+  },
+  {
+   "codigo": "EAM 436",
+   "nome": "CONTROLE DE QUALIDADE CARTOGRÁFICA"
+  },
+  {
+   "codigo": "EAM 440",
+   "nome": "TOPOGRAFIA DIGITAL"
+  },
+  {
+   "codigo": "EAM 441",
+   "nome": "DESENHO TOPOGRÁFICO DIGITAL"
+  },
+  {
+   "codigo": "EAM 442",
+   "nome": "PROCESSAMENTO DE DADOS HIDROGRÁFICOS"
+  },
+  {
+   "codigo": "EAM 450",
+   "nome": "SENSORIAMENTO REMOTO I"
+  },
+  {
+   "codigo": "EAM 451",
+   "nome": "SISTEMA DE INFORMAÇÃO GEOGRÁFICA"
+  },
+  {
+   "codigo": "EAM 461",
+   "nome": "ENGENHARIA DE AVALIAÇÃO"
+  },
+  {
+   "codigo": "EAM 463",
+   "nome": "PARCELAMENTO DO SOLO URBANO E RURAL"
+  },
+  {
+   "codigo": "EAM 464",
+   "nome": "CADASTRO TERRITORIAL MULTIFINALITÁRIO"
+  },
+  {
+   "codigo": "EAM 465",
+   "nome": "INTELIGÊNCIA GEOESPACIAL E GESTÃO TERRITORIAL"
+  },
+  {
+   "codigo": "EAM 470",
+   "nome": "FOTOGRAMETRIA I"
+  },
+  {
+   "codigo": "EAM 471",
+   "nome": "FOTOGRAMETRIA II"
+  },
+  {
+   "codigo": "EAM 480",
+   "nome": "PROGRAMAÇÃO APLICADA À ENGENHARIA DE AGRIMENSURA E CARTOGRÁFICA"
+  },
+  {
+   "codigo": "EAM 482",
+   "nome": "BANCO DE DADOS GEOGRÁFICOS"
+  },
+  {
+   "codigo": "EAM 484",
+   "nome": "CIÊNCIA DE DADOS GEOESPACIAIS"
+  },
+  {
+   "codigo": "EAM 492",
+   "nome": "ESTÁGIO SUPERVISIONADO"
+  },
+  {
+   "codigo": "EAM 493",
+   "nome": "ATIVIDADES COMPLEMENTARES I"
+  },
+  {
+   "codigo": "EAM 494",
+   "nome": "ATIVIDADES COMPLEMENTARES II"
+  },
+  {
+   "codigo": "EAM 495",
+   "nome": "ATIVIDADES COMPLEMENTARES III"
+  },
+  {
+   "codigo": "EAM 496",
+   "nome": "ATIVIDADES COMPLEMENTARES IV"
+  },
+  {
+   "codigo": "EAM 497",
+   "nome": "SEMINÁRIO E MONOGRAFIA I"
+  },
+  {
+   "codigo": "EAM 498",
+   "nome": "SEMINÁRIO E MONOGRAFIA II"
+  },
+  {
+   "codigo": "EAM 499",
+   "nome": "TÓPICOS EM ENGENHARIA DE AGRIMENSURA E CARTOGRÁFICA"
+  },
+  {
+   "codigo": "EAM 610",
+   "nome": "GEOACÚSTICA SUBMARINA"
+  },
+  {
+   "codigo": "EAM 620",
+   "nome": "POSICIONAMENTO POR SATÉLITES"
+  },
+  {
+   "codigo": "EAM 630",
+   "nome": "APRENDIZADO DE MÁQUINA: PRINCÍPIOS E APLICAÇÕES"
+  },
+  {
+   "codigo": "EAM 640",
+   "nome": "QUALIDADE DE DADOS GEOESPACIAIS I"
+  },
+  {
+   "codigo": "EAM 650",
+   "nome": "SENSORIAMENTO REMOTO AVANÇADO"
+  },
+  {
+   "codigo": "EAM 670",
+   "nome": "FOTOGRAMETRIA DIGITAL I"
+  }
+ ],
+ "aulas": [
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 190",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 14,
+   "fim": 15,
+   "sala": "PVB200"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 300",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 9,
+   "fim": 10,
+   "sala": "PVB304"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 300",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "PVB304"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 300",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 300",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 3,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 301",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "PVA239"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 301",
+   "tipo": "T",
+   "turma": 2,
+   "dia": 6,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "PVA153"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 301",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 301",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 4,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 301",
+   "tipo": "P",
+   "turma": 3,
+   "dia": 5,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 301",
+   "tipo": "P",
+   "turma": 4,
+   "dia": 5,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 301",
+   "tipo": "P",
+   "turma": 5,
+   "dia": 6,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 301",
+   "tipo": "P",
+   "turma": 6,
+   "dia": 6,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 310",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "PVA353"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 310",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 310",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 5,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 312",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "PVA284"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 312",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 312",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 2,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 330",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "PVA165"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 330",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "PVA277"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 380",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 380",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 393",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 7,
+   "fim": 12,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 410",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "CCE319"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 410",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE319"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 420",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "PVA310"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 420",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 421",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "PVA172"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 421",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "PVA172"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 433",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 14,
+   "fim": 15,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 433",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 15,
+   "fim": 17,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 436",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 436",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 441",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 441",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 6,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 442",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 13,
+   "fim": 16,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 450",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "PVA115"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 450",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 450",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 2,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 451",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 14,
+   "fim": 18,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 451",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 6,
+   "inicio": 14,
+   "fim": 18,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 463",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "PVA388"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 463",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 463",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 6,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 465",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 465",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 471",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE321"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 471",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "CCE321"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 482",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 482",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 484",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 484",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 497",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 10,
+   "fim": 11,
+   "sala": "CCE319"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 498",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 14,
+   "fim": 15,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 499",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 8,
+   "fim": 9,
+   "sala": "LEA103"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 499",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 9,
+   "fim": 12,
+   "sala": "LEA103"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 620",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 8,
+   "fim": 12,
+   "sala": "CCE321"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 630",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 8,
+   "fim": 9,
+   "sala": "CCE321"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 630",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 9,
+   "fim": 12,
+   "sala": "CCE321"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 670",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE321"
+  },
+  {
+   "semestre": "2026-1",
+   "disciplina": "EAM 670",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "CCE321"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 191",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "PVB107"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 15,
+   "fim": 16,
+   "sala": "PVA117"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "PVA277"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "T",
+   "turma": 2,
+   "dia": 2,
+   "inicio": 16,
+   "fim": 17,
+   "sala": "PVA117"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "T",
+   "turma": 2,
+   "dia": 4,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "PVA277"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 3,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "P",
+   "turma": 3,
+   "dia": 3,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "P",
+   "turma": 4,
+   "dia": 4,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "P",
+   "turma": 5,
+   "dia": 5,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "P",
+   "turma": 6,
+   "dia": 3,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 300",
+   "tipo": "P",
+   "turma": 7,
+   "dia": 4,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 301",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "PVB300"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 301",
+   "tipo": "T",
+   "turma": 2,
+   "dia": 2,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "PVA153"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 301",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 301",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 5,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 301",
+   "tipo": "P",
+   "turma": 3,
+   "dia": 5,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 301",
+   "tipo": "P",
+   "turma": 4,
+   "dia": 6,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 311",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "PVA353"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 311",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "LEA103"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 311",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 3,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "LEA103"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 313",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 313",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 351",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 8,
+   "fim": 12,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 351",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 5,
+   "inicio": 8,
+   "fim": 12,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 394",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 14,
+   "fim": 18,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 422",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "PVA310"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 422",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "PVA310"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 422",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 431",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 431",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 434",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 14,
+   "fim": 15,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 434",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 15,
+   "fim": 17,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 440",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 440",
+   "tipo": "P",
+   "turma": 2,
+   "dia": 3,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 442",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 442",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 13,
+   "fim": 14,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 451",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 14,
+   "fim": 18,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 461",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 461",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 464",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "PVA348"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 464",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 10,
+   "fim": 12,
+   "sala": "CCE323"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 470",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "LEA102"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 470",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 5,
+   "inicio": 8,
+   "fim": 10,
+   "sala": "CCE321"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 480",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE322"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 497",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 13,
+   "fim": 14,
+   "sala": "LEA103"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 498",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 4,
+   "inicio": 13,
+   "fim": 14,
+   "sala": "LEA101"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 499",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 8,
+   "fim": 9,
+   "sala": "LEA103"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 499",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 6,
+   "inicio": 9,
+   "fim": 12,
+   "sala": "LEA103"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 610",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 2,
+   "inicio": 14,
+   "fim": 17,
+   "sala": "CCE321"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 650",
+   "tipo": "T",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 14,
+   "fim": 16,
+   "sala": "CCE321"
+  },
+  {
+   "semestre": "2026-2",
+   "disciplina": "EAM 650",
+   "tipo": "P",
+   "turma": 1,
+   "dia": 3,
+   "inicio": 16,
+   "fim": 18,
+   "sala": "CCE321"
+  }
+ ]
+}

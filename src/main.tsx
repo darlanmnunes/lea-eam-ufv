@@ -1,0 +1,14 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import '@fontsource-variable/montserrat'
+import '@fontsource-variable/source-sans-3'
+import '@fontsource/ibm-plex-mono/400.css'
+import '@fontsource/ibm-plex-mono/500.css'
+import './estilos/base.css'
+import { App } from './App'
+
+createRoot(document.getElementById('raiz')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
