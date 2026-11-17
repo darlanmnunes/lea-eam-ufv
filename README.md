@@ -68,7 +68,7 @@ flowchart LR
 
 | Página inicial | Acervo |
 | --- | --- |
-| <img src="docs/inicio.webp" alt="Página inicial com a placa do LEA e fotos de equipamentos do acervo"> | <img src="docs/acervo.webp" alt="Catálogo de equipamentos com a situação de cada unidade"> |
+| <img src="docs/inicio.webp" alt="Página inicial com o prédio, a placa do LEA e quatro equipamentos do acervo"> | <img src="docs/acervo.webp" alt="Catálogo de equipamentos com a situação de cada unidade"> |
 | **Equipamento** | **Aulas práticas** |
 | <img src="docs/equipamento.webp" alt="Página de uma estação total com as unidades e o botão de pedido"> | <img src="docs/aulas.webp" alt="Horário das disciplinas EAM com os equipamentos de cada aula prática"> |
 

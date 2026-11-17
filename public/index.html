@@ -68,13 +68,21 @@
 
   /* topo: a placa do LEA ao centro, quatro equipamentos do acervo ao redor */
   .hero--centred .hero__window.topo-fotos { background: none; -webkit-mask-image: none; mask-image: none; overflow: visible; border-radius: 0;
-    display: grid; grid-template-columns: 1fr 1fr 1.35fr 1fr 1fr; gap: var(--s-4); min-height: clamp(260px, 40svh, 460px); }
-  .topo-fotos figure { margin: 0; position: relative; overflow: hidden; border-radius: var(--r-lg); background: var(--p-surface); }
+    display: grid; grid-template-columns: 1fr 1.2fr 1.5fr; gap: var(--s-4); min-height: clamp(280px, 42svh, 480px); }
+  .topo-predio, .topo-equip { display: grid; gap: var(--s-4); min-height: 0; }
+  .topo-predio { grid-template-rows: 1fr 1fr; }
+  .topo-equip { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+  .topo-fotos figure { margin: 0; position: relative; overflow: hidden; border-radius: var(--r-lg); background: var(--p-surface); min-height: 0; }
   .topo-fotos img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
   .topo-fotos figure:hover img { transform: scale(1.03); }
-  .topo-fotos .topo-placa img { object-position: 50% 45%; }
-  @media (max-width: 1023px) { .hero--centred .hero__window.topo-fotos { grid-template-columns: 1fr 1.35fr 1fr; } .topo-fotos .topo-lado { display: none; } }
-  @media (max-width: 639px) { .hero--centred .hero__window.topo-fotos { gap: var(--s-2); min-height: 236px; } }
+  .topo-placa img { object-position: 50% 45%; }
+  .topo-predio img { object-position: 50% 68%; }
+  @media (max-width: 639px) {
+    .hero--centred .hero__window.topo-fotos { grid-template-columns: 1fr 1.15fr 1fr; gap: var(--s-2); min-height: 236px; }
+    .topo-predio, .topo-equip { gap: var(--s-2); }
+    .topo-equip { grid-template-columns: 1fr; }
+    .topo-equip figure:nth-child(n+3) { display: none; }
+  }
   @media (prefers-reduced-motion: reduce) { .topo-fotos img { transition: none; } }
 
   /* empréstimo: a ficha animada sobre a malha da marca */
@@ -195,6 +203,14 @@
   .lea-seg .is-neso { background: var(--neso); color: #fff; }
   .lea-obs { font-size: 13px; color: var(--u-muted); border-top: 1px solid var(--u-line); padding-top: 10px; margin: 0; }
   @media (max-width: 639px) { #etapas .panel { --p-h: 260px; } }
+  /* voltar ao início */
+  .voltar-topo { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); z-index: 50; width: 48px; height: 48px; border-radius: 50%; border: 0; display: grid; place-items: center; cursor: pointer;
+    background: #0c214c; color: #f4f2ec; box-shadow: 0 10px 28px -10px rgb(12 33 76 / .6); opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .25s ease, transform .25s ease, background-color .2s ease; }
+  .voltar-topo.is-on { opacity: 1; transform: none; pointer-events: auto; }
+  .voltar-topo:hover { background: #5a0204; transform: translateY(-2px); }
+  .voltar-topo:active { transform: translateY(0) scale(.96); }
+  .voltar-topo:focus-visible { outline: 2px solid #ae7c09; outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { .voltar-topo { transition: opacity .2s; transform: none; } }
 </style>
 </head>
 <body>
@@ -234,11 +250,17 @@
         <div class="btn-row"><a class="btn btn--primary" href="acervo.html">Ver o acervo</a><a class="btn btn--secondary" href="#emprestimo">Ver as etapas do empréstimo</a></div>
       </div>
       <div class="hero__window topo-fotos">
-        <figure class="topo-lado"><img src="equip/geodetic-gd2i.webp" alt="Estação total Geodetic GD2i no armário do almoxarifado" width="750" height="1000" data-source="client" data-subject="estação total do LEA"></figure>
-        <figure><img src="equip/chc-nav-i50.webp" alt="Receptor GNSS CHC Nav i50 no estojo amarelo" width="1000" height="750" data-source="client" data-subject="receptor GNSS do LEA"></figure>
+        <div class="topo-predio">
+          <figure><img src="lea/fachada-480.webp" srcset="lea/fachada-480.webp 480w, lea/fachada.webp 900w" sizes="(max-width: 639px) 30vw, 380px" alt="Fachada do LEA vista da rua, com o portão de grade" width="480" height="679" data-source="client" data-subject="fachada do LEA"></figure>
+          <figure><img src="lea/patio-480.webp" srcset="lea/patio-480.webp 480w, lea/patio.webp 900w" sizes="(max-width: 639px) 30vw, 380px" alt="O prédio do LEA visto do pátio" width="480" height="714" data-source="client" data-subject="pátio do LEA"></figure>
+        </div>
         <figure class="topo-placa"><img src="lea/placa.webp" srcset="lea/placa-480.webp 480w, lea/placa.webp 900w" sizes="(max-width: 639px) 40vw, 380px" alt="Placa azul na entrada do Laboratório de Engenharia de Agrimensura e Cartográfica" width="900" height="1200" data-source="client" data-subject="placa do LEA"></figure>
-        <figure><img src="equip/riegl-vz-400.webp" alt="Laser scanner Riegl VZ-400 no estojo de espuma" width="750" height="1000" data-source="client" data-subject="laser scanner do LEA"></figure>
-        <figure class="topo-lado"><img src="equip/nivel-topcon-dl-502.webp" alt="Nível digital Topcon DL-502 com a bateria" width="750" height="1000" data-source="client" data-subject="nível do LEA"></figure>
+        <div class="topo-equip">
+          <figure><img src="equip/geodetic-gd2i.webp" alt="Estação total Geodetic GD2i" width="750" height="1000" data-source="client" data-subject="estação total do LEA"></figure>
+          <figure><img src="equip/chc-nav-i50.webp" alt="Receptor GNSS CHC Nav i50 no estojo" width="1000" height="750" data-source="client" data-subject="receptor GNSS do LEA"></figure>
+          <figure><img src="equip/riegl-vz-400.webp" alt="Laser scanner Riegl VZ-400 no estojo" width="750" height="1000" data-source="client" data-subject="laser scanner do LEA"></figure>
+          <figure><img src="equip/nivel-topcon-dl-502.webp" alt="Nível digital Topcon DL-502" width="750" height="1000" data-source="client" data-subject="nível do LEA"></figure>
+        </div>
       </div>
     </div></div>
   </section>
@@ -469,6 +491,22 @@
     </div>
   </div>
 </footer>
+
+<button class="voltar-topo" type="button" aria-label="Voltar ao início da página" title="Voltar ao início">
+  <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16V4M4.5 9.5 10 4l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<script>
+(() => {
+  const b = document.querySelector('.voltar-topo');
+  const ver = () => b.classList.toggle('is-on', scrollY > innerHeight * 0.8);
+  addEventListener('scroll', ver, { passive: true }); ver();
+  b.addEventListener('click', () => {
+    const calmo = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    scrollTo({ top: 0, behavior: calmo ? 'auto' : 'smooth' });
+    document.querySelector('.nav__logo').focus({ preventScroll: true });
+  });
+})();
+</script>
 
 <script type="module" src="assets/system.js"></script>
 <script type="module" src="assets/motion/motion.js"></script>
