@@ -7,7 +7,7 @@ import type {
   Acao, Acervo, Api, DadosAcao, Emprestimo, Evento, Horarios, Modelo, NovoPedido, Ocupacao, Papel, Perfil, Pessoa, Semestre, Status, TipoEvento, Uso,
 } from './tipos'
 
-const CHAVE = 'lea-demo-v2'
+const CHAVE = 'lea-demo-v3'
 
 const PERSONAS: Pessoa[] = [
   { id: 'p-estudante', nome: 'Marina Duarte', email: 'marina.duarte@ufv.example', matricula: '108245', telefone: '(31) 90000-0001', vinculo: 'Discente', papeis: ['solicitante'] },
@@ -83,7 +83,7 @@ function semente(): Estado {
     emprestimos: [
       base({
         id: 'e-1', codigo: `LEA-${ano}-0001`, status: 'encerrado',
-        finalidade: 'Aula prática de poligonação', projeto: 'EAM 301 · Topografia II', localUso: 'Campus Viçosa, Recanto das Cigarras',
+        finalidade: 'Aula prática de poligonação', projeto: 'EAM 301 | Topografia básica', localUso: 'Campus Viçosa, Recanto das Cigarras',
         retiradaPrevista: hoje(-16), devolucaoPrevista: hoje(-15), participantes: ['Turma prática T2'],
         itens: [item('i-1', 'geodetic-gd2i#1', { estadoRetirada: 'conforme', estadoDevolucao: 'conforme' }), item('i-2', 'geodetic-gd2i#2', { estadoRetirada: 'conforme', estadoDevolucao: 'com_ressalva', obsDevolucao: 'Bateria reserva voltou descarregada.' })],
         eventos: [
@@ -94,7 +94,7 @@ function semente(): Estado {
       }),
       base({
         id: 'e-2', codigo: `LEA-${ano}-0002`, status: 'em_uso',
-        finalidade: 'Levantamento cadastral para TCC', projeto: 'TCC · Cadastro territorial em Ponte Nova', localUso: 'Ponte Nova, MG',
+        finalidade: 'Levantamento cadastral para TCC', projeto: 'TCC | Cadastro territorial em Ponte Nova', localUso: 'Ponte Nova, MG',
         retiradaPrevista: hoje(-2), devolucaoPrevista: hoje(3), participantes: ['Caio Brandão', 'Lívia Torres'],
         itens: [item('i-3', 'chc-i50#1', { estadoRetirada: 'conforme' }), item('i-4', 'topcon-es-65#1', { estadoRetirada: 'com_ressalva', obsRetirada: 'Estojo com um fecho quebrado.' })],
         eventos: [
@@ -105,7 +105,7 @@ function semente(): Estado {
       }),
       base({
         id: 'e-3', codigo: `LEA-${ano}-0003`, status: 'aguardando_coordenacao',
-        finalidade: 'Varredura da fachada do prédio', projeto: 'Iniciação científica · Documentação de patrimônio edificado', localUso: 'Campus Viçosa, Edifício Arthur Bernardes',
+        finalidade: 'Varredura da fachada do prédio', projeto: 'Iniciação científica | Documentação de patrimônio edificado', localUso: 'Campus Viçosa, Edifício Arthur Bernardes',
         retiradaPrevista: hoje(6), devolucaoPrevista: hoje(7), participantes: ['Lívia Torres'],
         itens: [item('i-5', 'riegl-vz-400#1', { observacao: 'Com tripé e notebook de controle.' })],
         eventos: [ev('pedido_assinado', est, 'solicitante', 0, 8)],

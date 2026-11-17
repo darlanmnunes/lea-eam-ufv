@@ -155,7 +155,7 @@ export interface Api {
   modo: 'demo' | 'supabase'
   sessao(): Promise<Pessoa | null>
   aoMudarSessao(fn: () => void): () => void
-  /** demo: id da persona · supabase: e-mail para o link de acesso */
+  /** demo: id da persona | supabase: e-mail para o link de acesso */
   entrar(chave: string): Promise<void>
   sair(): Promise<void>
   salvarPerfil(p: Perfil): Promise<void>

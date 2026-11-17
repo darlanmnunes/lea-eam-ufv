@@ -18,7 +18,7 @@ export function Equipamento({ id }: { id: string }) {
       <div className="equip">
         <Foto m={m} grande />
         <div className="equip-dados">
-          <p className="cota">{c.sigla} · {c.nome}</p>
+          <p className="cota">{c.sigla} | {c.nome}</p>
           <h1>{m.marca} {m.nome}</h1>
           {m.descricao && <p className="equip-desc">{m.descricao}</p>}
           <Periodo />
@@ -34,7 +34,7 @@ export function Equipamento({ id }: { id: string }) {
                     <p className="unidade-id">{cota(c.sigla, u)}</p>
                     <p className="unidade-nota">
                       {NOME_ESTADO[estado]}{estado === 'emprestado' && ate ? ` até ${dia(ate)}` : ''}
-                      {u.observacao ? ` · ${u.observacao}` : ` · ${identificacao(u)}`}
+                      {u.observacao ? ` | ${u.observacao}` : ` | ${identificacao(u)}`}
                     </p>
                   </div>
                   {estado === 'livre' && (
@@ -54,7 +54,7 @@ export function Equipamento({ id }: { id: string }) {
               <ul className="lista-aulas">
                 {q.aulas.map((a) => (
                   <li key={`${a.disciplina}${a.turma}${a.dia}${a.inicio}`}>
-                    <b>{textoAula(a)}</b> {a.nome.toLowerCase().replace(/\b(i{1,3}|iv)\b/g, (r) => r.toUpperCase())} · {a.quantidade} {a.quantidade === 1 ? 'unidade' : 'unidades'}
+                    <b>{textoAula(a)}</b> {a.nome.toLowerCase().replace(/\b(i{1,3}|iv)\b/g, (r) => r.toUpperCase())} | {a.quantidade} {a.quantidade === 1 ? 'unidade' : 'unidades'}
                   </li>
                 ))}
               </ul>

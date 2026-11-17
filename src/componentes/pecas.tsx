@@ -1,4 +1,4 @@
-import { type ReactNode } from 'react'
+import { type CSSProperties, type ReactNode } from 'react'
 import { NOME_ESTADO, type EstadoUnidade, type Quadro } from '../lib/disponibilidade'
 import { NOME_STATUS, TOM_STATUS } from '../lib/fluxo'
 import type { Modelo, Status } from '../lib/tipos'
@@ -14,7 +14,7 @@ export function Marcas({ q }: { q: Quadro }) {
   const rotulo = (Object.keys(conta) as EstadoUnidade[]).map((e) => `${conta[e]} ${NOME_ESTADO[e].toLowerCase()}`).join(', ')
   return (
     <span className="marcas" role="img" aria-label={rotulo} title={rotulo}>
-      {q.unidades.map((u) => <i key={u.unidade.id} className={`marca marca-${u.estado}`} />)}
+      {q.unidades.map((u, i) => <i key={u.unidade.id} className={`marca marca-${u.estado}`} style={{ '--i': i } as CSSProperties} />)}
     </span>
   )
 }

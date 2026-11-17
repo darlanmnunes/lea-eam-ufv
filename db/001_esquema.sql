@@ -1,4 +1,4 @@
--- LEA · Acervo e empréstimo de equipamentos
+-- LEA | Acervo e empréstimo de equipamentos
 -- Esquema para PostgreSQL 14+ (Supabase). Aplicar na ordem: 001, 002, 003.
 
 create extension if not exists pgcrypto;

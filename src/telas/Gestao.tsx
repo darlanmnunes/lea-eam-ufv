@@ -80,7 +80,7 @@ export function Gestao() {
               <div className="gestao-modelo">
                 <Foto m={m} />
                 <div>
-                  <p className="cota">{c.sigla} · {c.nome}</p>
+                  <p className="cota">{c.sigla} | {c.nome}</p>
                   <h2>{m.marca} {m.nome}</h2>
                   <p className="gestao-botoes">
                     <button className="btn-texto" onClick={() => { setUn(null); setModelo({ id: m.id, categoriaId: m.categoriaId, marca: m.marca, nome: m.nome, descricao: m.descricao ?? '', foto: m.foto }); window.scrollTo(0, 0) }}>Editar modelo</button>

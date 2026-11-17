@@ -47,8 +47,8 @@ export function Acervo() {
     <main className="pagina">
       <section className="abre">
         <div>
-          <p className="cab-sobre">Laboratório de Engenharia de Agrimensura e Cartográfica</p>
-          <h1>Acervo de equipamentos</h1>
+          <p className="cab-sobre">Acervo do LEA</p>
+          <h1>Equipamentos</h1>
           <p className="abre-texto">Escolha as datas, veja o que está livre e monte seu pedido. A autorização e os cientes de retirada e devolução acontecem aqui, sem papel.</p>
         </div>
         <Periodo />
@@ -89,15 +89,15 @@ export function Acervo() {
             const sobra = q.livres.filter((u) => !cesta.itens.includes(u.id))
             return (
               <li key={m.id} className="ficha-acervo">
-                <a href={`#/equipamento/${m.id}`} className="ficha-acervo-foto" tabIndex={-1} aria-hidden="true"><Foto m={m} /></a>
+                <a href={`#/equipamento/${m.id}`} className="ficha-acervo-foto" tabIndex={-1} aria-hidden="true"><Foto m={m} /><span className="ficha-acervo-ver">Ver as unidades <span aria-hidden="true">→</span></span></a>
                 <div className="ficha-acervo-corpo">
-                  <p className="cota">{c.sigla} · {c.nome}</p>
+                  <p className="cota">{c.sigla} | {c.nome}</p>
                   <h2><a href={`#/equipamento/${m.id}`}>{m.marca} {m.nome}</a></h2>
                   <div className="ficha-acervo-linha">
                     <Marcas q={q} />
                     <span className="conta">{q.livres.length} de {q.unidades.length} {q.livres.length === 1 ? 'livre' : 'livres'}</span>
                   </div>
-                  {q.aulas.length > 0 && <p className="nota-aula">Em aula: {q.aulas.slice(0, 2).map(textoAula).join(' · ')}{q.aulas.length > 2 ? ` e mais ${q.aulas.length - 2}` : ''}</p>}
+                  {q.aulas.length > 0 && <p className="nota-aula">Em aula: {q.aulas.slice(0, 2).map(textoAula).join(' | ')}{q.aulas.length > 2 ? ` e mais ${q.aulas.length - 2}` : ''}</p>}
                 </div>
                 <div className="ficha-acervo-pe">
                   {meus > 0 && (
@@ -130,7 +130,7 @@ export function BarraFicha() {
   if (!cesta.itens.length) return null
   return (
     <div className="barra-ficha" role="region" aria-label="Pedido em montagem">
-      <p><b>{cesta.itens.length} {cesta.itens.length === 1 ? 'equipamento' : 'equipamentos'}</b> · {periodo(cesta.de, cesta.ate)}</p>
+      <p><b>{cesta.itens.length} {cesta.itens.length === 1 ? 'equipamento' : 'equipamentos'}</b> | {periodo(cesta.de, cesta.ate)}</p>
       <a className="btn btn-ouro" href="#/pedir">Continuar o pedido</a>
     </div>
   )

@@ -76,7 +76,7 @@ export function Pedido({ id }: { id: string }) {
       <p className="trilha"><a href="#/pedidos">Pedidos</a> / {e.codigo}</p>
       <header className="cab cab-pedido">
         <div>
-          <p className="cab-sobre">{e.codigo} · pedido em {dia(e.criadoEm)}</p>
+          <p className="cab-sobre">{e.codigo} | pedido em {dia(e.criadoEm)}</p>
           <h1>{e.finalidade}</h1>
           <p className="cab-linha">
             <Selo status={e.status} />
@@ -161,7 +161,7 @@ export function Pedido({ id }: { id: string }) {
               {e.eventos.map((v) => (
                 <li key={v.id}>
                   <time dateTime={v.criadoEm}>{diaHora(v.criadoEm)}</time>
-                  <p><b>{v.autorNome}</b> · {papelNaFrase(v.autorPapel)}</p>
+                  <p><b>{v.autorNome}</b> | {papelNaFrase(v.autorPapel)}</p>
                   <p>{TEXTO_EVENTO[v.tipo]}{v.observacao ? `: “${v.observacao}”` : '.'}</p>
                 </li>
               ))}
@@ -173,7 +173,7 @@ export function Pedido({ id }: { id: string }) {
           <section className="bloco">
             <h2>Atividade</h2>
             <dl className="resumo resumo-coluna">
-              <div><dt>Responsável</dt><dd>{e.respNome}<br />{e.respMatricula} · {e.respTelefone}<br />{e.respEmail}</dd></div>
+              <div><dt>Responsável</dt><dd>{e.respNome}<br />{e.respMatricula} | {e.respTelefone}<br />{e.respEmail}</dd></div>
               <div><dt>Projeto, disciplina ou grupo</dt><dd>{e.projeto}</dd></div>
               <div><dt>Local</dt><dd>{e.localUso}</dd></div>
               <div><dt>Retirada</dt><dd>{diaLongo(e.retiradaPrevista)}</dd></div>

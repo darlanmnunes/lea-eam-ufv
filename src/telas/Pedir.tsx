@@ -122,7 +122,7 @@ export function Pedir() {
               <input type="text" value={f.finalidade} onChange={(e) => setF({ ...f, finalidade: e.target.value })} placeholder="Levantamento planialtimétrico para TCC" />
             </Campo>
             <Campo rotulo="Projeto, disciplina ou grupo" erro={tentou ? erros.projeto : null}>
-              <input type="text" value={f.projeto} onChange={(e) => setF({ ...f, projeto: e.target.value })} placeholder="EAM 311 · Topografia II" />
+              <input type="text" value={f.projeto} onChange={(e) => setF({ ...f, projeto: e.target.value })} placeholder="EAM 311 | Topografia II" />
             </Campo>
             <Campo rotulo="Local de utilização" erro={tentou ? erros.localUso : null}>
               <input type="text" value={f.localUso} onChange={(e) => setF({ ...f, localUso: e.target.value })} placeholder="Ponte Nova, MG" />
@@ -160,11 +160,11 @@ export function Pedir() {
             <>
               <p className="termo-texto">{PREAMBULO}</p>
               <dl className="resumo">
-                <div><dt>Responsável</dt><dd>{eu.nome} · {eu.matricula ?? 'sem matrícula'}</dd></div>
+                <div><dt>Responsável</dt><dd>{eu.nome} | {eu.matricula ?? 'sem matrícula'}</dd></div>
                 <div><dt>Retirada</dt><dd>{diaLongo(cesta.de)}</dd></div>
                 <div><dt>Devolução</dt><dd>{diaLongo(cesta.ate)}</dd></div>
                 <div><dt>Equipamentos</dt><dd>{itens.map(({ unidade: u, modelo, categoria }) => `${modelo.marca} ${modelo.nome} (${cota(categoria.sigla, u)})`).join('; ')}</dd></div>
-                <div><dt>Finalidade</dt><dd>{f.finalidade} · {f.projeto} · {f.localUso}</dd></div>
+                <div><dt>Finalidade</dt><dd>{f.finalidade} | {f.projeto} | {f.localUso}</dd></div>
               </dl>
               <fieldset className="declaracoes">
                 <legend>Declaro que</legend>
