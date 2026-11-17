@@ -1,7 +1,7 @@
 {
   "name": "lea-eam-ufv",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "Acervo do LEA | Laboratório de Engenharia de Agrimensura e Cartográfica | UFV",
   "scripts": {
