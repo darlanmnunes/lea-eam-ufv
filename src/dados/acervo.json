@@ -135,6 +135,21 @@
    ]
   },
   {
+   "id": "estacao-total-pentax",
+   "categoria": "estacao-total",
+   "marca": "Estação total",
+   "nome": "Pentax",
+   "foto": "pentax-r-315nx.webp",
+   "descricao": "Estação total, precisão linear 2 mm + 2 ppm, alcance 3.500 m com 1 prisma e 250 m sem prisma, tempo medição 1 s, uso topografia, ac. 2 prismas alvos, 2 bastões 3,60 m, nível esférico, tripé ext. em alumínio, cabo transm.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    }
+   ]
+  },
+  {
    "id": "topcon-es-65",
    "categoria": "estacao-total",
    "marca": "Topcon",
@@ -173,21 +188,6 @@
    "unidades": [
     {
      "patrimonio": "[removido]"
-    }
-   ]
-  },
-  {
-   "id": "estacao-total-pentax",
-   "categoria": "estacao-total",
-   "marca": "Estação total",
-   "nome": "Pentax",
-   "foto": null,
-   "descricao": "Estação total, precisão linear 2 mm + 2 ppm, alcance 3.500 m com 1 prisma e 250 m sem prisma, tempo medição 1 s, uso topografia, ac. 2 prismas alvos, 2 bastões 3,60 m, nível esférico, tripé ext. em alumínio, cabo transm.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
     }
    ]
   },
@@ -334,25 +334,11 @@
    ]
   },
   {
-   "id": "topcon-dl-502",
-   "categoria": "nivel",
-   "marca": "Topcon",
-   "nome": "DL-502",
-   "foto": "nivel-topcon-dl-502.webp",
-   "descricao": "Nível digital para nivelamento geométrico.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "obs": "Sem número de patrimônio na planilha."
-    }
-   ]
-  },
-  {
    "id": "nivel-zeiss",
    "categoria": "nivel",
    "marca": "Nível",
    "nome": "Zeiss",
-   "foto": null,
+   "foto": "nivel-zeiss-ni-002.webp",
    "descricao": "Nível para topografia acondicionado em caixa de madeira. cor: cinza.",
    "emprestavel": true,
    "unidades": [
@@ -394,7 +380,7 @@
    "categoria": "nivel",
    "marca": "Nível",
    "nome": "Foif",
-   "foto": null,
+   "foto": "nivel-foif.webp",
    "descricao": "Nível óptico.",
    "emprestavel": true,
    "unidades": [
@@ -413,6 +399,63 @@
     {
      "patrimonio": "[removido]",
      "serie": "[removido]"
+    }
+   ]
+  },
+  {
+   "id": "nivel-mom",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "MOM",
+   "foto": "nivel-mom-ni-b5.webp",
+   "descricao": "Nível para topografia, pequeno instrumento de nivelacao automática, em estojo de couro. cor: vermelha.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    }
+   ]
+  },
+  {
+   "id": "nivel-siom",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "Siom",
+   "foto": "nivel-siom.webp",
+   "descricao": "Nível para topografia, escala de 0 a 350 graus, em estojo e tripé em madeira e pontas de ferro. cor: laranja.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "[removido]"
+    }
+   ]
+  },
+  {
+   "id": "nivel-wild",
+   "categoria": "nivel",
+   "marca": "Nível",
+   "nome": "Wild",
+   "foto": "nivel-wild.webp",
+   "descricao": "Nível topográfico acondicionado em caixa de plástico.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "[removido]"
+    }
+   ]
+  },
+  {
+   "id": "topcon-dl-502",
+   "categoria": "nivel",
+   "marca": "Topcon",
+   "nome": "DL-502",
+   "foto": "nivel-topcon-dl-502.webp",
+   "descricao": "Nível digital para nivelamento geométrico.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "obs": "Sem número de patrimônio na planilha."
     }
    ]
   },
@@ -529,21 +572,6 @@
    ]
   },
   {
-   "id": "nivel-mom",
-   "categoria": "nivel",
-   "marca": "Nível",
-   "nome": "MOM",
-   "foto": null,
-   "descricao": "Nível para topografia, pequeno instrumento de nivelacao automática, em estojo de couro. cor: vermelha.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    }
-   ]
-  },
-  {
    "id": "nivel-pzo",
    "categoria": "nivel",
    "marca": "Nível",
@@ -559,39 +587,11 @@
    ]
   },
   {
-   "id": "nivel-siom",
-   "categoria": "nivel",
-   "marca": "Nível",
-   "nome": "Siom",
-   "foto": null,
-   "descricao": "Nível para topografia, escala de 0 a 350 graus, em estojo e tripé em madeira e pontas de ferro. cor: laranja.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "patrimonio": "[removido]"
-    }
-   ]
-  },
-  {
-   "id": "nivel-wild",
-   "categoria": "nivel",
-   "marca": "Nível",
-   "nome": "Wild",
-   "foto": null,
-   "descricao": "Nível topográfico acondicionado em caixa de plástico.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "patrimonio": "[removido]"
-    }
-   ]
-  },
-  {
    "id": "teodolito-berger",
    "categoria": "teodolito",
    "marca": "Teodolito",
    "nome": "Berger",
-   "foto": null,
+   "foto": "teodolito-berger-dgt20.webp",
    "descricao": "Teodolito digital, com prumo óptico, leitura digital de 10 segundos, com porcentagem de rampa, com estojo para aconcionamento, proteção e transporte, com tripé de alumínio.",
    "emprestavel": true,
    "unidades": [
@@ -682,7 +682,7 @@
    "categoria": "teodolito",
    "marca": "Teodolito",
    "nome": "World",
-   "foto": null,
+   "foto": "teodolito-world.webp",
    "descricao": "Teodolito de leitura externa, escala de 0 a 360 graus, precisão de 1 minuto, com bússola. cor: bege.",
    "emprestavel": true,
    "unidades": [
@@ -725,6 +725,109 @@
    ]
   },
   {
+   "id": "teodolito-vasconcelos",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Vasconcelos",
+   "foto": "teodolito-vasconcelos.webp",
+   "descricao": "Teodolito, com limbos externos, aproximadamente de 1 minuto no limbo horizontal e no vertical, em estojo metálico tipo campanula de cor cinza e preta com tripé em madeira, altura regulável. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-wild",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Wild",
+   "foto": "teodolito-wild-t2.webp",
+   "descricao": "Teodolito, com limbos internos, aproximadamente de 1 minuto nos limbos horizontais e verticais, luneta autoredutor, em caixa metálica tipo campanula cor verde, com tripé em madeiraaltura regulável.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-zeiss",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Zeiss",
+   "foto": "teodolito-zeiss-th2.webp",
+   "descricao": "Teodolito, com limbos internos em caixa metálica tipo maleta de cor azul, com tripé de madeira, altura regulável. cor: cinza.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    },
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    }
+   ]
+  },
+  {
+   "id": "teodolito-zeiss-jena",
+   "categoria": "teodolito",
+   "marca": "Teodolito",
+   "nome": "Zeiss Jena",
+   "foto": "teodolito-zeiss-theo-015.webp",
+   "descricao": "Teodolito de escala, micrométrico, 7 ajustes, procedência alemã.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    }
+   ]
+  },
+  {
    "id": "teodolito-sem-marca",
    "categoria": "teodolito",
    "marca": "Teodolito",
@@ -760,100 +863,12 @@
    ]
   },
   {
-   "id": "teodolito-vasconcelos",
-   "categoria": "teodolito",
-   "marca": "Teodolito",
-   "nome": "Vasconcelos",
-   "foto": null,
-   "descricao": "Teodolito, com limbos externos, aproximadamente de 1 minuto no limbo horizontal e no vertical, em estojo metálico tipo campanula de cor cinza e preta com tripé em madeira, altura regulável. cor: cinza.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    }
-   ]
-  },
-  {
    "id": "teodolito-dfv",
    "categoria": "teodolito",
    "marca": "Teodolito",
    "nome": "DFV",
    "foto": null,
    "descricao": "Teodolito repetidor, ajustável, com bússola e luneta em caixa cinza e preta portátil, tripé regulável em madeira cor: cinza.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    }
-   ]
-  },
-  {
-   "id": "teodolito-wild",
-   "categoria": "teodolito",
-   "marca": "Teodolito",
-   "nome": "Wild",
-   "foto": null,
-   "descricao": "Teodolito, com limbos internos, aproximadamente de 1 minuto nos limbos horizontais e verticais, luneta autoredutor, em caixa metálica tipo campanula cor verde, com tripé em madeiraaltura regulável.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    },
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    }
-   ]
-  },
-  {
-   "id": "teodolito-zeiss",
-   "categoria": "teodolito",
-   "marca": "Teodolito",
-   "nome": "Zeiss",
-   "foto": null,
-   "descricao": "Teodolito, com limbos internos em caixa metálica tipo maleta de cor azul, com tripé de madeira, altura regulável. cor: cinza.",
    "emprestavel": true,
    "unidades": [
     {
@@ -963,21 +978,6 @@
    ]
   },
   {
-   "id": "teodolito-zeiss-jena",
-   "categoria": "teodolito",
-   "marca": "Teodolito",
-   "nome": "Zeiss Jena",
-   "foto": null,
-   "descricao": "Teodolito de escala, micrométrico, 7 ajustes, procedência alemã.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    }
-   ]
-  },
-  {
    "id": "teodolito-zuhio",
    "categoria": "teodolito",
    "marca": "Teodolito",
@@ -1028,6 +1028,35 @@
    "nome": "Mavic Air 2",
    "foto": "drone-dji-mavic-air-2.webp",
    "descricao": "Drone multirrotor para imagens aéreas.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "[removido]"
+    }
+   ]
+  },
+  {
+   "id": "binoculo-bushnell",
+   "categoria": "medicao",
+   "marca": "Binóculo",
+   "nome": "Bushnell",
+   "foto": "binoculo-bushnell.webp",
+   "descricao": "Binóculo com diâmetro de 35mm, aumento 7x15 vezes com zoom, com tampa protetora das lentes, acompanha bolsa em courvin para acondicionamento. cor: preto.",
+   "emprestavel": true,
+   "unidades": [
+    {
+     "patrimonio": "[removido]",
+     "serie": "[removido]"
+    }
+   ]
+  },
+  {
+   "id": "telemetro-wild",
+   "categoria": "medicao",
+   "marca": "Telêmetro",
+   "nome": "Wild",
+   "foto": "telemetro-wild.webp",
+   "descricao": "Telêmetro com cabeçote, marca Wild, com limbos externos horizontais e verticais em estojo metálico.",
    "emprestavel": true,
    "unidades": [
     {
@@ -1195,21 +1224,6 @@
    ]
   },
   {
-   "id": "binoculo-bushnell",
-   "categoria": "medicao",
-   "marca": "Binóculo",
-   "nome": "Bushnell",
-   "foto": null,
-   "descricao": "Binóculo com diâmetro de 35mm, aumento 7x15 vezes com zoom, com tampa protetora das lentes, acompanha bolsa em courvin para acondicionamento. cor: preto.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
-    }
-   ]
-  },
-  {
    "id": "bussola-fuji",
    "categoria": "medicao",
    "marca": "Bússola",
@@ -1286,20 +1300,6 @@
    "nome": "Genovesi",
    "foto": null,
    "descricao": "Medidor topográfico, com leituras parciais em decímetros, capacidade máxima do registrador 10 km cor laranja.",
-   "emprestavel": true,
-   "unidades": [
-    {
-     "patrimonio": "[removido]"
-    }
-   ]
-  },
-  {
-   "id": "telemetro-wild",
-   "categoria": "medicao",
-   "marca": "Telêmetro",
-   "nome": "Wild",
-   "foto": null,
-   "descricao": "Telêmetro com cabeçote, marca Wild, com limbos externos horizontais e verticais em estojo metálico.",
    "emprestavel": true,
    "unidades": [
     {
@@ -1894,7 +1894,7 @@
    "categoria": "apoio",
    "marca": "Câmera digital",
    "nome": "Nikon",
-   "foto": null,
+   "foto": "camera-nikon.webp",
    "descricao": "Câmera digital.",
    "emprestavel": true,
    "unidades": [

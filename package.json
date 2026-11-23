@@ -1,9 +1,11 @@
 {
   "name": "lea-eam-ufv",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "description": "Acervo do LEA | Laboratório de Engenharia de Agrimensura e Cartográfica | UFV",
+  "license": "AGPL-3.0-or-later",
+  "author": "Darlan Miranda Nunes <darlan.nunes@ufv.br> (Universidade Federal de Viçosa)",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

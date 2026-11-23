@@ -117,6 +117,25 @@ const resumo = (desc) => {
   return /[.!]$/.test(t) ? t : `${t}.`
 }
 
+// Fotos (public/equip/) dos modelos que vêm só do patrimônio. Originais em dados-fonte/fotos-originais/.
+const FOTOS = {
+  'estacao-total-pentax': 'pentax-r-315nx.webp',
+  'nivel-zeiss': 'nivel-zeiss-ni-002.webp',
+  'nivel-foif': 'nivel-foif.webp',
+  'nivel-mom': 'nivel-mom-ni-b5.webp',
+  'nivel-siom': 'nivel-siom.webp',
+  'nivel-wild': 'nivel-wild.webp',
+  'teodolito-berger': 'teodolito-berger-dgt20.webp',
+  'teodolito-world': 'teodolito-world.webp',
+  'teodolito-vasconcelos': 'teodolito-vasconcelos.webp',
+  'teodolito-wild': 'teodolito-wild-t2.webp',
+  'teodolito-zeiss': 'teodolito-zeiss-th2.webp',
+  'teodolito-zeiss-jena': 'teodolito-zeiss-theo-015.webp',
+  'binoculo-bushnell': 'binoculo-bushnell.webp',
+  'telemetro-wild': 'telemetro-wild.webp',
+  'camera-digital-nikon': 'camera-nikon.webp',
+}
+
 // 1. modelos curados com as unidades da planilha de empréstimo
 const modelos = new Map()
 const usados = new Set()
@@ -145,7 +164,7 @@ for (const p of patrimonio) {
   const marca = marcaDe(p.marca)
   const id = slug(`${t[1]} ${marca ?? 'sem marca'}`)
   if (!modelos.has(id)) {
-    modelos.set(id, { id, categoria: t[0], marca: t[1], nome: marca ?? 'sem marca', foto: null, descricao: resumo(p.descricao), emprestavel: true, unidades: [] })
+    modelos.set(id, { id, categoria: t[0], marca: t[1], nome: marca ?? 'sem marca', foto: FOTOS[id] ?? null, descricao: resumo(p.descricao), emprestavel: true, unidades: [] })
   }
   const u = { patrimonio: p.patrimonio }
   if (p.serie && !SEM_MARCA.has(p.serie.toUpperCase())) u.serie = p.serie

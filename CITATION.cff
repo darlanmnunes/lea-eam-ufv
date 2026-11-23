@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Se usar este software, cite-o conforme os metadados abaixo."
+type: software
+title: "Acervo do LEA: sistema de gestão do acervo e de empréstimo de equipamentos do Laboratório de Engenharia de Agrimensura e Cartográfica da UFV"
+abstract: "Sistema web para gestão do acervo de equipamentos topográficos e geodésicos de um laboratório de ensino: catálogo com a situação de cada unidade, disponibilidade por período, reserva automática para aulas práticas a partir do horário oficial e fluxo de empréstimo com sete assinaturas eletrônicas e termo de responsabilidade."
+version: "1.1.1"
+date-released: "2026-11-23"
+license: AGPL-3.0-or-later
+repository-code: "https://github.com/darlanmnunes/lea-eam-ufv"
+url: "https://darlanmnunes.github.io/lea-eam-ufv/"
+authors:
+  - family-names: "Nunes"
+    given-names: "Darlan Miranda"
+    orcid: "https://orcid.org/0000-0001-5566-7919"
+    email: "darlan.nunes@ufv.br"
+    affiliation: "Universidade Federal de Viçosa, Departamento de Engenharia Civil"
+keywords:
+  - gestão de laboratório
+  - empréstimo de equipamentos
+  - inventário patrimonial
+  - assinatura eletrônica
+  - Engenharia de Agrimensura e Cartográfica
+  - Supabase
+  - React

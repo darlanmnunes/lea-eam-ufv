@@ -1,0 +1,37 @@
+Acervo do LEA: sistema de gestão do acervo e de empréstimo de equipamentos do Laboratório de Engenharia de Agrimensura e Cartográfica da UFV
+Copyright (C) 2026 Universidade Federal de Viçosa (UFV)
+Autor: Darlan Miranda Nunes (Setor de Engenharia de Agrimensura e Cartográfica / Departamento de Engenharia Civil, UFV)
+https://orcid.org/0000-0001-5566-7919
+
+Escopo: gestão do acervo de equipamentos do LEA (catálogo, situação de cada unidade,
+disponibilidade, reserva para aulas práticas) e empréstimo com assinaturas eletrônicas
+e termo de responsabilidade. Código em https://github.com/darlanmnunes/lea-eam-ufv
+
+Sistema relacionado: a Oferta de Disciplinas EAM (https://github.com/darlanmnunes/oferta-eam-ufv)
+é outro programa, com código, versões, licença e citação próprios. Os dois usam o mesmo
+projeto Supabase e o mesmo login, mas o Acervo fica no esquema `public` e a Oferta no
+esquema `oferta`, com tabelas e permissões separadas. Este aviso e a licença abaixo valem
+só para o Acervo do LEA.
+
+Este programa é software livre: pode ser redistribuído e modificado nos termos da
+GNU Affero General Public License, versão 3 ou posterior (AGPL-3.0-or-later),
+publicada pela Free Software Foundation. O texto integral está no arquivo LICENSE.
+
+Este programa é distribuído na expectativa de ser útil, mas SEM QUALQUER GARANTIA,
+nem mesmo a garantia implícita de COMERCIABILIDADE ou de ADEQUAÇÃO A UM FIM ESPECÍFICO.
+
+Quem oferecer uma versão modificada deste programa como serviço em rede deve
+disponibilizar o código-fonte correspondente aos usuários desse serviço (AGPL, seção 13).
+
+Itens NÃO cobertos pela licença acima:
+- Marcas e logotipos da UFV e da Engenharia de Agrimensura e Cartográfica (public/marca/):
+  uso restrito à identificação institucional deste sistema.
+- Fotografias do LEA e dos equipamentos (public/lea/, public/equip/,
+  dados-fonte/fotos-originais/): direitos dos respectivos autores; não são licenciadas
+  para reutilização.
+- Biblioteca de interface em public/assets/ (taste-skill): componente de terceiros,
+  regido pela licença do respectivo autor.
+- Dados pessoais de docentes, servidores e estudantes: não fazem parte do repositório
+  e não podem ser publicados com base nesta licença.
+
+Como citar: ver o arquivo CITATION.cff ou o botão "Cite this repository" no GitHub.
