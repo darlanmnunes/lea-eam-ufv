@@ -67,12 +67,19 @@ export function criarApiSupabase(url: string, chave: string): Api {
     },
     personas: () => [],
     async acervo(): Promise<Acervo> {
-      const [c, m, u] = await Promise.all([
+      // patrimônio e série não são públicos: vêm de identificacao_unidades(), vazia para quem não entrou
+      const [c, m, u, ident] = await Promise.all([
         sb.from('categorias').select('*').order('ordem'),
         sb.from('modelos').select('*').order('ordem'),
-        sb.from('unidades').select('*').neq('situacao', 'baixado'),
+        sb.from('unidades').select('id, modelo_id, situacao, observacao').neq('situacao', 'baixado').order('id'),
+        sb.rpc('identificacao_unidades'),
       ])
-      const unidades = ok<Linha[]>(u).map(unidade)
+      const porId = new Map(ok<Linha[]>(ident).map((l) => [l.id, l]))
+      const unidades = ok<Linha[]>(u).map((l) => unidade({ ...l, ...porId.get(l.id) }))
+      if (porId.size === 0) {
+        const conta = new Map<string, number>()
+        for (const x of unidades) { const k = (conta.get(x.modeloId) ?? 0) + 1; conta.set(x.modeloId, k); x.rotulo = `unidade ${k}` }
+      }
       return {
         categorias: ok<Linha[]>(c) as Acervo['categorias'],
         modelos: ok<Linha[]>(m).map((l): Modelo => ({

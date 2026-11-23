@@ -1,0 +1,8 @@
+# Fora do pacote de código (zip do release no GitHub, que o Zenodo arquiva).
+# O site continua usando estes arquivos; eles só não entram no arquivamento.
+public/equip/   export-ignore
+public/lea/     export-ignore
+public/marca/   export-ignore
+docs/           export-ignore
+.gitignore      export-ignore
+.gitattributes  export-ignore

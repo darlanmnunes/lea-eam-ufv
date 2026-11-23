@@ -26,9 +26,11 @@ disponibilizar o código-fonte correspondente aos usuários desse serviço (AGPL
 Itens NÃO cobertos pela licença acima:
 - Marcas e logotipos da UFV e da Engenharia de Agrimensura e Cartográfica (public/marca/):
   uso restrito à identificação institucional deste sistema.
-- Fotografias do LEA e dos equipamentos (public/lea/, public/equip/,
-  dados-fonte/fotos-originais/): direitos dos respectivos autores; não são licenciadas
-  para reutilização.
+- Fotografias do LEA e dos equipamentos (public/lea/, public/equip/): direitos dos
+  respectivos autores; não são licenciadas para reutilização e não entram no pacote
+  arquivado no Zenodo. Números de patrimônio visíveis nas fotos foram borrados.
+- Inventário patrimonial (números de patrimônio e de série): informação institucional da
+  UFV; não faz parte do repositório. O acervo publicado usa identificações de exemplo.
 - Biblioteca de interface em public/assets/ (taste-skill): componente de terceiros,
   regido pela licença do respectivo autor.
 - Dados pessoais de docentes, servidores e estudantes: não fazem parte do repositório

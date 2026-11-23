@@ -385,18 +385,29 @@ create policy evento_leitura on emprestimo_eventos for select
   using (exists (select 1 from emprestimos e where e.id = emprestimo_id
                   and (e.solicitante_id = auth.uid() or sou_equipe())));
 
+-- Patrimônio e número de série de cada unidade: só para quem tem cadastro, e o cadastro exige
+-- conta @ufv.br (salvar_perfil). Quem não entrou recebe a lista vazia.
+create function identificacao_unidades()
+returns table (id uuid, patrimonio text, numero_serie text)
+language sql stable security definer set search_path = public as $$
+  select u.id, u.patrimonio, u.numero_serie from unidades u
+   where exists (select 1 from pessoas p where p.id = auth.uid())
+$$;
+
 -- No Supabase, tabelas, sequências e funções novas nascem liberadas para anon e authenticated.
 -- Fecha tudo e libera só o que o site usa.
 revoke all on all tables in schema public from anon, authenticated;
 revoke all on all sequences in schema public from anon, authenticated;
 revoke execute on all functions in schema public from public, anon, authenticated;
 grant usage on schema public to anon, authenticated;
-grant select on categorias, modelos, unidades, ocupacao,
+grant select on categorias, modelos, ocupacao,
                 semestres, disciplinas, aulas, disciplina_equipamentos to anon, authenticated;
+-- unidades: patrimônio e número de série não são públicos (ver identificacao_unidades)
+grant select (id, modelo_id, situacao, observacao) on unidades to anon, authenticated;
 grant insert, update, delete on categorias, semestres to authenticated;
 grant select on pessoas, emprestimos, emprestimo_itens, emprestimo_eventos to authenticated;
 grant insert, update, delete on modelos, unidades to authenticated;
 grant execute on function salvar_perfil, criar_emprestimo, avancar_emprestimo, definir_papeis,
                           definir_uso_disciplina, tenho_papel, sou_equipe, cuida_do_acervo, eu to authenticated;
-grant execute on function reserva_aulas, tenho_papel, sou_equipe, cuida_do_acervo, eu to anon, authenticated;
+grant execute on function reserva_aulas, tenho_papel, sou_equipe, cuida_do_acervo, eu, identificacao_unidades to anon, authenticated;
 grant execute on function pendentes_de_ciente, lembretes_a_enviar to service_role;

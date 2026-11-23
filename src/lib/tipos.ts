@@ -63,6 +63,8 @@ export interface Unidade {
   serie: string | null
   situacao: Situacao
   observacao: string | null
+  /** Sem login, patrimônio e série não vêm do banco; a unidade aparece como "unidade 1", "unidade 2"... */
+  rotulo?: string
 }
 
 export interface Modelo {

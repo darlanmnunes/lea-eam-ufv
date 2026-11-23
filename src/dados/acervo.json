@@ -72,22 +72,22 @@
    "emprestavel": true,
    "unidades": [
     {
-     "serie": "[removido]"
+     "serie": "EX-001"
     },
     {
-     "serie": "[removido]"
+     "serie": "EX-002"
     },
     {
-     "serie": "[removido]"
+     "serie": "EX-003"
     },
     {
-     "serie": "[removido]"
+     "serie": "EX-004"
     },
     {
-     "serie": "[removido]"
+     "serie": "EX-005"
     },
     {
-     "serie": "[removido]"
+     "serie": "EX-006"
     }
    ]
   },
@@ -101,19 +101,19 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-007"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-008"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-009"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-010"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-011"
     }
    ]
   },
@@ -127,10 +127,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-012"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-013"
     }
    ]
   },
@@ -144,8 +144,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-014"
     }
    ]
   },
@@ -159,7 +158,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-015"
     }
    ]
   },
@@ -173,7 +172,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-016"
     }
    ]
   },
@@ -187,7 +186,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-017"
     }
    ]
   },
@@ -201,9 +200,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-018"
     },
     {
+     "serie": "EX-019",
      "obs": "Sem número de patrimônio na planilha."
     }
    ]
@@ -218,10 +218,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-020"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-021"
     }
    ]
   },
@@ -235,7 +235,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-022"
     }
    ]
   },
@@ -249,7 +249,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-023"
     }
    ]
   },
@@ -263,7 +263,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-024"
     }
    ]
   },
@@ -277,10 +277,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-025"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-026"
     }
    ]
   },
@@ -294,12 +294,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-027"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-028"
     }
    ]
   },
@@ -313,8 +311,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-029"
     }
    ]
   },
@@ -328,8 +325,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-030"
     }
    ]
   },
@@ -343,35 +339,28 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-031"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-032"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-033"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-034"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-035"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-036"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-037"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-038"
     }
    ]
   },
@@ -385,20 +374,16 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-039"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-040"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-041"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-042"
     }
    ]
   },
@@ -412,8 +397,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-043"
     }
    ]
   },
@@ -427,7 +411,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-044"
     }
    ]
   },
@@ -441,7 +425,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-045"
     }
    ]
   },
@@ -455,6 +439,7 @@
    "emprestavel": true,
    "unidades": [
     {
+     "serie": "EX-046",
      "obs": "Sem número de patrimônio na planilha."
     }
    ]
@@ -469,16 +454,13 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-047"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-048"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-049"
     }
    ]
   },
@@ -492,16 +474,13 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-050"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-051"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-052"
     }
    ]
   },
@@ -515,12 +494,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-053"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-054"
     }
    ]
   },
@@ -534,12 +511,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "670"
+     "serie": "EX-055"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-056"
     }
    ]
   },
@@ -553,7 +528,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-057"
     }
    ]
   },
@@ -567,7 +542,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-058"
     }
    ]
   },
@@ -581,8 +556,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-059"
     }
    ]
   },
@@ -596,84 +570,64 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-060"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-061"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-062"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-063"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-064"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-065"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-066"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-067"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-068"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-069"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-070"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-071"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-072"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-073"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-074"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-075"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-076"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-077"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-078"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-079"
     }
    ]
   },
@@ -687,40 +641,32 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-080"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-081"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-082"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]",
+     "serie": "EX-083",
      "situacao": "manutencao",
      "obs": "Consta como \"Com defeito\" no patrimônio."
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-084"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-085"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]",
+     "serie": "EX-086",
      "situacao": "manutencao",
      "obs": "Consta como \"Com defeito\" no patrimônio."
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-087"
     }
    ]
   },
@@ -734,27 +680,22 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-088"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-089"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-090"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-091"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-092"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-093"
     }
    ]
   },
@@ -768,20 +709,16 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-094"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-095"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-096"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-097"
     }
    ]
   },
@@ -795,20 +732,16 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-098"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-099"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-100"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-101"
     }
    ]
   },
@@ -822,8 +755,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-102"
     }
    ]
   },
@@ -837,28 +769,22 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-103"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-104"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-105"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-106"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-107"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-108"
     }
    ]
   },
@@ -872,20 +798,16 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-109"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-110"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-111"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-112"
     }
    ]
   },
@@ -899,16 +821,13 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-113"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-114"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-115"
     }
    ]
   },
@@ -922,16 +841,13 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-116"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-117"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-118"
     }
    ]
   },
@@ -945,7 +861,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-119"
     }
    ]
   },
@@ -959,7 +875,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-120"
     }
    ]
   },
@@ -973,7 +889,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-121"
     }
    ]
   },
@@ -987,7 +903,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-122"
     }
    ]
   },
@@ -1001,7 +917,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-123"
     }
    ]
   },
@@ -1015,7 +931,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
+     "serie": "EX-124",
      "situacao": "manutencao",
      "obs": "Consta como \"Com defeito\" no patrimônio."
     }
@@ -1031,7 +947,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-125"
     }
    ]
   },
@@ -1045,8 +961,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-126"
     }
    ]
   },
@@ -1060,7 +975,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-127"
     }
    ]
   },
@@ -1074,19 +989,19 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-128"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-129"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-130"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-131"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-132"
     }
    ]
   },
@@ -1100,16 +1015,16 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-133"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-134"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-135"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-136"
     }
    ]
   },
@@ -1123,12 +1038,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-137"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-138"
     }
    ]
   },
@@ -1142,12 +1055,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-139"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-140"
     }
    ]
   },
@@ -1161,12 +1072,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-141"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-142"
     }
    ]
   },
@@ -1180,10 +1089,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-143"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-144"
     }
    ]
   },
@@ -1197,10 +1106,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-145"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-146"
     }
    ]
   },
@@ -1214,12 +1123,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-147"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-148"
     }
    ]
   },
@@ -1233,7 +1140,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-149"
     }
    ]
   },
@@ -1247,7 +1154,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-150"
     }
    ]
   },
@@ -1261,7 +1168,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-151"
     }
    ]
   },
@@ -1275,7 +1182,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-152"
     }
    ]
   },
@@ -1289,7 +1196,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-153"
     }
    ]
   },
@@ -1303,7 +1210,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-154"
     }
    ]
   },
@@ -1317,28 +1224,28 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-155"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-156"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-157"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-158"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-159"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-160"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-161"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-162"
     }
    ]
   },
@@ -1352,19 +1259,19 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-163"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-164"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-165"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-166"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-167"
     }
    ]
   },
@@ -1378,16 +1285,16 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-168"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-169"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-170"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-171"
     }
    ]
   },
@@ -1401,16 +1308,16 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-172"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-173"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-174"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-175"
     }
    ]
   },
@@ -1424,19 +1331,16 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-176"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-177"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-178"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-179"
     }
    ]
   },
@@ -1450,16 +1354,16 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-180"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-181"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-182"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-183"
     }
    ]
   },
@@ -1473,16 +1377,16 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-184"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-185"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-186"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-187"
     }
    ]
   },
@@ -1496,13 +1400,13 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-188"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-189"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-190"
     }
    ]
   },
@@ -1516,16 +1420,13 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-191"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-192"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-193"
     }
    ]
   },
@@ -1539,12 +1440,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-194"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-195"
     }
    ]
   },
@@ -1558,10 +1457,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-196"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-197"
     }
    ]
   },
@@ -1575,8 +1474,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-198"
     }
    ]
   },
@@ -1590,7 +1488,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-199"
     }
    ]
   },
@@ -1604,8 +1502,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-200"
     }
    ]
   },
@@ -1619,7 +1516,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-201"
     }
    ]
   },
@@ -1633,7 +1530,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-202"
     }
    ]
   },
@@ -1647,7 +1544,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-203"
     }
    ]
   },
@@ -1661,7 +1558,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-204"
     }
    ]
   },
@@ -1675,7 +1572,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-205"
     }
    ]
   },
@@ -1689,7 +1586,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-206"
     }
    ]
   },
@@ -1703,7 +1600,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-207"
     }
    ]
   },
@@ -1717,21 +1614,19 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-208"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-209"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-210"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-211"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-212"
     }
    ]
   },
@@ -1745,12 +1640,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-213"
     },
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-214"
     }
    ]
   },
@@ -1764,10 +1657,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-215"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-216"
     }
    ]
   },
@@ -1781,10 +1674,10 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-217"
     },
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-218"
     }
    ]
   },
@@ -1798,8 +1691,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-219"
     }
    ]
   },
@@ -1813,8 +1705,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-220"
     }
    ]
   },
@@ -1828,7 +1719,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-221"
     }
    ]
   },
@@ -1842,8 +1733,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-222"
     }
    ]
   },
@@ -1857,7 +1747,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-223"
     }
    ]
   },
@@ -1871,7 +1761,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-224"
     }
    ]
   },
@@ -1885,7 +1775,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]"
+     "serie": "EX-225"
     }
    ]
   },
@@ -1899,8 +1789,7 @@
    "emprestavel": true,
    "unidades": [
     {
-     "patrimonio": "[removido]",
-     "serie": "[removido]"
+     "serie": "EX-226"
     }
    ]
   }

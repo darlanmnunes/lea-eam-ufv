@@ -37,7 +37,8 @@ Até aqui, pegar um equipamento do LEA emprestado exigia um requerimento em pape
 assinaturas colhidas de sala em sala. O **Acervo do LEA** leva esse caminho para o site:
 
 - **Consultar** o que o laboratório tem: estações totais, receptores GNSS, níveis, teodolitos,
-  laser scanner, drones, planímetros e o apoio de campo, com o número de patrimônio e a foto quando houver.
+  laser scanner, drones, planímetros e o apoio de campo, com a foto quando houver. O número de patrimônio
+  de cada unidade aparece para quem entra com a conta @ufv.br.
 - **Ver o que está livre** nas datas escolhidas, unidade por unidade.
 - **Pedir e assinar** pelo site, com o termo de responsabilidade gerado ao final, pronto para
   imprimir ou salvar em PDF.
@@ -110,13 +111,13 @@ almoxarifado da sala 108, com atendimento das 7h às 12h e das 13h às 18h.
 ## Como citar
 
 Nunes, D. M. (2026). *Acervo do LEA: sistema de gestão do acervo e de empréstimo de equipamentos do Laboratório de
-Engenharia de Agrimensura e Cartográfica da UFV* (versão 1.1.1) [Software]. Zenodo.
+Engenharia de Agrimensura e Cartográfica da UFV* (versão 1.1.2) [Software]. Zenodo.
 https://doi.org/10.5281/zenodo.24478306
 
-O DOI acima vale para todas as versões e leva sempre à mais recente. Para citar só a versão 1.1.1, use
-[10.5281/zenodo.24478307](https://doi.org/10.5281/zenodo.24478307). Os metadados estão em [CITATION.cff](CITATION.cff)
-e no botão "Cite this repository" do GitHub; DOI, commit e hashes de cada versão em [DOI.md](DOI.md). Licença AGPL-3.0-or-later ([LICENSE](LICENSE)); fotos e marcas têm regras
-próprias ([NOTICE](NOTICE)).
+O DOI acima vale para todas as versões e leva sempre à mais recente. O DOI de cada versão, com commit e
+hashes do pacote, está em [DOI.md](DOI.md). Os metadados estão em [CITATION.cff](CITATION.cff) e no botão
+"Cite this repository" do GitHub. Licença AGPL-3.0-or-later ([LICENSE](LICENSE)); fotos, marcas e inventário
+têm regras próprias ([NOTICE](NOTICE)).
 
 ---
 
@@ -129,9 +130,9 @@ próprias ([NOTICE](NOTICE)).
 | --- | --- |
 | `public/` | Página inicial, fotos do laboratório e dos equipamentos, marcas da UFV e da EAM |
 | `src/` | Aplicação do acervo (React + TypeScript, Vite) |
-| `src/dados/` | Acervo inicial e horário das aulas EAM |
+| `src/dados/` | Acervo com identificações de exemplo (EX-001...) e horário das aulas EAM |
 | `db/` | Esquema PostgreSQL, regras do fluxo, dados iniciais e testes |
-| `dados-fonte/` | Planilhas de origem do acervo, já sem dados pessoais |
+| `dados-fonte/privado/` | Planilhas do patrimônio e fotos originais; só na máquina, fora do git |
 | `scripts/` | Montagem do acervo, importação do horário da DTI e publicação |
 | `supabase/functions/lembretes/` | Envio dos lembretes por e-mail |
 
@@ -168,7 +169,13 @@ node scripts/importar-horarios.mjs 2027 1
 <summary><b>Banco de dados</b></summary>
 
 As regras ficam no próprio banco: quem pode assinar cada etapa, bloqueio de reserva em dobro,
-prioridade das aulas e registro imutável das assinaturas.
+prioridade das aulas e registro imutável das assinaturas. Patrimônio e número de série não são públicos:
+sem login, a tabela de unidades entrega só modelo e situação, e a identificação vem da função
+`identificacao_unidades()`, que responde a quem tem cadastro.
+
+Patrimônio, série e as fotos originais não ficam no repositório: as planilhas e o SQL com o inventário
+real vivem em `dados-fonte/privado/` e `db/privado/`, que o git ignora. As fotos do site, as marcas e as
+capturas de tela ficam fora do pacote de código arquivado no Zenodo (`.gitattributes`).
 
 ```bash
 npm run db:teste      # cria um banco descartável e percorre o fluxo inteiro
@@ -178,7 +185,9 @@ npm run db:supabase   # junta os scripts em db/supabase_completo.sql
 
 Para montar um projeto novo no Supabase:
 
-1. Rode `db/supabase_completo.sql` no SQL Editor.
+1. Rode `db/supabase_completo.sql` no SQL Editor. Ele traz o acervo com identificações de exemplo; para o
+   inventário real, rode também `db/privado/003_acervo_real.sql`, gerado na máquina por
+   `node scripts/montar-acervo.mjs && node scripts/gerar-sql-acervo.mjs` a partir de `dados-fonte/privado/`.
 2. Em Authentication, ative o provedor Google e inclua o endereço do site em URL Configuration.
 3. Copie `.env.example` para `.env` com a URL e a chave pública do projeto.
 4. Entre no site e torne-se administrador pelo SQL Editor:

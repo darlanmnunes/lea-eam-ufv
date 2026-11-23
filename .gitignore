@@ -6,3 +6,6 @@ dist
 .taste-skill
 shots
 .playwright-mcp
+# inventário com patrimônio e série, e fotos originais: ficam só na máquina
+dados-fonte/privado/
+db/privado/

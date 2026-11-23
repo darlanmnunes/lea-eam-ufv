@@ -29,8 +29,8 @@ end $$;
 create temp table t (id uuid, u1 uuid, u2 uuid);
 grant all on t to authenticated;
 insert into t (u1, u2)
-  select (select id from unidades where patrimonio = '[removido]'),
-         (select id from unidades where numero_serie = '[removido]');
+  select (select id from unidades where numero_serie = 'EX-015'),
+         (select id from unidades where numero_serie = 'EX-001');
 
 set role authenticated;
 

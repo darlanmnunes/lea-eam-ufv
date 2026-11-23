@@ -117,12 +117,14 @@ export function atrasado(e: Emprestimo): boolean {
 }
 
 export function cota(sigla: string, u: Unidade): string {
+  if (u.rotulo) return `${sigla} ${u.rotulo}`
   if (u.patrimonio) return `${sigla} ${u.patrimonio}`
   if (u.serie) return `${sigla} s/n ${u.serie}`
   return `${sigla} sem registro`
 }
 
 export function identificacao(u: Unidade): string {
+  if (u.rotulo) return 'Patrimônio visível após entrar'
   if (u.patrimonio) return `Patrimônio ${u.patrimonio}`
   if (u.serie) return `Nº de série ${u.serie}`
   return 'Sem patrimônio'

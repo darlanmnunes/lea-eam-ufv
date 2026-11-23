@@ -1,12 +1,16 @@
-// Monta src/dados/acervo.json a partir de:
-//   dados-fonte/emprestimo_sala108.json  (planilha de controle de empréstimo; modelos com foto e descrição própria)
-//   dados-fonte/patrimonio_sala108.json  (relação de patrimônio da sala 108)
+// Monta o acervo a partir das planilhas, que ficam só na máquina (dados-fonte/privado/, fora do git):
+//   dados-fonte/privado/emprestimo_sala108.json  (planilha de controle de empréstimo; modelos com foto e descrição própria)
+//   dados-fonte/privado/patrimonio_sala108.json  (relação de patrimônio da sala 108)
+// Gera dois arquivos:
+//   dados-fonte/privado/acervo.json  inventário real, com patrimônio e número de série (não vai para o git)
+//   src/dados/acervo.json            o mesmo acervo com identificações de exemplo (EX-001...), para o modo
+//                                    demonstração e para instalações novas
 // Uso: node scripts/montar-acervo.mjs && node scripts/gerar-sql-acervo.mjs
 import { readFileSync, writeFileSync } from 'node:fs'
 
 const ler = (p) => JSON.parse(readFileSync(new URL(`../${p}`, import.meta.url)))
-const emprestimo = ler('dados-fonte/emprestimo_sala108.json')
-const patrimonio = ler('dados-fonte/patrimonio_sala108.json')
+const emprestimo = ler('dados-fonte/privado/emprestimo_sala108.json')
+const patrimonio = ler('dados-fonte/privado/patrimonio_sala108.json')
 
 const categorias = [
   { id: 'estacao-total', nome: 'Estações totais', sigla: 'ET' },
@@ -177,6 +181,10 @@ const ordemCat = Object.fromEntries(categorias.map((c) => [c.id, c.ordem]))
 const lista = [...modelos.values()].sort((a, b) =>
   ordemCat[a.categoria] - ordemCat[b.categoria] || (b.foto ? 1 : 0) - (a.foto ? 1 : 0) || b.unidades.length - a.unidades.length || a.id.localeCompare(b.id))
 
-writeFileSync(new URL('../src/dados/acervo.json', import.meta.url), JSON.stringify({ categorias, modelos: lista }, null, 1) + '\n')
+const salvar = (p, modelos) => writeFileSync(new URL(`../${p}`, import.meta.url), JSON.stringify({ categorias, modelos }, null, 1) + '\n')
+salvar('dados-fonte/privado/acervo.json', lista)
+// público: sem patrimônio nem série; cada unidade ganha uma identificação de exemplo
+let ex = 0
+salvar('src/dados/acervo.json', lista.map((m) => ({ ...m, unidades: m.unidades.map(({ patrimonio, serie, ...u }) => ({ serie: `EX-${String(++ex).padStart(3, '0')}`, ...u })) })))
 const n = lista.reduce((s, m) => s + m.unidades.length, 0)
 console.log(`${lista.length} modelos, ${n} unidades (${fora} itens de mobiliário fora do acervo)`)
