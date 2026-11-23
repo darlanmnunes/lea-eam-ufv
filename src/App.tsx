@@ -62,7 +62,8 @@ function Rodape() {
         <p>
           Laboratório de Engenharia de Agrimensura e Cartográfica (LEA)<br />
           Departamento de Engenharia Civil | Universidade Federal de Viçosa<br />
-          <span className="rodape-autor">Desenvolvido por Prof. Dr. Darlan Miranda Nunes</span>
+          <span className="rodape-autor">Desenvolvido por Prof. Dr. Darlan Miranda Nunes</span><br />
+          <a className="rodape-doi" href="https://doi.org/10.5281/zenodo.24478306">DOI 10.5281/zenodo.24478306</a>
         </p>
         <img src="./marca/assinatura.png" alt="EAM | Engenharia de Agrimensura e Cartográfica" height="44" />
       </div>

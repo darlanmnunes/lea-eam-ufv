@@ -20,6 +20,7 @@
   <a href="https://github.com/darlanmnunes/lea-eam-ufv/releases/latest"><img alt="Versão" src="https://img.shields.io/github/v/release/darlanmnunes/lea-eam-ufv?label=vers%C3%A3o&color=0c214c"></a>
   <a href="https://darlanmnunes.github.io/lea-eam-ufv/"><img alt="Site no ar" src="https://img.shields.io/website?url=https%3A%2F%2Fdarlanmnunes.github.io%2Flea-eam-ufv%2F&label=site&up_message=no%20ar&up_color=5a0204"></a>
   <img alt="226 unidades em 95 modelos" src="https://img.shields.io/badge/acervo-226%20unidades%20%7C%2095%20modelos-ae7c09">
+  <a href="https://doi.org/10.5281/zenodo.24478306"><img alt="DOI" src="https://zenodo.org/badge/1461338382.svg"></a>
 </p>
 
 <p align="center">
@@ -103,6 +104,19 @@ almoxarifado da sala 108, com atendimento das 7h às 12h e das 13h às 18h.
 <p align="center">
   <img src="public/lea/almoxarifado-1200.webp" alt="Almoxarifado do LEA com as estantes de estojos de estações totais" width="80%">
 </p>
+
+---
+
+## Como citar
+
+Nunes, D. M. (2026). *Acervo do LEA: sistema de gestão do acervo e de empréstimo de equipamentos do Laboratório de
+Engenharia de Agrimensura e Cartográfica da UFV* (versão 1.1.1) [Software]. Zenodo.
+https://doi.org/10.5281/zenodo.24478306
+
+O DOI acima vale para todas as versões e leva sempre à mais recente. Para citar só a versão 1.1.1, use
+[10.5281/zenodo.24478307](https://doi.org/10.5281/zenodo.24478307). Os metadados estão em [CITATION.cff](CITATION.cff)
+e no botão "Cite this repository" do GitHub; DOI, commit e hashes de cada versão em [DOI.md](DOI.md). Licença AGPL-3.0-or-later ([LICENSE](LICENSE)); fotos e marcas têm regras
+próprias ([NOTICE](NOTICE)).
 
 ---
 

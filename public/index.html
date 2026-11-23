@@ -93,6 +93,12 @@
   .lea-apoio { display: flex; gap: var(--s-6); align-items: center; margin: var(--s-4) 0 0; }
   .lea-apoio img { height: 60px; width: auto; }
   .close__word { line-height: 1.38; overflow: visible; }
+  /* rodapé: em janela baixa (notebook), cresce em vez de pôr o LEA grande sobre os links */
+  @media (min-width: 640px) {
+    footer.closing { height: auto; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+    footer.closing > .wrap { flex: 1 0 auto; height: auto; grid-template-rows: minmax(min-content, 1fr) auto; }
+  }
+  .footer__legal a { text-decoration: underline; text-underline-offset: 3px; }
   #aulas .frame__img { object-position: 50% 0; }
   .lab-foto { margin-top: var(--s-7); }
   .lab-foto .frame__img { width: 100%; height: 100%; object-fit: cover; }
@@ -466,7 +472,7 @@
       </div>
       <div class="footer__legal">
         <span>&copy; 2026 Engenharia de Agrimensura e Cartográfica | Departamento de Engenharia Civil | UFV</span>
-        <span>Desenvolvido por Prof. Dr. Darlan Miranda Nunes</span>
+        <span>Desenvolvido por Prof. Dr. Darlan Miranda Nunes | DOI <a href="https://doi.org/10.5281/zenodo.24478306">10.5281/zenodo.24478306</a></span>
       </div>
     </div>
   </div>

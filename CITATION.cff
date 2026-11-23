@@ -5,6 +5,14 @@ title: "Acervo do LEA: sistema de gestão do acervo e de empréstimo de equipame
 abstract: "Sistema web para gestão do acervo de equipamentos topográficos e geodésicos de um laboratório de ensino: catálogo com a situação de cada unidade, disponibilidade por período, reserva automática para aulas práticas a partir do horário oficial e fluxo de empréstimo com sete assinaturas eletrônicas e termo de responsabilidade."
 version: "1.1.1"
 date-released: "2026-11-23"
+doi: "10.5281/zenodo.24478306"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24478306"
+    description: "DOI de todas as versões (aponta sempre para a mais recente)"
+  - type: doi
+    value: "10.5281/zenodo.24478307"
+    description: "DOI da versão 1.1.1"
 license: AGPL-3.0-or-later
 repository-code: "https://github.com/darlanmnunes/lea-eam-ufv"
 url: "https://darlanmnunes.github.io/lea-eam-ufv/"

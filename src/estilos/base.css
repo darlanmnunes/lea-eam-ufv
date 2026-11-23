@@ -375,6 +375,7 @@ table { border-collapse: collapse; width: 100%; }
 .rodape-dentro img { height: 44px; width: auto; }
 .rodape-autor { display: inline-block; margin-top: 6px; color: var(--azul); font-weight: 600; }
 .rodape-dentro img:last-child { margin-left: auto; }
+.rodape-doi { display: inline-block; margin-top: 4px; font: 500 0.8rem var(--mono); color: var(--tinta-2); }
 @media (max-width: 640px) { .rodape-dentro { flex-wrap: wrap; } .rodape-dentro img:last-child { margin-left: 0; } }
 
 /* ---------- termo (documento) ---------- */
