@@ -9,3 +9,5 @@ shots
 # inventário com patrimônio e série, e fotos originais: ficam só na máquina
 dados-fonte/privado/
 db/privado/
+# controle de registro do software (DOI, commit e hashes): só na máquina
+DOI.md

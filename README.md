@@ -114,8 +114,8 @@ Nunes, D. M. (2026). *Acervo do LEA: sistema de gestão do acervo e de emprésti
 Engenharia de Agrimensura e Cartográfica da UFV* (versão 1.1.2) [Software]. Zenodo.
 https://doi.org/10.5281/zenodo.24478306
 
-O DOI acima vale para todas as versões e leva sempre à mais recente. O DOI de cada versão, com commit e
-hashes do pacote, está em [DOI.md](DOI.md). Os metadados estão em [CITATION.cff](CITATION.cff) e no botão
+O DOI acima vale para todas as versões e leva sempre à mais recente. Para citar só a versão 1.1.2, use
+[10.5281/zenodo.24483932](https://doi.org/10.5281/zenodo.24483932). Os metadados estão em [CITATION.cff](CITATION.cff) e no botão
 "Cite this repository" do GitHub. Licença AGPL-3.0-or-later ([LICENSE](LICENSE)); fotos, marcas e inventário
 têm regras próprias ([NOTICE](NOTICE)).
 
